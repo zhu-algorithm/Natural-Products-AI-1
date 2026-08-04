@@ -1,0 +1,482 @@
+Natural-Products-AI-1/
+
+│
+├── README.md
+├── requirements.txt
+├── main.py
+│
+├── data/
+│   └── example_natural_products.csv
+│
+└── src/
+    │
+    ├── database/
+    │   ├── __init__.py
+    │   └── natural_product_loader.py
+    │
+    ├── chemistry/
+    │   ├── __init__.py
+    │   ├── descriptor.py
+    │   └── molecular_graph.py
+    │
+    ├── models/
+    │   ├── __init__.py
+    │   └── graph_transformer.py
+    │
+    └── utils/
+        ├── __init__.py
+        └── logger.py
+
+numpy
+pandas
+rdkit
+torch
+torch-geometric
+scikit-learn
+pyyaml
+tqdm
+networkx
+
+pip install -r requirements.txt
+
+data/example_natural_products.csv
+id,name,smiles
+1,Quercetin,C1=CC(=C(C=C1C2C(=O)C3=C(C=C(C=C3O2)O)O)O)O
+2,Curcumin,COC1=CC(=CC(=C1O)OC)C=CC(=O)CC(=O)C=CC2=CC(=C(C=C2)O)OC
+3,Resveratrol,C1=CC(=CC=C1C=CC2=CC(=CC=C2)O)O
+4,EGCG,COC1=CC(=C(C=C1O)O)C2OC(C(O)C(O)C2O)OC3=CC(=C(C=C3)O)O
+
+
+src/database/natural_product_loader.py
+
+import pandas as pd
+
+
+class NaturalProductLoader:
+
+
+    def __init__(self, file):
+
+        self.file = file
+
+
+
+    def load(self):
+
+        data = pd.read_csv(self.file)
+
+
+        data = data.drop_duplicates(
+            subset=["smiles"]
+        )
+
+
+        print(
+            f"[Database] Loaded {len(data)} compounds"
+        )
+
+
+        return data
+
+
+src/chemistry/descriptor.py
+
+from rdkit import Chem
+from rdkit.Chem import Descriptors
+from rdkit.Chem import Crippen
+from rdkit.Chem import Lipinski
+
+
+
+def calculate_descriptors(smiles):
+
+
+    mol = Chem.MolFromSmiles(smiles)
+
+
+    if mol is None:
+
+        return None
+
+
+
+    result = {
+
+
+        "MW":
+
+        Descriptors.MolWt(mol),
+
+
+
+        "LogP":
+
+        Crippen.MolLogP(mol),
+
+
+
+        "HBD":
+
+        Lipinski.NumHDonors(mol),
+
+
+
+        "HBA":
+
+        Lipinski.NumHAcceptors(mol),
+
+
+
+        "Rotatable":
+
+        Lipinski.NumRotatableBonds(mol)
+
+
+    }
+
+
+    return result
+
+
+src/chemistry/molecular_graph.py
+
+from rdkit import Chem
+
+import torch
+
+
+
+def atom_feature(atom):
+
+
+    return [
+
+        atom.GetAtomicNum(),
+
+        atom.GetTotalDegree(),
+
+        atom.GetFormalCharge(),
+
+        int(atom.GetIsAromatic())
+
+    ]
+
+
+
+
+
+def smiles_to_graph(smiles):
+
+
+    mol = Chem.MolFromSmiles(smiles)
+
+
+    if mol is None:
+
+        return None
+
+
+
+    nodes=[]
+
+
+
+    for atom in mol.GetAtoms():
+
+        nodes.append(
+
+            atom_feature(atom)
+
+        )
+
+
+
+    x=torch.tensor(
+
+        nodes,
+
+        dtype=torch.float
+
+    )
+
+
+
+    edges=[]
+
+
+
+    for bond in mol.GetBonds():
+
+
+        i=bond.GetBeginAtomIdx()
+
+        j=bond.GetEndAtomIdx()
+
+
+        edges.append([i,j])
+
+        edges.append([j,i])
+
+
+
+    edge_index=torch.tensor(
+
+        edges,
+
+        dtype=torch.long
+
+    ).T
+
+
+
+    return {
+
+
+        "x":x,
+
+
+        "edge_index":edge_index
+
+    }
+
+src/models/graph_transformer.py
+
+import torch
+import torch.nn as nn
+
+
+
+class GraphTransformer(nn.Module):
+
+
+    def __init__(
+
+        self,
+
+        input_dim=4,
+
+        hidden_dim=128,
+
+        output_dim=1024
+
+    ):
+
+
+        super().__init__()
+
+
+
+        self.encoder = nn.Sequential(
+
+
+            nn.Linear(
+
+                input_dim,
+
+                hidden_dim
+
+            ),
+
+
+            nn.ReLU(),
+
+
+            nn.Linear(
+
+                hidden_dim,
+
+                output_dim
+
+            )
+
+        )
+
+
+
+    def forward(self,x):
+
+
+        embedding=self.encoder(x)
+
+
+
+        embedding=torch.mean(
+
+            embedding,
+
+            dim=0
+
+        )
+
+
+        return embedding
+
+src/utils/logger.py
+
+import logging
+
+
+
+def get_logger():
+
+
+    logging.basicConfig(
+
+        level=logging.INFO,
+
+        format="%(asctime)s | %(message)s"
+
+    )
+
+
+    return logging.getLogger()
+
+main.py
+
+from src.database.natural_product_loader import NaturalProductLoader
+
+from src.chemistry.descriptor import calculate_descriptors
+
+from src.chemistry.molecular_graph import smiles_to_graph
+
+from src.models.graph_transformer import GraphTransformer
+
+from src.utils.logger import get_logger
+
+
+
+logger=get_logger()
+
+
+
+def main():
+
+
+    logger.info(
+
+        "Starting Natural Products AI"
+
+    )
+
+
+
+    loader=NaturalProductLoader(
+
+        "data/example_natural_products.csv"
+
+    )
+
+
+
+    compounds=loader.load()
+
+
+
+    model=GraphTransformer()
+
+
+
+    for _,row in compounds.iterrows():
+
+
+        print()
+
+        print(
+
+            "Compound:",
+
+            row["name"]
+
+        )
+
+
+
+        descriptor = calculate_descriptors(
+
+            row["smiles"]
+
+        )
+
+
+
+        print(
+
+            "Properties:",
+
+            descriptor
+
+        )
+
+
+
+        graph = smiles_to_graph(
+
+            row["smiles"]
+
+        )
+
+
+
+        embedding=model(
+
+            graph["x"]
+
+        )
+
+
+
+        print(
+
+            "AI embedding:",
+
+            embedding.shape
+
+        )
+
+
+
+    logger.info(
+
+        "Finished"
+
+    )
+
+
+
+
+
+if __name__=="__main__":
+
+    main()
+
+
+python main.py
+
+Starting Natural Products AI
+
+[Database] Loaded 4 compounds
+
+
+Compound: Quercetin
+
+Properties:
+MW 302.24
+LogP 1.5
+HBD 5
+HBA 7
+
+
+AI embedding:
+torch.Size([1024])
+
+
+Compound: Curcumin
+
+AI embedding:
+torch.Size([1024])
+
+
+Finished
+
+
+
