@@ -12,27 +12,34 @@
 <body>
   <style>@media(min-width:781px){.evidence{grid-template-columns:repeat(3,1fr)}.evidence .partner-card{grid-column:1/-1;min-height:auto}}.partner-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:13px}.partner-links a{display:inline-flex;align-items:center;border:1px solid #bcd8ce;background:#f2f8f5;color:#14715d;border-radius:7px;padding:9px 12px;text-decoration:none;font-size:13px;font-weight:750}.partner-links a:hover{background:#e1f1ea}</style>
   <style>
-    .gmu-bar{background:#fff;border-bottom:1px solid #dce7e3}.gmu-in{max-width:1180px;margin:auto;padding:13px 24px;display:flex;align-items:center;gap:16px}.gmu-in img{width:214px;height:auto;max-width:45vw}.gmu-copy{border-left:1px solid #dce7e3;padding-left:16px;color:#365a55;font-size:13px}.gmu-copy b{display:block;color:#173f39;font-size:14px}.gmu-copy a{color:#14715d}
-    @media(max-width:600px){.gmu-in{gap:10px;padding:11px 16px}.gmu-copy{padding-left:10px;font-size:11px}.gmu-copy b{font-size:12px}}
+    .gmu-bar{background:#fff;border-bottom:1px solid #dce7e3}.gmu-in{max-width:1180px;margin:auto;padding:13px 24px;display:flex;align-items:center;gap:16px}.gmu-in img{width:214px;height:auto;max-width:45vw}.gmu-copy{border-left:1px solid #dce7e3;padding-left:16px;color:#365a55;font-size:13px}.gmu-copy b{display:block;color:#173f39;font-size:14px}.gmu-copy a{color:#14715d}.support-unit{margin-top:8px;padding-top:8px;border-top:1px solid #e3ece8;color:#526e69}.support-unit strong{color:#173f39}.support-unit a{text-decoration:none;font-weight:750}
+    .columns{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:34px}.column{position:relative;overflow:hidden;min-height:248px;border-radius:12px;padding:22px;color:#fff;text-decoration:none;display:flex;flex-direction:column;justify-content:flex-end;transition:transform .18s ease,box-shadow .18s ease}.column:hover{transform:translateY(-3px);box-shadow:0 12px 28px #17343a22}.column:focus-visible{outline:3px solid #d3ef95;outline-offset:3px}.column::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 10%,#092e2fd9 92%)}.column>*{position:relative}.column .num{position:absolute;top:17px;right:18px;font-size:12px;font-weight:800;letter-spacing:1px;opacity:.8}.column h3{font-size:22px;line-height:1.15;margin:0 0 7px}.column p{font-size:12px;line-height:1.55;margin:0;color:#e5f2ee}.column.karst{background:radial-gradient(circle at 28% 25%,#76a86a,#1d5b52 56%,#123f42)}.column.asean{background:radial-gradient(circle at 72% 18%,#d5a851,#9d4e39 53%,#49394f)}.column.monk{background:radial-gradient(circle at 30% 18%,#dfd67c,#739448 52%,#2e5840)}.column.artemisinin{background:radial-gradient(circle at 72% 24%,#a9d6ba,#477f69 52%,#173f45)}.column.disease{background:radial-gradient(circle at 68% 20%,#9bc5cf,#426e75 52%,#263e56)}.column.calycosin{background:radial-gradient(circle at 28% 20%,#d6c884,#807448 48%,#3d4855)}
+    .directory{margin-top:8px;display:flex;flex-direction:column}.directory-head{margin-bottom:17px;order:0}.directory-head h2{font-size:27px;margin:0}.directory-head p{color:var(--muted);margin:4px 0 0}.hub-group{background:#fff;border:1px solid var(--line);border-radius:13px;margin-top:16px;overflow:hidden}.hub-head{display:grid;grid-template-columns:190px 1fr auto;align-items:center;gap:18px;padding:20px 22px;border-bottom:1px solid var(--line)}.hub-kicker{font-size:11px;font-weight:850;letter-spacing:1px;color:var(--green)}.hub-head h3{font-size:22px;margin:3px 0 0}.hub-head p{margin:0;color:var(--muted);font-size:13px}.hub-enter{white-space:nowrap;color:var(--green);font-weight:800;text-decoration:none;font-size:13px}.tracks{display:grid;grid-template-columns:repeat(3,1fr);gap:0}.track{padding:19px 21px;border-right:1px solid var(--line)}.track:last-child{border-right:0}.track h4{font-size:14px;margin:0 0 10px}.track-links{display:flex;flex-direction:column;gap:8px}.track-links a{color:#45625e;text-decoration:none;font-size:12px;line-height:1.35}.track-links a:hover{color:var(--green);text-decoration:underline}#karst-directory{order:1}#asean-directory{order:2}#disease-directory{order:3}#calycosin-directory{order:4}#monk-directory{order:5}#artemisinin-directory{order:6}.shared{margin-top:28px;background:#eaf2ef;border:1px solid #d2e2dc;border-radius:13px;padding:22px}.shared h2{font-size:21px;margin:0}.shared>p{color:var(--muted);font-size:13px;margin:4px 0 15px}.shared-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.shared-card{background:#fff;border-radius:9px;padding:14px;text-decoration:none}.shared-card b{display:block;color:var(--green);font-size:14px}.shared-card span{display:block;color:var(--muted);font-size:11px;margin-top:4px}.about-strip{margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:14px}.about-card{background:#fff;border:1px solid var(--line);border-radius:11px;padding:19px}.about-card h3{margin:0 0 5px;font-size:17px}.about-card p{color:var(--muted);font-size:12px;margin:0}.about-card a{display:inline-block;margin-top:10px;color:var(--green);font-weight:800;text-decoration:none;font-size:12px}
+    @media(max-width:900px){.columns{grid-template-columns:1fr 1fr}.tracks{grid-template-columns:1fr}.track{border-right:0;border-bottom:1px solid var(--line)}.track:last-child{border-bottom:0}.shared-grid{grid-template-columns:1fr 1fr}}@media(max-width:680px){.hub-head{grid-template-columns:1fr}.about-strip{grid-template-columns:1fr}}@media(max-width:520px){.columns,.shared-grid{grid-template-columns:1fr}.column{min-height:210px}}
+    .public-entry{background:#eff6d8;border-bottom:1px solid #d6e2b1}.public-entry-in{max-width:1180px;margin:auto;padding:18px 24px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:17px}.public-entry-icon{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:#173f3c;color:#d6ee91;font-size:20px}.public-entry h2{font-size:18px;margin:0 0 2px}.public-entry p{font-size:13px;color:#546554;margin:0}.public-entry a{background:#173f3c;color:#fff;border-radius:8px;padding:10px 14px;text-decoration:none;font-weight:800;font-size:13px;white-space:nowrap}
+    @media(max-width:600px){.gmu-in{gap:10px;padding:11px 16px}.gmu-copy{padding-left:10px;font-size:11px}.gmu-copy b{font-size:12px}.public-entry-in{grid-template-columns:auto 1fr}.public-entry a{grid-column:1/-1;text-align:center}}
   </style>
   <header class="top">
     <div class="topin">
       <div class="brand">HerbNova R&amp;D<small>天然产物智能发现与转化平台</small></div>
       <nav class="topnav">
-        <a href="#modules">功能模块</a>
-        <a href="#workflow">研发流程</a>
-        <a href="#evidence">证据标准</a>
+        <a href="#karst-directory">喀斯特专栏</a>
+        <a href="#asean-directory">东盟专栏</a>
+        <a href="#disease-directory">广西特色疾病</a>
+        <a href="#calycosin-directory">毛蕊异黄酮专栏</a>
+        <a href="#monk-directory">罗汉果专栏</a>
+        <a href="#artemisinin-directory">青蒿素专栏</a>
         <a href="natural-product-ai-platform.html">研发工作台</a>
-        <a href="karst-natural-products.html">喀斯特专栏</a>
       </nav>
     </div>
   </header>
   <section class="gmu-bar" aria-label="开发单位">
     <div class="gmu-in">
       <img src="guilin-medical-university-logo.png" alt="桂林医科大学校徽与中英文校名">
-      <div class="gmu-copy"><b>桂林医科大学开发AI平台</b>面向天然产物智能发现、机制研究与转化验证。<a href="https://www.glmu.edu.cn/" target="_blank" rel="noopener">访问学校官网 ↗</a></div>
+      <div class="gmu-copy"><b>桂林医科大学开发AI平台</b>面向天然产物智能发现、机制研究与转化验证。<a href="https://www.glmu.edu.cn/" target="_blank" rel="noopener">访问学校官网 ↗</a><div class="support-unit"><strong>支持单位：</strong><a href="https://www.glmu.edu.cn/info/1057/60093.htm" target="_blank" rel="noopener">桂林医科大学附属灵山医院（灵山县人民医院）↗</a></div></div>
     </div>
   </section>
+  <section class="public-entry" aria-label="普通用户入口"><div class="public-entry-in"><div class="public-entry-icon">▶</div><div><h2>第一次来？观看五分钟高清平台导览</h2><p>通过喀斯特风景、实验室、植物特写和科学图示，了解 AI 药物技术、罗汉果、青蒿素与东盟应用。</p></div><a href="public-introduction.html">播放五分钟介绍 →</a></div></section>
   <section class="hero">
     <div class="heroin">
       <div class="eyebrow">AUDITABLE AI FOR NATURAL-PRODUCT R&amp;D</div>
@@ -46,7 +53,84 @@
   </section>
   <main class="wrap">
     <div class="notice"><b>研究用途声明：</b>平台输出为可证伪的研究假设，不构成药物疗效、诊断或处方结论。任何候选必须通过受体验证、正交实验、PK/PD 和相应的动物/临床研究。</div>
-    <section id="modules">
+    <section id="columns" aria-labelledby="columns-title">
+      <div class="sectiontitle"><h2 id="columns-title">六大研究专栏</h2><p>从区域资源、跨境协作、重点天然产物和特色疾病进入完整证据链。</p></div>
+      <div class="columns">
+        <a class="column karst" href="karst-natural-products.html"><span class="num">01 · REGION</span><h3>喀斯特专栏</h3><p>中越石灰岩带与迪纳里克喀斯特的特有植物、化学证据和合规发现路径。</p></a>
+        <a class="column asean" href="asean-application.html"><span class="num">02 · ASEAN</span><h3>东盟专栏</h3><p>多语言科研协作入口，连接样本标准、AI 筛选、证据复核与跨区域转化。</p></a>
+        <a class="column disease" href="guangxi-disease-omics.html"><span class="num">03 · MULTI-OMICS</span><h3>广西特色疾病</h3><p>汇总代谢组、转录组、蛋白组和基因组数据，连接公开参考队列、广西本地研究与多模态虚拟细胞模型。</p></a>
+        <a class="column calycosin" href="calycosin-column.html"><span class="num">04 · CALYCOSIN</span><h3>毛蕊异黄酮专栏</h3><p>系统汇总文献证据、广西科研关联、分子靶点、网络药理学、虚拟细胞分析及潜在治疗适应症。</p></a>
+        <a class="column monk" href="monk-fruit-hub.html"><span class="num">05 · SIRAITIA</span><h3>罗汉果专栏</h3><p>汇集非甜苷成分发现、肠菌群机制、研发分析、产品配方与质量评价。</p></a>
+        <a class="column artemisinin" href="artemisinin-hub.html"><span class="num">06 · ARTEMISININ</span><h3>青蒿素专栏</h3><p>围绕化合物身份、直接靶点、免疫机制、结构证据与实验验证建立研究档案。</p></a>
+      </div>
+    </section>
+    <section class="directory" aria-labelledby="directory-title">
+      <div class="directory-head"><h2 id="directory-title">按专栏浏览研究内容</h2><p>先选择专栏，再按“资源与数据—分析与机制—验证与转化”进入具体页面。</p></div>
+
+      <article class="hub-group" id="karst-directory">
+        <div class="hub-head"><div><span class="hub-kicker">01 · 区域天然资源</span><h3>喀斯特专栏</h3></div><p>围绕中越石灰岩带、广西—贵州锥状喀斯特与迪纳里克喀斯特，组织特有植物、已报道成分、化学空白和合规采样证据。</p><a class="hub-enter" href="karst-natural-products.html">进入专栏 →</a></div>
+        <div class="tracks">
+          <section class="track"><h4>资源与化学证据</h4><div class="track-links"><a href="karst-natural-products.html">特有植物与区域化学资源</a><a href="calycosin-column.html">毛蕊异黄酮专栏</a><a href="compound-literature-evidence-cards.html">天然化合物文献证据卡</a><a href="compound-library.html">标准化化合物档案</a></div></section>
+          <section class="track"><h4>AI 筛选与研究设计</h4><div class="track-links"><a href="compound-docking-network-atlas.html">对接与网络筛选图谱</a><a href="research-pathway.html">研究路径工作台</a><a href="network-pharmacology-analysis.html">网络药理分析</a></div></section>
+          <section class="track"><h4>验证与保护边界</h4><div class="track-links"><a href="structure-docking-center.html">结构与对接质量门</a><a href="发表级筛选标准与研究方案.md">发表级证据标准</a><a href="data-evidence-center.html">数据与证据中心</a></div></section>
+        </div>
+      </article>
+
+      <article class="hub-group" id="asean-directory">
+        <div class="hub-head"><div><span class="hub-kicker">02 · 跨区域协作</span><h3>东盟专栏</h3></div><p>提供多语言平台入口与东盟天然产物协作路径，统一样本来源、研究标准、证据复核和成果转化规则。</p><a class="hub-enter" href="asean-application.html">进入专栏 →</a></div>
+        <div class="tracks">
+          <section class="track"><h4>区域协作入口</h4><div class="track-links"><a href="asean-application.html">中文与东盟多语言介绍</a><a href="karst-natural-products.html">中越喀斯特资源衔接</a><a href="microbiome-ai-collaboration-guide.html">微生物组 × AI 协作指南</a></div></section>
+          <section class="track"><h4>共同研究标准</h4><div class="track-links"><a href="compound-library.html">化合物与样本标准化</a><a href="data-evidence-center.html">共享数据与证据分级</a><a href="structure-docking-center.html">结构与对接复核</a></div></section>
+          <section class="track"><h4>应用与转化</h4><div class="track-links"><a href="fsmp-medical-food.html">特医食品与中药制剂</a><a href="formulation-development.html">剂型开发工作台</a><a href="research-pathway.html">跨区域研究路径登记</a></div></section>
+        </div>
+      </article>
+
+      <article class="hub-group" id="monk-directory">
+        <div class="hub-head"><div><span class="hub-kicker">05 · 重点品种研发</span><h3>罗汉果专栏</h3></div><p>把原料谱系、非甜苷成分发现、实体库、肠菌群机制、配方与质量评价归入一条完整研发链。</p><a class="hub-enter" href="monk-fruit-hub.html">进入专栏 →</a></div>
+      </article>
+
+      <article class="hub-group" id="artemisinin-directory">
+        <div class="hub-head"><div><span class="hub-kicker">06 · 药物机制研究</span><h3>青蒿素专栏</h3></div><p>区分已知临床事实、前临床线索与计算假设，围绕直接靶点、响应细胞、结构证据和因果实验组织研究。</p><a class="hub-enter" href="artemisinin-hub.html">进入专栏 →</a></div>
+        <div class="tracks">
+          <section class="track"><h4>身份与文献证据</h4><div class="track-links"><a href="compound-library.html">青蒿素化合物档案</a><a href="compound-literature-evidence-cards.html">来源与研究边界证据卡</a><a href="三种天然产物具体研究课题与验证清单.md">具体课题与验证清单</a></div></section>
+          <section class="track"><h4>靶点与免疫机制</h4><div class="track-links"><a href="network-pharmacology-analysis.html">网络药理学分析</a><a href="virtual-t-cell-analysis.html">虚拟 T 细胞分析</a><a href="data-evidence-center.html">青蒿素证据汇总</a></div></section>
+          <section class="track"><h4>结构与实验验证</h4><div class="track-links"><a href="structure-docking-center.html">结构与分子对接</a><a href="compound-docking-network-atlas.html">对接与网络筛选图谱</a><a href="发表级筛选标准与研究方案.md">结合、功能与因果质量门</a></div></section>
+        </div>
+      </article>
+
+      <article class="hub-group" id="disease-directory">
+        <div class="hub-head"><div><span class="hub-kicker">03 · 区域疾病多组学</span><h3>广西特色疾病专栏</h3></div><p>围绕鼻咽癌、肝细胞癌、地中海贫血、肝吸虫相关胆管癌和 G6PD 缺乏，统一汇总代谢组、转录组、蛋白组及基因组数据。</p><a class="hub-enter" href="guangxi-disease-omics.html">进入专栏 →</a></div>
+        <div class="tracks">
+          <section class="track"><h4>疾病与队列</h4><div class="track-links"><a href="guangxi-disease-omics.html#diseases">首批疾病目录</a><a href="guangxi-disease-omics.html#datasets">公开参考数据登记表</a><a href="data-evidence-center.html">数据与证据分级</a></div></section>
+          <section class="track"><h4>四类组学数据</h4><div class="track-links"><a href="guangxi-disease-omics.html#omics">代谢组数据</a><a href="guangxi-disease-omics.html#omics">转录组数据</a><a href="guangxi-disease-omics.html#omics">蛋白组数据</a><a href="guangxi-disease-omics.html#omics">基因组数据</a></div></section>
+          <section class="track"><h4>整合与验证</h4><div class="track-links"><a href="guangxi-disease-omics.html#datasets">数据登记与质控</a><a href="network-pharmacology-analysis.html">疾病网络与通路分析</a><a href="research-pathway.html">研究路径登记</a></div></section>
+        </div>
+      </article>
+
+      <article class="hub-group" id="calycosin-directory">
+        <div class="hub-head"><div><span class="hub-kicker">04 · 天然化合物专题</span><h3>毛蕊异黄酮专栏</h3></div><p>围绕毛蕊异黄酮的文献证据、广西科研关联、重点实验室、分子靶点、网络药理学、虚拟细胞与潜在适应症组织研究。</p><a class="hub-enter" href="calycosin-column.html">进入专栏 →</a></div>
+        <div class="tracks">
+          <section class="track"><h4>文献与广西关联</h4><div class="track-links"><a href="calycosin-column.html#literature">已发表文献分析</a><a href="calycosin-column.html#guangxi">广西科研与成果转化</a><a href="calycosin-column.html#laboratory">广西肿瘤免疫与微环境调控重点实验室</a></div></section>
+          <section class="track"><h4>靶点与机制分析</h4><div class="track-links"><a href="calycosin-column.html#targets">靶点分析结果</a><a href="calycosin-column.html#network">网络药理学整合</a><a href="calycosin-column.html#virtual">虚拟细胞分析</a></div></section>
+          <section class="track"><h4>适应症与实验验证</h4><div class="track-links"><a href="calycosin-column.html#indications">潜在治疗适应症</a><a href="calycosin-research.html">详细研究工作区</a><a href="compound-library.html">天然化合物库</a></div></section>
+        </div>
+      </article>
+    </section>
+
+    <section class="shared" aria-labelledby="shared-title"><h2 id="shared-title">平台公共能力</h2><p>以下工具服务于全部专栏，负责统一数据、证据等级、结构计算和转化标准。</p><div class="shared-grid">
+      <a class="shared-card" href="natural-product-ai-platform.html"><b>AI 研发工作台</b><span>项目导入、任务组织与状态管理</span></a>
+      <a class="shared-card" href="compound-library.html"><b>标准化化合物库</b><span>身份、批次、构象与开发风险</span></a>
+      <a class="shared-card" href="structure-docking-center.html"><b>结构与对接中心</b><span>PDB/AlphaFold 评审与基准验证</span></a>
+      <a class="shared-card" href="data-evidence-center.html"><b>数据与证据中心</b><span>文献、计算、体外和体内证据分级</span></a>
+      <a class="shared-card" href="network-pharmacology-analysis.html"><b>网络药理分析</b><span>FDR、置换、负对照与外部复现</span></a>
+      <a class="shared-card" href="formulation-development.html"><b>剂型开发</b><span>处方、稳定性、暴露与质量放行</span></a>
+      <a class="shared-card" href="fsmp-medical-food.html"><b>特医食品与中药制剂</b><span>药食同源、特医注册及院内制剂法规路径</span></a>
+      <a class="shared-card" href="发表级筛选标准与研究方案.md"><b>发表级证据标准</b><span>统一质量门、退出规则与可复现归档</span></a>
+    </div></section>
+
+    <section class="about-strip"><article class="about-card"><h3>合作伙伴</h3><p>连接天然产物研发、药物开发与健康产业转化伙伴。</p><div class="partner-links"><a href="https://www.layn.com.cn/" target="_blank" rel="noopener">桂林莱茵生物 ↗</a><a href="https://www.guilinpharma.com/" target="_blank" rel="noopener">桂林南药 ↗</a><a href="http://www.yfff.com.cn/" target="_blank" rel="noopener">宇峰集团 ↗</a></div></article><article class="about-card"><h3>平台开发者与研究治理</h3><p>平台由朱棣团队开发，面向肿瘤免疫药理、炎症免疫药理与创新药物研究。朱棣作为合作研究者，参与推动多项肿瘤免疫治疗及新药研发成果进入临床研究或完成成果转化；参与完成2项新药IND相关研究与申报工作，并在相关早期临床研究中开展初步疗效验证。早期临床结果尚需更大样本和后续研究确认，不等同于确证性疗效结论或药品获批上市。</p><p>平台各专题沿用统一的证据分级、来源追溯与人工复核规则。</p><a href="natural-product-ai-platform.html#import">查看研发工作台与平台信息 →</a></article></section>
+
+    <section id="modules" hidden>
       <div class="sectiontitle"><h2>研发功能模块</h2><p>每个模块均含 AI 辅助、质量门与人工复核要求。</p></div>
       <div class="modules">
         <article class="card"><div class="icon">⌬</div><h3>AI 化合物库</h3><p>针对天然产物的身份、批次、构象、质子化、代谢物和开发性风险建立标准化记录。</p><ul><li>青蒿素、淫羊藿苷、罗汉果皂苷 V 参考条目</li><li>AI 构象策略与干扰风险分诊</li><li>批次质控与 ADME 数据放行</li></ul><a class="link" href="compound-library.html">打开化合物库 →</a></article>
@@ -62,7 +146,7 @@
         <article class="card"><div class="icon">▤</div><h3>天然化合物文献证据卡</h3><p>为图谱中的每个化合物保存天然来源、证据类型、研究边界与原始文献直达链接，构成可审计的研究证据起点。</p><ul><li>原始分离、定量与指纹证据分层</li><li>16 个化合物逐项可追溯</li><li>避免将来源证据误作疗效证据</li></ul><a class="link" href="compound-literature-evidence-cards.html">打开化合物文献证据卡 →</a></article>
       </div>
     </section>
-    <section id="workflow" class="workflow">
+    <section id="workflow" class="workflow" hidden>
       <div class="sectiontitle"><h2>从筛选到论文的研发路径</h2><p>任一关键质量门失败即阻断，不允许用总分覆盖。</p></div>
       <div class="steps">
         <div class="step"><b>01 · 方案冻结</b>研究问题、终点、标准、版本与种子</div>
@@ -73,27 +157,19 @@
         <div class="step"><b>06 · 研究归档</b>原始数据、代码、参数、负结果与报告</div>
       </div>
     </section>
-    <section id="evidence" class="evidence">
+    <section id="evidence" class="evidence" hidden>
       <article class="card"><h3>天然化合物研发课题</h3><p>青蒿素—pSS 直接靶点/细胞类型机制；淫羊藿苷—MASH 纤维化的细胞类型与暴露；罗汉果皂苷 V—UC ER 应激与上皮屏障分型。</p><a class="link" href="三种天然产物具体研究课题与验证清单.md">查看具体课题与验证清单 →</a></article>
-      <article class="card"><h3>罗汉果 AI 成分挖掘与高值化</h3><p>覆盖非甜苷类成分库、分级回收、细胞/动物验证、肠菌群多组学、产品配方与谱效关联质量标准的七阶段算法工作流。</p><a class="link" href="monk-fruit-ai-workflow.html">打开罗汉果研发工作流 →</a></article>
-      <article class="card"><h3>罗汉果 AI 研发操作手册</h3><p>将七阶段工作流转为团队可执行的操作文件，明确角色、目录、输入、算法、质量门、交付物、异常处理和论文级归档。</p><a class="link" href="monk-fruit-ai-sop.html">打开操作手册 →</a></article>
-      <article class="card"><h3>罗汉果三大研发算法与流程图</h3><p>分别说明非甜苷成分挖掘、肠菌群多组学机制、产品配方与谱效质量标志物的算法包、流程图、验证方法与放行规则。</p><a class="link" href="monk-fruit-three-algorithms.html">打开算法与流程图 →</a></article>
-      <article class="card"><h3>罗汉果非甜苷成分库算法</h3><p>规定提取物谱系、原始谱图与馏分数据如何进入 AI 分析，并将数百个化学特征逐级收敛为可确证、可追溯的实体化合物库。</p><a class="link" href="monk-fruit-non-glycoside-library-algorithm.html">打开成分库算法 →</a></article>
-      <article class="card"><h3>罗汉果成分库建库数据要求</h3><p>明确研发人员必须提交的原料、提取、分离、原始谱图与库存数据，以及化学结构、文献和参考谱的外部检索与核对规范。</p><a class="link" href="monk-fruit-library-data-requirements.html">打开建库数据规范 →</a></article>
-      <article class="card"><h3>罗汉果肠菌群纵向配对设计</h3><p>将食用/给药前（T0）与干预后（T1/T2）同一对象的菌群测序、对照组、组别×时间模型和无泄漏机器学习规则固化为可执行方案。</p><a class="link" href="monk-fruit-longitudinal-microbiome-design.html">打开纵向设计与算法 →</a></article>
       <article class="card"><h3>微生物组 × AI 研发协作指南</h3><p>用统一语言解释微生物组解析、机器学习与大数据整合：各岗位的输入、算法的输出、关键质量门和机制验证边界。</p><a class="link" href="microbiome-ai-collaboration-guide.html">打开协作指南 →</a></article>
-      <article class="card"><h3>罗汉果多AI机制发现流程</h3><p>将网络药理学、分子对接、虚拟细胞、肠菌群多组学与实验验证连接为同一条可证伪的机制证据链。</p><a class="link" href="monk-fruit-mechanism-multi-ai.html">打开机制算法与流程 →</a></article>
       <article class="card"><h3>发表级证据标准</h3><p>包含化合物质量门、网络统计、结构对接基准、反筛、实验梯度、退出规则与可复现数据包要求。</p><a class="link" href="发表级筛选标准与研究方案.md">查看筛选标准与研究方案 →</a></article>
       <article class="card"><h3>数据与证据中心</h3><p>集中展示青蒿素、淫羊藿苷和罗汉果皂苷 V 的文献链接、研究类型、证据边界与下一步验证任务。</p><a class="link" href="data-evidence-center.html">打开数据与证据中心 →</a></article>
       <article class="card"><h3>喀斯特特有天然化合物</h3><p>聚焦中越石灰岩带、广西—贵州锥状喀斯特与迪纳里克喀斯特的特殊植物、已报道化合物、化学空白与合规研发路径。</p><a class="link" href="karst-natural-products.html">打开喀斯特专栏 →</a></article>
       <article class="card"><h3>东盟应用 · 多语言入口</h3><p>面向东盟地区的天然产物研发协作，提供中文、英语、泰语、越南语、高棉语与老挝语的平台介绍，并串联化合物、证据、结构对接与实验验证工作流。</p><ul><li>ไทย / Tiếng Việt：泰语、越南语介绍</li><li>ខ្មែរ / ລາວ：高棉语、老挝语介绍</li><li>研究用途、证据边界与协作路径</li></ul><a class="link" href="asean-application.html">打开东盟应用专栏 →</a></article>
-      <article class="card"><h3>特医食品转化中心</h3><p>面向天然来源营养组分的特医食品研发，提供已获批产品标杆、天然产物适配性判断、AI证据管理及中国特医食品注册申报流程。</p><a class="link" href="fsmp-medical-food.html">打开特医食品转化中心 →</a></article>
+      <article class="card"><h3>特医食品与中药制剂转化中心</h3><p>覆盖药食同源原料核验、特医食品注册、中药院内制剂注册或备案，以及国家与广西法规导航，明确食品、特殊食品和药品三条监管路径。</p><a class="link" href="fsmp-medical-food.html">打开转化中心 →</a></article>
       <article class="card partner-card"><h3>合作伙伴</h3><p>面向天然产物研发、药物开发与健康产业转化的协作伙伴。</p><div class="partner-links"><a href="https://www.layn.com.cn/" target="_blank" rel="noopener">桂林莱茵生物 ↗</a><a href="https://www.guilinpharma.com/" target="_blank" rel="noopener">桂林南药 ↗</a><a href="http://www.yfff.com.cn/" target="_blank" rel="noopener">宇峰集团 ↗</a></div></article>
       <article class="card partner-card"><h3>研究路径工作台</h3><p>从下拉列表选择原有研究对象或喀斯特来源化合物，按文献、AI靶点、对接、网络或实验阶段生成可追溯研究登记摘要。</p><a class="link" href="research-pathway.html">打开研究路径工作台 →</a></article>
-      <article class="card partner-card"><h3>平台开发者 · 朱棣</h3><p>复旦大学长聘正教授、上海医学院特聘教授，哈佛大学医学院前讲师，桂林医科大学合作研究生导师。研究方向为肿瘤免疫药理学、炎症免疫药理学与创新药物开发。</p><ul><li>入选国家高层次计划科创领军、国家海外高层次人才青年项目、复旦大学卓识计划、河北省燕赵英才、江苏省双创人才等</li><li>获中国抗癌协会科技奖二等奖、中国发明协会创新奖二等奖、上海市药学会科技奖优胜奖、上海优秀发明铜奖等</li><li>获全国颠覆性创新创业大赛优秀奖、“海聚英才”全球创新创业大赛优胜奖等；主持各级科研项目14项，获授权专利13项</li><li>多项肿瘤免疫治疗与新药研发成果进入临床或完成转化</li></ul><a class="link" href="natural-product-ai-platform.html#import">查看平台研发工作台 →</a></article>
+      <article class="card partner-card"><h3>平台开发者 · 朱棣</h3><p>复旦大学长聘正教授、上海医学院特聘教授，哈佛大学医学院前讲师，桂林医科大学合作研究生导师。研究方向为肿瘤免疫药理学、炎症免疫药理学与创新药物开发。</p><ul><li>入选国家高层次计划科创领军、国家海外高层次人才青年项目、复旦大学卓识计划、河北省燕赵英才、江苏省双创人才等</li><li>获中国抗癌协会科技奖二等奖、中国发明协会创新奖二等奖、上海市药学会科技奖优胜奖、上海优秀发明铜奖等</li><li>获全国颠覆性创新创业大赛优秀奖、“海聚英才”全球创新创业大赛优胜奖等；主持各级科研项目14项，获授权专利13项</li><li>作为合作研究者，参与推动多项肿瘤免疫治疗及新药研发成果进入临床研究或完成成果转化</li><li>参与完成2项新药IND相关研究与申报工作，并在相关早期临床研究中开展初步疗效验证；早期结果尚需更大样本和后续研究确认，不代表已获得确证性疗效结论或药品上市批准</li></ul><a class="link" href="natural-product-ai-platform.html#import">查看平台研发工作台 →</a></article>
     </section>
   </main>
   <footer class="footer"><div class="footerin"><b>HerbNova R&amp;D</b> · 静态演示站点。公开部署前请配置数据权限、用户认证、数据库备份、ELN/LIMS 审计和模型版本治理。</div></footer>
 </body>
 </html>
-
