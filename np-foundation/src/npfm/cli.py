@@ -12,6 +12,9 @@ def emit(value,path=None):
 
 def main(argv=None):
     argv=list(sys.argv[1:] if argv is None else argv)
+    if argv and argv[0]=='np-gpt':
+        from .np_gpt.cli import main as np_gpt_main
+        return np_gpt_main(argv[1:])
     if argv and argv[0] in {'download','data','upstream'}:
         from importlib import import_module
         return import_module('npfm.'+argv[0]).main(argv[1:])
