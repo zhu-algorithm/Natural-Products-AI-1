@@ -1,0 +1,19 @@
+{
+  "format": "np-gpt-seen-public-row-ids-delta-v1",
+  "count": 688166,
+  "raw_dtype": "int64",
+  "raw_shape": [
+    688166
+  ],
+  "raw_npy_bytes": 5505456,
+  "raw_npy_sha256": "75ace5c5fb999d9c811151717e8834632c1e5eb193536ab5a741d2a4aaf73cf8",
+  "encoded_file": "seen_train_row_id_deltas.npy.gz",
+  "encoded_bytes": 78136,
+  "encoded_sha256": "1eb7a616117b7999acfd69b14013398038324d544d7fc7c22a5b2407c82973cc",
+  "encoding": "gzip of uint32 NPY successive positive differences, with initial previous row id 0; cumsum(dtype=int64) exactly restores row ids",
+  "row_id_meaning": "one-based public input CSV data row; maps to prepared corpus metadata.sqlite molecules.id",
+  "corpus_manifest_sha256": "a93c49e68e29a891ea73fe28ca78a030ca97914d41b63702f534f03e0ef0fcf5",
+  "required_for_inference": false,
+  "source_training_config_sha256": "88df0fccba08ed25e937d1b7f26cf6d620bb077b4440974766085e99b0f69535",
+  "distributed_training_config_note": "Only corpus_dir/output_dir made relative to this folder; all training hyperparameters unchanged."
+}

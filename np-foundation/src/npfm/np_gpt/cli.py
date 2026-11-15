@@ -1,4 +1,4 @@
-import argparse,json,sys
+import argparse,csv,json,sys
 from pathlib import Path
 
 def main(argv=None):
@@ -6,7 +6,8 @@ def main(argv=None):
     s=p.add_subparsers(dest='command',required=True)
     c=s.add_parser('prepare');c.add_argument('--input',required=True);c.add_argument('--output',required=True);c.add_argument('--max-seq-length',type=int,default=1024);c.add_argument('--seed',default='np-gpt-v1')
     c=s.add_parser('train');c.add_argument('--config',required=True);c.add_argument('--corpus');c.add_argument('--output');c.add_argument('--resume');c.add_argument('--max-steps',type=int);c.add_argument('--max-train-records',type=int);c.add_argument('--device');c.add_argument('--epochs',type=int)
-    c=s.add_parser('generate');c.add_argument('--checkpoint',required=True);c.add_argument('--n',type=int,default=128);c.add_argument('--max-new-tokens',type=int,default=384);c.add_argument('--temperature',type=float,default=.8);c.add_argument('--top-k',type=int,default=50);c.add_argument('--top-p',type=float,default=.95);c.add_argument('--prefix',default='');c.add_argument('--seed',type=int,default=42);c.add_argument('--batch-size',type=int,default=32);c.add_argument('--device',default='cpu');c.add_argument('--output',required=True)
+    c=s.add_parser('generate');c.add_argument('--checkpoint',required=True);c.add_argument('--n',type=int,default=128);c.add_argument('--max-new-tokens',type=int,default=384);c.add_argument('--temperature',type=float,default=.8);c.add_argument('--top-k',type=int,default=50);c.add_argument('--top-p',type=float,default=.95);c.add_argument('--prefix',default='');c.add_argument('--seed',type=int,default=42);c.add_argument('--batch-size',type=int,default=32);c.add_argument('--device',default='cpu');c.add_argument('--cpu-threads',type=int,default=4);c.add_argument('--output',required=True)
+    c=s.add_parser('score');c.add_argument('--checkpoint',required=True);c.add_argument('--input',required=True);c.add_argument('--output',required=True);c.add_argument('--smiles-column',default='smiles');c.add_argument('--id-column',default='compound_id');c.add_argument('--batch-size',type=int,default=32);c.add_argument('--device',default='cpu');c.add_argument('--cpu-threads',type=int,default=4)
     c=s.add_parser('evaluate');c.add_argument('--input',required=True);c.add_argument('--corpus',required=True);c.add_argument('--output',required=True)
     a=p.parse_args(argv)
     try:
@@ -19,7 +20,11 @@ def main(argv=None):
             result=train_from_config(a.config,{'corpus_dir':absolute(a.corpus),'output_dir':absolute(a.output),'resume':absolute(a.resume),'max_steps':a.max_steps,'max_train_records':a.max_train_records,'device':a.device,'epochs':a.epochs})
         elif a.command=='generate':
             from .generation import generate
-            result={'attempts':len(generate(a.checkpoint,a.n,max_new_tokens=a.max_new_tokens,temperature=a.temperature,top_k=a.top_k,top_p=a.top_p,seed=a.seed,prefix=a.prefix,batch_size=a.batch_size,device=a.device,output_path=a.output)),'output':a.output}
+            result={'attempts':len(generate(a.checkpoint,a.n,max_new_tokens=a.max_new_tokens,temperature=a.temperature,top_k=a.top_k,top_p=a.top_p,seed=a.seed,prefix=a.prefix,batch_size=a.batch_size,device=a.device,output_path=a.output,cpu_threads=a.cpu_threads)),'output':a.output}
+        elif a.command=='score':
+            from .scoring import represent_records
+            with open(a.input,encoding='utf-8-sig',newline='') as f:records=list(csv.DictReader(f))
+            _,result=represent_records(records,a.checkpoint,a.output,smiles_column=a.smiles_column,id_column=a.id_column,batch_size=a.batch_size,device=a.device,cpu_threads=a.cpu_threads)
         else:
             from .evaluation import evaluate_generated
             with open(a.input) as f:records=[json.loads(line) for line in f if line.strip()]

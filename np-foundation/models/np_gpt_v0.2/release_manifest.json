@@ -1,0 +1,134 @@
+{
+  "version": "0.2.0",
+  "format": "np-gpt-published-checkpoint-v1",
+  "date": "2026-11-15",
+  "model_sha256": "b6818cbe086401a22617072ab8d605500cfa64862ce59a561ad19aa5a47c5592",
+  "parameter_count": 331680,
+  "weight_shard_count": 6,
+  "weight_bytes": 1335628,
+  "duplicated_complete_weights": false,
+  "trained_scope": "structural_language_model_only",
+  "property_heads": [],
+  "epoch_complete": true,
+  "training_records_seen": 688166,
+  "training_prediction_tokens": 45457285,
+  "optimizer_steps": 11296,
+  "validation_test_subsets_each": 4096,
+  "token_baseline_test_matches": true,
+  "generation_attempts": 512,
+  "source_data": "Pinned public COCONUT/LOTUS union; source terms and attribution retained in ATTRIBUTION.md.",
+  "training_resume_state_included": false,
+  "seen_public_row_id_encoding": "Lossless positive uint32 differences in gzip NPY; original hash and restoration script supplied.",
+  "files": [
+    {
+      "path": "ATTRIBUTION.md",
+      "bytes": 1937,
+      "sha256": "f7139f5ad854dab683ad5659beeeb4f0ed4338bcac1a505d6eb43f73bc45498f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3020,
+      "sha256": "c4c40ecb3573bc91e21ef1aaef0f1ec383a51c26c67cba6db9ddee70d7f3d149"
+    },
+    {
+      "path": "corpus_manifest.json",
+      "bytes": 31564,
+      "sha256": "a93c49e68e29a891ea73fe28ca78a030ca97914d41b63702f534f03e0ef0fcf5"
+    },
+    {
+      "path": "evaluation_subsets.json",
+      "bytes": 130586,
+      "sha256": "fcd62c399f4421fd7d503daa3923151b34fcd4caf6ce21d22601c19f3c5064d9"
+    },
+    {
+      "path": "generated_512.jsonl",
+      "bytes": 163146,
+      "sha256": "b34417a45a193e45ceb6dedc9c6e2343ff8ae2fdf303ec28f893e47f90947c97"
+    },
+    {
+      "path": "generated_512.jsonl.metadata.json",
+      "bytes": 853,
+      "sha256": "9d6463ce8856ac8dc2849134ccc6c0fc5a6c7e11e93f5c453ec2120b8ab375a6"
+    },
+    {
+      "path": "generation_evaluation.json",
+      "bytes": 829324,
+      "sha256": "f188ba4d35a6353af639194ef83acf9cb0bb127a9025cd468a4d25c12100bf68"
+    },
+    {
+      "path": "model.index.json",
+      "bytes": 1752,
+      "sha256": "dc56ff35e3333880cc36e17103aa690ecce097d951fbeb851df0b579bb0da089"
+    },
+    {
+      "path": "model.part0001.bin",
+      "bytes": 262144,
+      "sha256": "1de086fb74b378f6b723f640a13510fef146f0ae798de6bd5779f906135d0f17"
+    },
+    {
+      "path": "model.part0002.bin",
+      "bytes": 262144,
+      "sha256": "d832c912d3efb4e32bad8513d992bfaa4975244e05188de6481c67d0e477f7ec"
+    },
+    {
+      "path": "model.part0003.bin",
+      "bytes": 262144,
+      "sha256": "4e5360953dc69d69816c8d2b32d1677deec3ec5b244c2ba194e978848938dae0"
+    },
+    {
+      "path": "model.part0004.bin",
+      "bytes": 262144,
+      "sha256": "bd46f68d8419776cc6c831891a1d01e3dfaeb278bc58e3b01936d9245a34c966"
+    },
+    {
+      "path": "model.part0005.bin",
+      "bytes": 262144,
+      "sha256": "d3bb2e7d52b81bcaf81cb49039d983b4c7a29ec998fa735a3ea03ef6741fa8eb"
+    },
+    {
+      "path": "model.part0006.bin",
+      "bytes": 24908,
+      "sha256": "6ce8d91f0df729934baa19c1c807755385ca623ab310d526a4ccadcaa72cc986"
+    },
+    {
+      "path": "model_config.json",
+      "bytes": 252,
+      "sha256": "06b8e6c6ad01dbb206725f613c43edfe1aa1a149c5db238a1effbdbf00c944b8"
+    },
+    {
+      "path": "restore_seen_rows.py",
+      "bytes": 1719,
+      "sha256": "2ee398f3dbd03f2ea4afbf6079787cbb7df0b324f725aad0e1d9ca6748a33231"
+    },
+    {
+      "path": "seen_train_row_id_deltas.npy.gz",
+      "bytes": 78136,
+      "sha256": "1eb7a616117b7999acfd69b14013398038324d544d7fc7c22a5b2407c82973cc"
+    },
+    {
+      "path": "seen_train_rows_provenance.json",
+      "bytes": 1044,
+      "sha256": "d4ebb2096db34eae24d26030022dfca61fa789353b1103848e5babefb3ded6e6"
+    },
+    {
+      "path": "token_baselines.json",
+      "bytes": 615,
+      "sha256": "90cf8846cf2b22eeceb48dd89e176c8c64f6188e5ad69abd7fad498179129226"
+    },
+    {
+      "path": "tokenizer.json",
+      "bytes": 4826,
+      "sha256": "f4d63d611bd8a571ea3fd2ee8904e86a15fbb0525f58171bbb6c08f5b629bd7a"
+    },
+    {
+      "path": "training_config.json",
+      "bytes": 646,
+      "sha256": "e6f2ea3a7d09fca9922b17ab146590d374a5ab35b369f3f497a648eb1937297e"
+    },
+    {
+      "path": "training_report.json",
+      "bytes": 1809,
+      "sha256": "64c05bb754700cfef423335dbe158a8659a4cc2dc79bfe77fd93bd6643c7c211"
+    }
+  ]
+}

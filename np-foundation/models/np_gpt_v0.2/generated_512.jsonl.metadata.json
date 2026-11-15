@@ -1,0 +1,25 @@
+{
+  "model_index_sha256": "dc56ff35e3333880cc36e17103aa690ecce097d951fbeb851df0b579bb0da089",
+  "model_sha256": "b6818cbe086401a22617072ab8d605500cfa64862ce59a561ad19aa5a47c5592",
+  "model_metadata": {
+    "scope": "structural_language_model_only",
+    "selected_epoch": 1,
+    "selected_step": 11296,
+    "selection": "validation_token_nll",
+    "provisional": false,
+    "corpus_manifest_sha256": "a93c49e68e29a891ea73fe28ca78a030ca97914d41b63702f534f03e0ef0fcf5",
+    "unique_train_records_seen": 688166,
+    "prediction_tokens_seen": 45457285,
+    "trained_property_tasks": []
+  },
+  "attempts": 512,
+  "max_new_tokens": 512,
+  "temperature": 0.8,
+  "top_k": 50,
+  "top_p": 0.95,
+  "seed": 2026,
+  "batch_size": 32,
+  "device": "cpu",
+  "prefix": "",
+  "scope": "All attempted sequences retained; no validity-based resampling or hidden selection"
+}

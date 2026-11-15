@@ -1,6 +1,6 @@
 # NP-GPT 天然产物结构语言模型卡
 
-更新日期：2026-11-15。模型族：`NP-GPT`。检查点格式：`np-gpt-decoder-v1`。
+更新日期：2026-11-15。发行版本：`0.2.0`。模型族：`NP-GPT`。检查点格式：`np-gpt-decoder-v1`。发布路径：[`models/np_gpt_v0.2`](../models/np_gpt_v0.2/)。
 
 **NP-GPT 是本项目直接用 PyTorch 实现的因果 Transformer，用 SMILES 学习下一 token 分布。工程代码由本项目实现；Transformer、RoPE、RMSNorm、SwiGLU、GQA 与权重绑定都是已有方法，本文逐项列出来源，不将它们声称为新的数学架构。** 本模型未加载外部预训练模型权重，也不把旧版结构/图联合 pilot 的权重或 logS 结果称作 NP-GPT 的训练结果。
 
@@ -12,22 +12,22 @@
 
 ### 真实运行记录
 
-下表为本轮真实训练/生成结果的登记位置。在对应报告产生前保持未填，不引用旧 pilot 指标，也不把测试中的小分子夹具当作生成表现。
+下表全部训练和生成数字来自本轮固定检查点及实际报告。旧 pilot 和合成测试夹具不作为本模型性能证据。
 
 | 项目 | 状态/结果 | 依据 |
 |---|---|---|
 | 原始结构文件、版本与 SHA-256 | `coconut_lotus_union_compounds.csv`；238,371,765 bytes；完整 SHA 见下文 | 本轮 corpus `manifest.json` 的 `source` |
 | 原始行数、合格 train/val/test 数 | 764,701；合格分区分别为 688,166 / 37,720 / 38,810 | 本轮 corpus manifest 与 SQLite |
 | 分词器规模、上下文和排除数 | 376 tokens；上下文 1,024；排除 5 条：1 条超长、4 条 RDKit 失败 | 本轮 corpus manifest、tokenizer |
-| 实际参数数、配置与权重 SHA-256 | 等待本轮检查点 | `model_config.json`、`model.index.json` |
-| 优化器更新数、实际看过的分子/token | 尚无可登记的本轮训练报告 | `training_report.json` 与实际 seen row IDs |
-| 验证集选择与最终语言测试 | 尚无可登记的本轮训练报告 | 选定检查点与真实测试记录 |
-| 真实生成的 EOS、有效率、唯一率、新颖性 | 尚未登记本轮真实生成评测 | 原始生成 JSONL、生成参数与评测 JSON |
+| 实际参数数、配置与权重 SHA-256 | 331,680 参数；3 层、d=96、6 query heads/2 KV heads、FFN=256；完整权重 SHA 见下文 | `model_config.json`、`model.index.json` |
+| 优化器更新数、实际看过的分子/token | 完整 1 epoch；11,296 次更新；688,166 条训练序列；45,457,285 个预测 token；CPU 4 线程 1,136.12 秒 | `training_report.json` 与实际 seen row IDs |
+| 验证集选择与最终语言测试 | 各固定抽取 4,096 条；val NLL=0.660124；test NLL=0.658853、PPL=1.932575 | 验证 NLL 选模，随后计算测试 |
+| 真实生成的 EOS、有效率、唯一率、新颖性 | 512/512 EOS；439/512 RDKit有效；434/439唯一；354/434训练参考未命中；340/434全语料未命中 | 原始 512 attempts 与 `generation_evaluation.json` |
 | 疾病/ADMET/临床评测 | 未训练、未评测 | 结构语言目标不提供这些标签 |
 
-数据准备清单于 `2026-11-15T06:24:45.631834+00:00` 生成。以上是已经核对的准备结果；训练/生成数值将在各自实际报告生成后更新。训练报告必须同时说明是否完整遍历所选训练集合；中途停止、步数上限或子样本训练不能写为完成了整个语料的一个 epoch。
+数据准备清单记录时间为 `2026-11-15T06:24:45.631834+00:00`。本次完整遍历合格训练分区，但验证与测试只抽取各 4,096 条；未声称评估全部 37,720/38,810 条验证/测试记录。训练报告中的 `epoch_complete=true`、`provisional=false`，实际 seen row IDs 与全部合格训练分区一致。
 
-数据核验定位：`npfm-data/np_gpt_corpus/manifest.json`。
+公开数据核验副本：[`corpus_manifest.json`](../models/np_gpt_v0.2/corpus_manifest.json)。全量 token 文件和 SQLite 在另行准备的语料目录，不嵌入模型权重。
 
 | 文件 | SHA-256 |
 |---|---|
@@ -35,6 +35,21 @@
 | 本轮 corpus manifest | `a93c49e68e29a891ea73fe28ca78a030ca97914d41b63702f534f03e0ef0fcf5` |
 | `metadata.sqlite` | `6b13f289b8ce85cd7cca86342bddebe9ee230877ca6ca827e446d0418e3c64c0` |
 | `tokenizer.json` | `f4d63d611bd8a571ea3fd2ee8904e86a15fbb0525f58171bbb6c08f5b629bd7a` |
+| 完整模型参数序列 | `b6818cbe086401a22617072ab8d605500cfa64862ce59a561ad19aa5a47c5592` |
+
+### 同测试集合的语言基线
+
+训练种子为 42，验证子集选择种子 43，测试子集选择种子 44。基线仅使用训练分区统计，测试选择与 NP-GPT 相同：4,096 条序列、269,469 个预测 token。unigram 与 bigram 使用加性平滑 0.1；排除跨分子 EOS→BOS 相邻关系。
+
+| 方法 | Token NLL（自然对数） | Perplexity |
+|---|---:|---:|
+| Unigram | 2.239964 | 9.392995 |
+| Bigram | 1.770690 | 5.874906 |
+| NP-GPT v0.2 | 0.658853 | 1.932575 |
+
+证据：[训练报告](../models/np_gpt_v0.2/training_report.json)、[基线报告](../models/np_gpt_v0.2/token_baselines.json)。这是同一结构 token 任务的比较，不是药化基线或外部模型的性能排名。NLL 按预测 token 总数加权，包含 EOS 预测，不包含 BOS 作为预测目标。此结果仅有本次固定种子和分区，未报告重复训练的置信区间。
+
+实际选定验证子集有 1 个 OOV token / 265,300 个词法 token，涉及 1 条序列；测试子集为 0 / 265,373，涉及 0 条序列。完整公开 row IDs 与复核计数见 [`evaluation_subsets.json`](../models/np_gpt_v0.2/evaluation_subsets.json)。这些是实际评测子集的计数，与下文全分区准备统计分开。
 
 ## 2. 已实现架构与方法来源
 
@@ -60,7 +75,7 @@ p_\theta(t_1,\ldots,t_n)=\prod_{i=1}^{n}p_\theta(t_i\mid t_{<i}).
 
 参考 LLaMA 等架构文献仅用于说明标准组件组合；NP-GPT 不是这些模型的官方变体，不使用其 checkpoint，也未获得其论文中报告的效果。RoPE 的存在不证明能够超出已训练上下文长度可靠外推。
 
-代码提供 `smoke`、`small`、`base` 容量配置，分别使用 2/4/8 个 decoder 层、64/192/512 的隐藏维度。它们是可实例化的架构配置，不表示三个规模都完成训练。实际参数数取决于词表与最终配置，以本轮 checkpoint 的实算值为准。
+代码提供 `smoke`、`small`、`base` 容量配置，分别使用 2/4/8 个 decoder 层、64/192/512 的隐藏维度。它们是可实例化的配置，不表示三个规模都完成训练。本次发布另使用实际 CPU 配置：3 层、隐藏维度 96，词表 376，共 331,680 参数；`configs/np_gpt_small_gpu.json` 和 `np_gpt_base_gpu.json` 仅为未训练模板。
 
 ## 3. 数据、身份与分词边界
 
@@ -86,7 +101,7 @@ p_\theta(t_1,\ldots,t_n)=\prod_{i=1}^{n}p_\theta(t_i\mid t_{<i}).
 
 上下文限额包含 BOS/EOS。超长分子保留在审计索引，不能被静默截断后当作完整结构训练。原子数过滤、化学解析过滤和词法过滤分别记录；某来源被纳入数据索引不代表其全部记录进入训练 token 流。代码的容量配置也不改变实际数据准备采用的上下文限额。
 
-本轮数据使用 `max_seq_length=1024`、`max_atoms=null`，未启用原子数过滤。一个 1,136-token 原始序列超过限额并被排除，合格训练序列最大长度为 910。下表是准备的序列流，不是已经消耗的训练量：
+本轮数据使用 `max_seq_length=1024`、`max_atoms=null`，未启用原子数过滤。一个 1,136-token 原始序列超过限额并被排除，合格训练序列最大长度为 910。下表给出完整准备序列流；本次实际消耗全部 train，validation/test 的评测各为 4,096 条子集：
 
 | 分区 | 合格序列 | 序列 token 数，含 BOS/EOS | 预测目标 token 数 | OOV token / 词法 token | 含 OOV 的序列 |
 |---|---:|---:|---:|---:|---:|
@@ -104,7 +119,18 @@ p_\theta(t_1,\ldots,t_n)=\prod_{i=1}^{n}p_\theta(t_i\mid t_{<i}).
 
 复现需要区分推理用的模型分片与恢复训练用的完整状态。推理 checkpoint 的模型 hash 证明加载了指定参数；继续训练还需要优化器、调度进度、随机数和实际数据游标的一致状态。只有真实完成的训练步骤才计入训练量，代码测试和随机初始化模型容量不计入已训练成果。
 
+发布目录保存一套 6 个推理权重分片，总计 1,335,628 bytes，不同时复制完整 `model.pt`。实际 seen row IDs 原 NPY 为 5,505,456 bytes；以正增量 uint32 NPY 加 gzip 无损压缩为 78,136 bytes，原始 hash、恢复方法与公开输入行号含义见 `seen_train_rows_provenance.json` 和 `restore_seen_rows.py`。该记录用于公开语料曝光核验，推理不依赖它。恢复训练用的 `resume.pt` 不包含在模型发行目录。
+
 ## 5. 生成评测定义与实际接口
+
+本次真实批次为 512 attempts，seed=2026、temperature=0.8、top-k=50、top-p=0.95、max_new_tokens=512、batch_size=32、CPU 4 线程。全部 512 次正常 EOS 结束；439 次 RDKit 有效（85.7422%），形成 434 个独特有效结构（434/439=98.8610%）。其中 354 个未命中合格训练参考（81.5668%），340 个未命中全语料参考（78.3410%）。原始生成失败、重复及全部有效结构均保留，没有按有效性修复或补采样。
+
+审计文件：[`generated_512.jsonl`](../models/np_gpt_v0.2/generated_512.jsonl)、[生成参数](../models/np_gpt_v0.2/generated_512.jsonl.metadata.json)、[逐样本评测](../models/np_gpt_v0.2/generation_evaluation.json)。两个参考新颖性分母都为 434 个独特有效结构，覆盖率均为 100%。未命中快照不等于新天然产物、世界首次发现、可合成、有效或安全。
+
+```bash
+npfm np-gpt generate --checkpoint models/np_gpt_v0.2 --n 512 --max-new-tokens 512 --temperature 0.8 --top-k 50 --top-p 0.95 --seed 2026 --batch-size 32 --cpu-threads 4 --output runs/generated_512.jsonl
+npfm np-gpt evaluate --input runs/generated_512.jsonl --corpus data/np_gpt_corpus --output runs/generation_evaluation.json
+```
 
 评测实现：[evaluation.py](../src/npfm/np_gpt/evaluation.py)。接口：
 
@@ -168,6 +194,8 @@ QED 是计算描述符，不是药物成功概率。RDKit 官方文档也说明�
 评测测试使用明确的小型合成测试夹具，验证分母、重复、立体异构体与同位素、名字/空白拒绝、未知终止、新颖性参考、源 key 与 canonical 匹配差异、哈希变化拒绝和 JSON 输出。测试通过证明相应代码行为；测试中的小分子结果不是模型生成性能。
 
 2026-11-15 本模块 12 项测试通过。另从已冻结的真实 SQLite 各取一条 train、val、test 与超长排除结构完成只读集成检查：四条均命中全语料，仅合格 train 记录命中训练参考。这是索引范围与接口检查，不是生成有效率测试。
+
+v0.2.0 发布前完整测试为 **86 passed，0 failed，0 skipped**。公开发布路径的 CLI 生成、36 个公开示例的 96 维表征和压缩训练行号恢复另行实跑通过。记录见 [`tests_v0.2.0.xml`](../reports/tests_v0.2.0.xml) 与 [`np_gpt_release_smoke.json`](../reports/np_gpt_release_smoke.json)。这些接口检查与上文固定 512 次生成性能报告分别记账。
 
 可重跑本模块测试：
 

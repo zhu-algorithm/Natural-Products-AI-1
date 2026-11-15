@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "npfm"
-version = "0.1.1"
-description = "Natural-product learning, chemistry and traceable evidence"
+version = "0.2.0"
+description = "NP-GPT structural language modeling, molecular learning and traceable evidence"
 readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "MIT"}

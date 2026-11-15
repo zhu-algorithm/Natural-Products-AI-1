@@ -1,0 +1,52 @@
+{
+  "format": "np-gpt-decoder-v1",
+  "serialization": "torch_state_dict_weights_only",
+  "model_sha256": "b6818cbe086401a22617072ab8d605500cfa64862ce59a561ad19aa5a47c5592",
+  "model_bytes": 1335628,
+  "parts": [
+    {
+      "path": "model.part0001.bin",
+      "bytes": 262144,
+      "sha256": "1de086fb74b378f6b723f640a13510fef146f0ae798de6bd5779f906135d0f17"
+    },
+    {
+      "path": "model.part0002.bin",
+      "bytes": 262144,
+      "sha256": "d832c912d3efb4e32bad8513d992bfaa4975244e05188de6481c67d0e477f7ec"
+    },
+    {
+      "path": "model.part0003.bin",
+      "bytes": 262144,
+      "sha256": "4e5360953dc69d69816c8d2b32d1677deec3ec5b244c2ba194e978848938dae0"
+    },
+    {
+      "path": "model.part0004.bin",
+      "bytes": 262144,
+      "sha256": "bd46f68d8419776cc6c831891a1d01e3dfaeb278bc58e3b01936d9245a34c966"
+    },
+    {
+      "path": "model.part0005.bin",
+      "bytes": 262144,
+      "sha256": "d3bb2e7d52b81bcaf81cb49039d983b4c7a29ec998fa735a3ea03ef6741fa8eb"
+    },
+    {
+      "path": "model.part0006.bin",
+      "bytes": 24908,
+      "sha256": "6ce8d91f0df729934baa19c1c807755385ca623ab310d526a4ccadcaa72cc986"
+    }
+  ],
+  "config_sha256": "06b8e6c6ad01dbb206725f613c43edfe1aa1a149c5db238a1effbdbf00c944b8",
+  "tokenizer_sha256": "f4d63d611bd8a571ea3fd2ee8904e86a15fbb0525f58171bbb6c08f5b629bd7a",
+  "parameter_count": 331680,
+  "metadata": {
+    "scope": "structural_language_model_only",
+    "selected_epoch": 1,
+    "selected_step": 11296,
+    "selection": "validation_token_nll",
+    "provisional": false,
+    "corpus_manifest_sha256": "a93c49e68e29a891ea73fe28ca78a030ca97914d41b63702f534f03e0ef0fcf5",
+    "unique_train_records_seen": 688166,
+    "prediction_tokens_seen": 45457285,
+    "trained_property_tasks": []
+  }
+}

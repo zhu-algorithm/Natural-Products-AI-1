@@ -1,0 +1,59 @@
+{
+  "format": "np-gpt-training-v1",
+  "parameter_count": 331680,
+  "corpus_manifest_sha256": "a93c49e68e29a891ea73fe28ca78a030ca97914d41b63702f534f03e0ef0fcf5",
+  "eligible_records": {
+    "train": 688166,
+    "val": 37720,
+    "test": 38810
+  },
+  "selected_records": {
+    "train": 688166,
+    "val": 4096,
+    "test": 4096
+  },
+  "unique_train_records_seen_in_run": 688166,
+  "training_prediction_tokens_seen": 45457285,
+  "optimizer_steps": 11296,
+  "history": [
+    {
+      "epoch": 1,
+      "step": 11296,
+      "epoch_complete": true,
+      "validation": {
+        "records": 4096,
+        "prediction_tokens": 269396,
+        "token_nll": 0.660124415784287,
+        "perplexity": 1.935033068082973,
+        "perplexity_capped_at_exp_50": false
+      },
+      "eligible_for_completed_epoch_selection": true
+    }
+  ],
+  "selected_checkpoint": {
+    "scope": "structural_language_model_only",
+    "selected_epoch": 1,
+    "selected_step": 11296,
+    "selection": "validation_token_nll",
+    "provisional": false,
+    "corpus_manifest_sha256": "a93c49e68e29a891ea73fe28ca78a030ca97914d41b63702f534f03e0ef0fcf5",
+    "unique_train_records_seen": 688166,
+    "prediction_tokens_seen": 45457285,
+    "trained_property_tasks": []
+  },
+  "test": {
+    "records": 4096,
+    "prediction_tokens": 269469,
+    "token_nll": 0.6588532198764281,
+    "perplexity": 1.9325748247507173,
+    "perplexity_capped_at_exp_50": false
+  },
+  "elapsed_seconds_this_invocation": 1136.1223403160002,
+  "device": "cpu",
+  "torch": "2.15.0+cpu",
+  "limitations": [
+    "Molecular language modeling does not establish natural occurrence, synthesis, ADMET or clinical efficacy.",
+    "Identity/connectivity split is not scaffold-disjoint evaluation.",
+    "Selected checkpoint used validation only; test evaluated afterwards."
+  ]
+}

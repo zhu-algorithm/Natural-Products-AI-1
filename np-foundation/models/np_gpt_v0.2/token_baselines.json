@@ -1,0 +1,20 @@
+{
+  "format": "np-gpt-token-baselines-v1",
+  "training_records": 688166,
+  "training_prediction_tokens": 45457285,
+  "corpus_manifest_sha256": "a93c49e68e29a891ea73fe28ca78a030ca97914d41b63702f534f03e0ef0fcf5",
+  "evaluation_split": "test",
+  "selected_records": 4096,
+  "selection_seed": 44,
+  "prediction_tokens": 269469,
+  "smoothing": 0.1,
+  "unigram": {
+    "token_nll": 2.2399641605545355,
+    "perplexity": 9.392994641691011
+  },
+  "bigram": {
+    "token_nll": 1.770690003562764,
+    "perplexity": 5.874905669010993
+  },
+  "scope": "Same token likelihood task; not a medicinal chemistry or ADMET baseline"
+}

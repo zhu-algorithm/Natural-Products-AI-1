@@ -1,0 +1,14 @@
+{
+  "vocab_size": 376,
+  "d_model": 96,
+  "n_layers": 3,
+  "n_heads": 6,
+  "n_kv_heads": 2,
+  "ffn_hidden_dim": 256,
+  "max_seq_len": 1024,
+  "rope_theta": 10000.0,
+  "norm_eps": 1e-05,
+  "dropout": 0.0,
+  "pad_token_id": 0,
+  "tie_embeddings": true
+}

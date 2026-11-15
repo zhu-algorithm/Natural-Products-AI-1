@@ -20,6 +20,7 @@ def main(argv=None):
         return import_module('npfm.'+argv[0]).main(argv[1:])
     p=argparse.ArgumentParser(description='Natural-product molecular learning and traceable evidence')
     sub=p.add_subparsers(dest='command',required=True)
+    sub.add_parser('np-gpt',help='Decoder-only structural language model: prepare, train, generate, score, evaluate')
     sub.add_parser('doctor')
     c=sub.add_parser('catalog');c.add_argument('kind',choices=['algorithms','databases','endpoints'])
     c=sub.add_parser('descriptors');c.add_argument('--input',required=True);c.add_argument('--output',required=True)

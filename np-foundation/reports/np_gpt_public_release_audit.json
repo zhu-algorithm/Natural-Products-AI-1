@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "public_text_files_scanned": 137,
+  "unexpected_private_analysis_markers": 0,
+  "files_in_model_directory": 23,
+  "model_distribution_bytes": 2591209,
+  "release_manifest_sha256": "89e66e49ae1ed2a626db9a1044ee8b0aa27e102ec0192d0e4d7e4f9c0570b5e1",
+  "pytest": {
+    "passed": 86,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "cli_smoke_passed": true,
+  "weight_shards": 6,
+  "complete_duplicate_weight_files": 0,
+  "remote_github_modified_by_this_step": false
+}
