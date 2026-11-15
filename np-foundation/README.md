@@ -81,6 +81,8 @@ npfm predict --checkpoint runs/solubility_pilot --input examples/compounds.csv -
 
 完整语料可通过 `npfm train --data` 接入；正式训练前应检查序列长度、原子预算和计算资源。模型不静默截断复杂天然产物。每次运行保存输入哈希、配置、词表、身份/骨架分组、任务来源、权重和评估记录。词表及标准化统计仅从训练部分估计，验证集选模后才报告测试集。
 
+发行版的较大拆分记录以 `splits.json.gz` 无损保存，程序直接读取并按原始解压字节校验SHA256；无需手动解压。压缩不改变训练拆分或模型权重。
+
 ## 架构
 
 ```mermaid

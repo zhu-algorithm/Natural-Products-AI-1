@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
   "updated_at": "2026-11-15",
-  "restoration_note": "Original workspace files disappeared between sessions. This registry was reconstructed from retained research context; all acquisition states start anew. Historical counts are explicitly labeled.",
+  "restoration_note": "Reconstructed after workspace loss; actual files were reacquired in this session and counted/hash-verified. Historical publication statistics remain distinct from observed record counts.",
   "scope": "37 important natural-product and supporting chemistry/evidence resources; not an exhaustive claim of all known natural compounds or algorithms",
   "count_unit_warning": "Molecules, full stereochemical keys, connectivity families, occurrences, assays, spectra and sequences are distinct denominators and overlap across databases.",
   "resources": [
@@ -49,8 +49,28 @@
         "Computed QED and NP-likeness are descriptors, not clinical druggability labels."
       ],
       "download_state": {
-        "status": "not_attempted_in_restoration",
-        "restoration_date": "2026-11-15"
+        "checked_at": "2026-11-15T01:16:14.410457+00:00",
+        "status": "downloaded",
+        "scope": "Selected explicitly registered export files, not all database tables or upstream collections",
+        "expected_files": 1,
+        "successful_files": 1,
+        "total_bytes": 199108039,
+        "files": [
+          {
+            "filename": "coconut_csv_lite-11-2026.zip",
+            "bytes": 199108039,
+            "sha256": "81f3edc1731f01da289fe6b84d162667863e331d52041a781565e1af2eb79939",
+            "record_count": 738793,
+            "record_count_note": "Actual parsed original table data rows excluding header"
+          }
+        ]
+      },
+      "observed_structure_export": {
+        "restored_on": "2026-11-15",
+        "raw_records": 738793,
+        "normalized_records": 728389,
+        "missing_smiles": 0,
+        "deduplication": "exact full InChIKey, otherwise exact SMILES"
       }
     },
     {
@@ -98,8 +118,35 @@
         "Record counts overlap other resources; do not sum as unique molecules."
       ],
       "download_state": {
-        "status": "not_attempted_in_restoration",
-        "restoration_date": "2026-11-15"
+        "checked_at": "2026-11-15T01:16:14.410457+00:00",
+        "status": "downloaded",
+        "scope": "Selected explicitly registered export files, not all database tables or upstream collections",
+        "expected_files": 2,
+        "successful_files": 2,
+        "total_bytes": 110893185,
+        "files": [
+          {
+            "filename": "260413_frozen.csv.gz",
+            "bytes": 20594507,
+            "sha256": "c0744fb4d4395a638739078601836d9472612c1ed6db6c8e4f0b5e8a972ced70",
+            "record_count": 674454,
+            "record_count_note": "Actual parsed original table data rows excluding header"
+          },
+          {
+            "filename": "260413_frozen_metadata.csv.gz",
+            "bytes": 90298678,
+            "sha256": "09885dcfb3bc0e6d700fefcd5778e91446a1f9d5d2fbbcbf00eb5d2e83b68844",
+            "record_count": 709740,
+            "record_count_note": "Actual parsed original table data rows excluding header"
+          }
+        ]
+      },
+      "observed_structure_export": {
+        "restored_on": "2026-11-15",
+        "raw_records": 709740,
+        "normalized_records": 227298,
+        "missing_smiles": 0,
+        "deduplication": "exact full InChIKey, otherwise exact SMILES"
       }
     },
     {
@@ -148,8 +195,28 @@
         "Upstream YAML may contain version/permission inconsistencies; verify original source terms."
       ],
       "download_state": {
-        "status": "not_attempted_in_restoration",
-        "restoration_date": "2026-11-15"
+        "checked_at": "2026-11-15T01:16:14.410457+00:00",
+        "status": "downloaded",
+        "scope": "Selected explicitly registered export files, not all database tables or upstream collections",
+        "expected_files": 2,
+        "successful_files": 2,
+        "total_bytes": 596446237,
+        "files": [
+          {
+            "filename": "sources.yaml",
+            "bytes": 17253,
+            "sha256": "4309f3946d64cfd47f1b2fd43deb32e42c31372e6e85a2c7299c9df85ab42c56",
+            "record_count": 40,
+            "record_count_note": "Upstream source YAML entries, not compounds"
+          },
+          {
+            "filename": "theobroma_v136_20260917.dump",
+            "bytes": 596428984,
+            "sha256": "a68e2af4096cdcebd5d579a52da6605df55eb42e316c1daf921be1a09da035ce",
+            "record_count": null,
+            "record_count_note": "PostgreSQL binary dump not restored; publication count is not independently measured"
+          }
+        ]
       }
     },
     {
@@ -235,8 +302,104 @@
         "ADME coverage is sparse and was not acquired as a separate file."
       ],
       "download_state": {
-        "status": "not_attempted_in_restoration",
-        "restoration_date": "2026-11-15"
+        "checked_at": "2026-11-15T01:16:14.410457+00:00",
+        "status": "downloaded",
+        "scope": "Selected explicitly registered export files, not all database tables or upstream collections",
+        "expected_files": 11,
+        "successful_files": 11,
+        "total_bytes": 347013398,
+        "files": [
+          {
+            "filename": "NPASS3.0_Coculture.tsv",
+            "bytes": 92291,
+            "sha256": "28282863e0b3f87d53dc4c5487c30737b05bb5e39f693feb04741baccccca0c0",
+            "record_count": 869,
+            "record_count_note": "Actual parsed original data records excluding header, before deduplication"
+          },
+          {
+            "filename": "NPASS3.0_Elicitation.tsv",
+            "bytes": 55372,
+            "sha256": "003221048e034a9a0105174c8495ae694aedc83c8f63e382caa6b77918071e5d",
+            "record_count": 382,
+            "record_count_note": "Actual parsed original data records excluding header, before deduplication"
+          },
+          {
+            "filename": "NPASS3.0_Engineer.tsv",
+            "bytes": 261746,
+            "sha256": "47c7526262ba6db6cae542094f711538577bf2f7f84e5e48ad2fbb1e19c2888f",
+            "record_count": 811,
+            "record_count_note": "Actual parsed original data records excluding header, before deduplication"
+          },
+          {
+            "filename": "NPASS3.0_Symbiont.tsv",
+            "bytes": 71606,
+            "sha256": "0eca0d333750a896f4eae1823b51679f056dcd5502f53093d2a4a76015fda424",
+            "record_count": 491,
+            "record_count_note": "Actual parsed original data records excluding header, before deduplication"
+          },
+          {
+            "filename": "NPASS3.0_activities.txt",
+            "bytes": 105252592,
+            "sha256": "2e1e01166b6571f0e77c8e1a1a2f4ee48c17fb8af92be024b30d207e27a289c2",
+            "record_count": 1048756,
+            "record_count_note": "Actual parsed original data records excluding header, before deduplication"
+          },
+          {
+            "filename": "NPASS3.0_naturalproducts_generalinfo.txt",
+            "bytes": 48379276,
+            "sha256": "fc3fdcb41423d2d654552b638800658ad90441509bb58516c2290edcf4ae2d83",
+            "record_count": 204023,
+            "record_count_note": "Actual parsed original data records excluding header, before deduplication"
+          },
+          {
+            "filename": "NPASS3.0_naturalproducts_species_pair.txt",
+            "bytes": 116693109,
+            "sha256": "0c80055682df5e648941833876c03956cbb4fa3254d1ac6d5dd1f2896bd480cb",
+            "record_count": 1117269,
+            "record_count_note": "Actual parsed original data records excluding header, before deduplication"
+          },
+          {
+            "filename": "NPASS3.0_naturalproducts_structure.txt",
+            "bytes": 64734351,
+            "sha256": "5f2ca5c3fcd0386d65a31146122e4c8bf6dfcbea7a786ea01e6be764d69f65dc",
+            "record_count": 203390,
+            "record_count_note": "Actual original structure records read by normalization"
+          },
+          {
+            "filename": "NPASS3.0_species_info.txt",
+            "bytes": 7508061,
+            "sha256": "d7d4d429e64de1268ba9d5c69f7d72fe16674731b04362b239f801b63d17d275",
+            "record_count": 48940,
+            "record_count_note": "Actual parsed original data records excluding header, before deduplication"
+          },
+          {
+            "filename": "NPASS3.0_target.txt",
+            "bytes": 663452,
+            "sha256": "e0c779601f8b0868779a888f2bfc9aafb76d7a1e527dbeec0031da7a52c88347",
+            "record_count": 8764,
+            "record_count_note": "Actual parsed original data records excluding header, before deduplication"
+          },
+          {
+            "filename": "NPASS3.0_toxicity.txt",
+            "bytes": 3301542,
+            "sha256": "bac44f0278839ff02b030caac10b134303ee0ab3fa9f8cf504d62b30b3bd19b8",
+            "record_count": 34975,
+            "record_count_note": "Actual parsed original data records excluding header, before deduplication"
+          }
+        ]
+      },
+      "last_access_check": {
+        "date": "2026-11-15",
+        "status": "download_page_checked",
+        "current_v3_bulk_links": 11,
+        "adme_bulk_link_present": false
+      },
+      "observed_structure_export": {
+        "restored_on": "2026-11-15",
+        "raw_records": 203390,
+        "normalized_records": 203290,
+        "missing_smiles": 0,
+        "deduplication": "exact full InChIKey, otherwise exact SMILES"
       }
     },
     {
@@ -284,8 +447,35 @@
         "Record counts overlap other resources; do not sum as unique molecules."
       ],
       "download_state": {
-        "status": "not_attempted_in_restoration",
-        "restoration_date": "2026-11-15"
+        "checked_at": "2026-11-15T01:16:14.410457+00:00",
+        "status": "downloaded",
+        "scope": "Selected explicitly registered export files, not all database tables or upstream collections",
+        "expected_files": 2,
+        "successful_files": 2,
+        "total_bytes": 509244851,
+        "files": [
+          {
+            "filename": "NPAtlas_download.json",
+            "bytes": 475573120,
+            "sha256": "4680176ca976a180cffd6496136e4efe214174d91eff711e98ea238bf0a52ac6",
+            "record_count": 36454,
+            "record_count_note": "Actual parsed original data records excluding header, before deduplication"
+          },
+          {
+            "filename": "NPAtlas_download.tsv",
+            "bytes": 33671731,
+            "sha256": "4fa5ce93cf5e271d65649f7f5c40e031b1e3d59144cb50c12c5fc9ee041cc72b",
+            "record_count": 36454,
+            "record_count_note": "Actual original structure records read by normalization"
+          }
+        ]
+      },
+      "observed_structure_export": {
+        "restored_on": "2026-11-15",
+        "raw_records": 36454,
+        "normalized_records": 36422,
+        "missing_smiles": 0,
+        "deduplication": "exact full InChIKey, otherwise exact SMILES"
       }
     },
     {
@@ -346,8 +536,56 @@
         "Record counts overlap other resources; do not sum as unique molecules."
       ],
       "download_state": {
-        "status": "not_attempted_in_restoration",
-        "restoration_date": "2026-11-15"
+        "checked_at": "2026-11-15T01:16:14.410457+00:00",
+        "status": "downloaded",
+        "scope": "Selected explicitly registered export files, not all database tables or upstream collections",
+        "expected_files": 5,
+        "successful_files": 5,
+        "total_bytes": 78531033,
+        "files": [
+          {
+            "filename": "CMNPD_1.0_2d.sdf.gz",
+            "bytes": 11338030,
+            "sha256": "c7e8f1fc24464fe7d205def06daa175e44d175dbf52c1addb94bb503db1621ef",
+            "record_count": 31561,
+            "record_count_note": "Actual original structure records read by normalization"
+          },
+          {
+            "filename": "CMNPD_1.0_3d.sdf.gz",
+            "bytes": 41119614,
+            "sha256": "6b73387914fb800b8b3b0ac101c956ca72ae5af6640eed82217d3d40d65e35f7",
+            "record_count": 47451,
+            "record_count_note": "Raw SDF delimiters, independent of structure parse success"
+          },
+          {
+            "filename": "CMNPD_1.0_act_br.tsv",
+            "bytes": 679743,
+            "sha256": "87f0e533a2b5439a47b2708616253c26e1cc101e06f1c1e28314903254e72cb4",
+            "record_count": 13162,
+            "record_count_note": "Actual parsed original data records excluding header, before deduplication"
+          },
+          {
+            "filename": "CMNPD_1.0_act_std.tsv",
+            "bytes": 10607288,
+            "sha256": "366fc4cff1c4747627d2248147e8be9afde370b4ec83b54431845e842f9d4cbc",
+            "record_count": 56363,
+            "record_count_note": "Actual parsed original data records excluding header, before deduplication"
+          },
+          {
+            "filename": "CMNPD_1.0_calc_prop.tsv",
+            "bytes": 14786358,
+            "sha256": "149ccc214d8f8fc8c1f00cd06e3fdb608c64710c6e35ce2e957d55debbc8e8df",
+            "record_count": 31561,
+            "record_count_note": "Actual parsed original data records excluding header, before deduplication"
+          }
+        ]
+      },
+      "observed_structure_export": {
+        "restored_on": "2026-11-15",
+        "raw_records": 31561,
+        "normalized_records": 31526,
+        "missing_smiles": 0,
+        "deduplication": "exact full InChIKey, otherwise exact SMILES"
       }
     },
     {
@@ -427,8 +665,84 @@
         "Plant/formulation use cannot be automatically attributed to each purified constituent."
       ],
       "download_state": {
-        "status": "not_attempted_in_restoration",
-        "restoration_date": "2026-11-15"
+        "checked_at": "2026-11-15T01:16:14.410457+00:00",
+        "status": "downloaded",
+        "scope": "Selected explicitly registered export files, not all database tables or upstream collections",
+        "expected_files": 10,
+        "successful_files": 10,
+        "total_bytes": 222252717,
+        "files": [
+          {
+            "filename": "2D_Structures_IMPPAT_Phytochemicals.sdf",
+            "bytes": 90993424,
+            "sha256": "a19831c4d4a2afaf83b00e8786454fa8c32349138577d487e56598957efcdeaf",
+            "record_count": 18314,
+            "record_count_note": "Raw SDF delimiters, independent of structure parse success"
+          },
+          {
+            "filename": "3D_Structures_IMPPAT_Phytochemicals.sdf",
+            "bytes": 88399154,
+            "sha256": "1f36adabc8ba2b70ab7bdb4f2efc7592213cbe8eb396baeef4859b14a572ed80",
+            "record_count": 18216,
+            "record_count_note": "Raw SDF delimiters, independent of structure parse success"
+          },
+          {
+            "filename": "Bioactivity_IMPPAT_Phytochemicals.tsv",
+            "bytes": 2864778,
+            "sha256": "6a8aeaa8d7350c2513decf52733da50fbe1917e88cd6f187299a8b88b007e33e",
+            "record_count": 31812,
+            "record_count_note": "Actual parsed original data records excluding header, before deduplication"
+          },
+          {
+            "filename": "Chemical_Information_IMPPAT_Phytochemicals.tsv",
+            "bytes": 9901357,
+            "sha256": "f1610d4d529f57feba65f673090227bb66b243e855d88d8b2d6816a20a948e9f",
+            "record_count": 18314,
+            "record_count_note": "Actual parsed original data records excluding header, before deduplication"
+          },
+          {
+            "filename": "IMPPAT_Phytochemical_Plant_Association.tsv",
+            "bytes": 14724808,
+            "sha256": "8c86875b1a3377122611d72d4a4067cfce26af9f770fb874b94f62b1fa9d4864",
+            "record_count": 196220,
+            "record_count_note": "Actual parsed original data records excluding header, before deduplication"
+          },
+          {
+            "filename": "IMPPAT_PolyHerbalFormulations.tsv",
+            "bytes": 4929420,
+            "sha256": "9b814015ee9e368a7801d3f05114221795221645c01e1d9116e24c04cb0f7558",
+            "record_count": 13860,
+            "record_count_note": "Actual parsed original data records excluding header, before deduplication"
+          },
+          {
+            "filename": "IMPPAT_SingleHerbalFormulations.tsv",
+            "bytes": 303826,
+            "sha256": "b582f10e72843d75063b9eea25c20ee0f9de30871edd93c3a76fdc0fd2b00295",
+            "record_count": 541,
+            "record_count_note": "Actual parsed original data records excluding header, before deduplication"
+          },
+          {
+            "filename": "IMPPAT_TherapeuticUse_Plant_Association.tsv",
+            "bytes": 7356547,
+            "sha256": "dab0c68bbda8553947dd3b645e0c9931eeeaccf977c41c27539c5dd5eb09f77e",
+            "record_count": 94261,
+            "record_count_note": "Actual parsed original data records excluding header, before deduplication"
+          },
+          {
+            "filename": "Plant_Information_IMPPAT.tsv",
+            "bytes": 541093,
+            "sha256": "f68c4f57ee1a58079147bf40c4cec03d647c2e2354e77e058db6e7620e450011",
+            "record_count": 4154,
+            "record_count_note": "Actual parsed original data records excluding header, before deduplication"
+          },
+          {
+            "filename": "Target_IMPPAT_Phytochemicals.tsv",
+            "bytes": 2238310,
+            "sha256": "87bcdfb01f78e7f783a33dfa8a76adcb68539b97eda0bccac2929342347910a1",
+            "record_count": 38842,
+            "record_count_note": "Actual parsed original data records excluding header, before deduplication"
+          }
+        ]
       }
     },
     {
@@ -480,8 +794,18 @@
         "Record counts overlap other resources; do not sum as unique molecules."
       ],
       "download_state": {
-        "status": "not_attempted_in_restoration",
-        "restoration_date": "2026-11-15"
+        "checked_at": "2026-11-15T01:16:14.410457+00:00",
+        "status": "failed",
+        "scope": "Selected explicitly registered export files, not all database tables or upstream collections",
+        "expected_files": 3,
+        "successful_files": 0,
+        "total_bytes": 0,
+        "files": []
+      },
+      "last_access_check": {
+        "date": "2026-11-15",
+        "status": "download_failed",
+        "reason": "All three official download endpoints again returned HTML; no payload retained."
       }
     },
     {
@@ -537,8 +861,35 @@
         "Record counts overlap other resources; do not sum as unique molecules."
       ],
       "download_state": {
-        "status": "not_attempted_in_restoration",
-        "restoration_date": "2026-11-15"
+        "checked_at": "2026-11-15T01:16:14.410457+00:00",
+        "status": "downloaded",
+        "scope": "Selected explicitly registered export files, not all database tables or upstream collections",
+        "expected_files": 3,
+        "successful_files": 3,
+        "total_bytes": 125490405,
+        "files": [
+          {
+            "filename": "mibig_gbk_4.0.tar.gz",
+            "bytes": 83652126,
+            "sha256": "43543f9c85316bc44e555dd2c6c37331b1a56150218b204dc14e623ea66e834b",
+            "record_count": 2636,
+            "record_count_note": "Archive regular-file entries, not unique compounds"
+          },
+          {
+            "filename": "mibig_json_4.0.tar.gz",
+            "bytes": 10004480,
+            "sha256": "d02a387c7d62f8e54d7bcdc03984301e513ce56c1782ecbc9ce957a76039444f",
+            "record_count": 3013,
+            "record_count_note": "Archive regular-file entries, not unique compounds"
+          },
+          {
+            "filename": "mibig_prot_seqs_4.0.fasta",
+            "bytes": 31833799,
+            "sha256": "4b196343ed82d49f2b8f3babe89d512b92f0e026040fa50b15eeb97950717e8b",
+            "record_count": 46987,
+            "record_count_note": "FASTA sequence headers, not natural-product count"
+          }
+        ]
       }
     },
     {
@@ -568,17 +919,17 @@
             "filename": "chebi.sdf.gz"
           },
           {
-            "url": "https://ftp.ebi.ac.uk/pub/databases/chebi/LICENSE",
+            "url": "https://ftp.ebi.ac.uk/pub/databases/chebi/SDF/LICENSE",
             "filename": "LICENSE"
           },
           {
-            "url": "https://ftp.ebi.ac.uk/pub/databases/chebi/README",
+            "url": "https://ftp.ebi.ac.uk/pub/databases/chebi/SDF/README",
             "filename": "README"
           }
         ],
         "requires_manual": false,
         "license_gate": "open",
-        "notes": ""
+        "notes": "Source URLs verified from official SDF directory listing on 2026-11-15. Root directory LICENSE was a failed restoration candidate; that history is retained. Root README is separately retained as auxiliary metadata."
       },
       "purposes": [
         "ontology",
@@ -590,8 +941,42 @@
         "Generic classes and invalid structures remain explicit missing structures."
       ],
       "download_state": {
-        "status": "not_attempted_in_restoration",
-        "restoration_date": "2026-11-15"
+        "checked_at": "2026-11-15T01:16:14.410457+00:00",
+        "status": "downloaded",
+        "scope": "Selected explicitly registered export files, not all database tables or upstream collections",
+        "expected_files": 3,
+        "successful_files": 3,
+        "total_bytes": 146346040,
+        "files": [
+          {
+            "filename": "LICENSE",
+            "bytes": 18655,
+            "sha256": "fe7b4ce83b8381cc5b216bbb4af73c570688d1b819c73bbaed8ca401f4677cd6",
+            "record_count": null,
+            "record_count_note": "Metadata document, not a molecular record table"
+          },
+          {
+            "filename": "README",
+            "bytes": 1675,
+            "sha256": "da750caf90789ae0644ce7b6b3fd030ed877f0b0ebbf0189d80552376365fce5",
+            "record_count": null,
+            "record_count_note": "Metadata document, not a molecular record table"
+          },
+          {
+            "filename": "chebi.sdf.gz",
+            "bytes": 146325710,
+            "sha256": "8402c74168b628e0b6e5ff382f84528ebaf3205929e476335b83936083a7c295",
+            "record_count": 199902,
+            "record_count_note": "Actual original structure records read by normalization"
+          }
+        ]
+      },
+      "observed_structure_export": {
+        "restored_on": "2026-11-15",
+        "raw_records": 199902,
+        "normalized_records": 195043,
+        "missing_smiles": 120,
+        "deduplication": "exact full InChIKey, otherwise exact SMILES"
       }
     },
     {
@@ -638,8 +1023,35 @@
         "Record counts overlap other resources; do not sum as unique molecules."
       ],
       "download_state": {
-        "status": "not_attempted_in_restoration",
-        "restoration_date": "2026-11-15"
+        "checked_at": "2026-11-15T01:16:14.410457+00:00",
+        "status": "downloaded",
+        "scope": "Selected explicitly registered export files, not all database tables or upstream collections",
+        "expected_files": 2,
+        "successful_files": 2,
+        "total_bytes": 1692775,
+        "files": [
+          {
+            "filename": "drug.target.interaction.tsv.gz",
+            "bytes": 956583,
+            "sha256": "1908684983a79a067a44da952e1f6fd26b0f34cc36560cd9be0f0843bbfee1e1",
+            "record_count": 22364,
+            "record_count_note": "Actual parsed original data records excluding header, before deduplication"
+          },
+          {
+            "filename": "structures.molV3.sdf.gz",
+            "bytes": 736192,
+            "sha256": "52fa2938e266a99bfe1c843aa32f0c90c458a05a858d4705ec08c8fb8f90aa13",
+            "record_count": 4310,
+            "record_count_note": "Actual original structure records read by normalization"
+          }
+        ]
+      },
+      "observed_structure_export": {
+        "restored_on": "2026-11-15",
+        "raw_records": 4310,
+        "normalized_records": 4240,
+        "missing_smiles": 0,
+        "deduplication": "exact full InChIKey, otherwise exact SMILES"
       }
     },
     {
@@ -709,8 +1121,70 @@
         "Record counts overlap other resources; do not sum as unique molecules."
       ],
       "download_state": {
-        "status": "not_attempted_in_restoration",
-        "restoration_date": "2026-11-15"
+        "checked_at": "2026-11-15T01:16:14.410457+00:00",
+        "status": "downloaded",
+        "scope": "Selected explicitly registered export files, not all database tables or upstream collections",
+        "expected_files": 8,
+        "successful_files": 8,
+        "total_bytes": 53305866,
+        "files": [
+          {
+            "filename": "README",
+            "bytes": 3304,
+            "sha256": "de992e6c1475d774d9f8f8271a6c371e2f8b2c86dcf459e871dfd1a830f54c06",
+            "record_count": null,
+            "record_count_note": "Metadata document, not a molecular record table"
+          },
+          {
+            "filename": "drug_atc.tsv",
+            "bytes": 32760,
+            "sha256": "b457e124cc13c482bbe3afcf76c43bd53764c14d40da563785e20146c2e0f229",
+            "record_count": 1560,
+            "record_count_note": "Headerless association table data lines according to source README"
+          },
+          {
+            "filename": "drug_names.tsv",
+            "bytes": 34759,
+            "sha256": "6427a3e3202c71a81dff97092957aacf0700b9c01f34b07e452a1ec47c92b007",
+            "record_count": 1430,
+            "record_count_note": "Headerless association table data lines according to source README"
+          },
+          {
+            "filename": "meddra_all_indications.tsv.gz",
+            "bytes": 344689,
+            "sha256": "3e019c1baec86a5ce056e428da803e821c2708ef22522950a738f330b5985d02",
+            "record_count": 30835,
+            "record_count_note": "Headerless association table data lines according to source README"
+          },
+          {
+            "filename": "meddra_all_label_indications.tsv.gz",
+            "bytes": 5916355,
+            "sha256": "a725399154c6491977116521f74c21ca29d2bb6db8121dbc95286a3bdfb23626",
+            "record_count": 447150,
+            "record_count_note": "Headerless association table data lines according to source README"
+          },
+          {
+            "filename": "meddra_all_label_se.tsv.gz",
+            "bytes": 42534383,
+            "sha256": "4ae1cbe7f7edd7e572f31bbec5761d10f01d500851260ea8e39cddf60da52643",
+            "record_count": 4753141,
+            "record_count_note": "Headerless association table data lines according to source README"
+          },
+          {
+            "filename": "meddra_all_se.tsv.gz",
+            "bytes": 2381171,
+            "sha256": "119b2f5319a9398da83e5fe3419889010dbacf8d3eef590251b00c025e2b3f99",
+            "record_count": 309849,
+            "record_count_note": "Headerless association table data lines according to source README"
+          },
+          {
+            "filename": "meddra_freq.tsv.gz",
+            "bytes": 2058445,
+            "sha256": "fcdfbf479c6b568dfca557a3eb2cdbe49c4a3291090999c0de0bd7092feaec7f",
+            "record_count": 291632,
+            "record_count_note": "Headerless association table data lines according to source README"
+          }
+        ]
       }
     },
     {
@@ -748,8 +1222,19 @@
         "Record counts overlap other resources; do not sum as unique molecules."
       ],
       "download_state": {
-        "status": "not_attempted_in_restoration",
-        "restoration_date": "2026-11-15"
+        "checked_at": "2026-11-15T01:16:14.410457+00:00",
+        "status": "manual",
+        "scope": "Selected explicitly registered export files, not all database tables or upstream collections",
+        "expected_files": 0,
+        "successful_files": 0,
+        "total_bytes": 0,
+        "files": []
+      },
+      "last_access_check": {
+        "date": "2026-11-15",
+        "status": "service_unavailable",
+        "url": "https://bioinf-applied.charite.de/supernatural_3/",
+        "reason": "HTTP Error 503: Service Unavailable"
       }
     },
     {
@@ -788,8 +1273,19 @@
         "Record counts overlap other resources; do not sum as unique molecules."
       ],
       "download_state": {
-        "status": "not_attempted_in_restoration",
-        "restoration_date": "2026-11-15"
+        "checked_at": "2026-11-15T01:16:14.410457+00:00",
+        "status": "manual",
+        "scope": "Selected explicitly registered export files, not all database tables or upstream collections",
+        "expected_files": 0,
+        "successful_files": 0,
+        "total_bytes": 0,
+        "files": []
+      },
+      "last_access_check": {
+        "date": "2026-11-15",
+        "status": "service_unavailable",
+        "url": "https://herb.ac.cn/",
+        "reason": "HTTP Error 503: Service Unavailable"
       }
     },
     {
@@ -826,8 +1322,13 @@
         "Record counts overlap other resources; do not sum as unique molecules."
       ],
       "download_state": {
-        "status": "not_attempted_in_restoration",
-        "restoration_date": "2026-11-15"
+        "checked_at": "2026-11-15T01:16:14.410457+00:00",
+        "status": "manual",
+        "scope": "Selected explicitly registered export files, not all database tables or upstream collections",
+        "expected_files": 0,
+        "successful_files": 0,
+        "total_bytes": 0,
+        "files": []
       }
     },
     {
@@ -864,8 +1365,13 @@
         "Record counts overlap other resources; do not sum as unique molecules."
       ],
       "download_state": {
-        "status": "not_attempted_in_restoration",
-        "restoration_date": "2026-11-15"
+        "checked_at": "2026-11-15T01:16:14.410457+00:00",
+        "status": "manual",
+        "scope": "Selected explicitly registered export files, not all database tables or upstream collections",
+        "expected_files": 0,
+        "successful_files": 0,
+        "total_bytes": 0,
+        "files": []
       }
     },
     {
@@ -903,8 +1409,13 @@
         "Record counts overlap other resources; do not sum as unique molecules."
       ],
       "download_state": {
-        "status": "not_attempted_in_restoration",
-        "restoration_date": "2026-11-15"
+        "checked_at": "2026-11-15T01:16:14.410457+00:00",
+        "status": "manual",
+        "scope": "Selected explicitly registered export files, not all database tables or upstream collections",
+        "expected_files": 0,
+        "successful_files": 0,
+        "total_bytes": 0,
+        "files": []
       }
     },
     {
@@ -942,8 +1453,13 @@
         "Record counts overlap other resources; do not sum as unique molecules."
       ],
       "download_state": {
-        "status": "not_attempted_in_restoration",
-        "restoration_date": "2026-11-15"
+        "checked_at": "2026-11-15T01:16:14.410457+00:00",
+        "status": "manual",
+        "scope": "Selected explicitly registered export files, not all database tables or upstream collections",
+        "expected_files": 0,
+        "successful_files": 0,
+        "total_bytes": 0,
+        "files": []
       }
     },
     {
@@ -981,8 +1497,13 @@
         "Record counts overlap other resources; do not sum as unique molecules."
       ],
       "download_state": {
-        "status": "not_attempted_in_restoration",
-        "restoration_date": "2026-11-15"
+        "checked_at": "2026-11-15T01:16:14.410457+00:00",
+        "status": "manual",
+        "scope": "Selected explicitly registered export files, not all database tables or upstream collections",
+        "expected_files": 0,
+        "successful_files": 0,
+        "total_bytes": 0,
+        "files": []
       }
     },
     {
@@ -1019,8 +1540,13 @@
         "Record counts overlap other resources; do not sum as unique molecules."
       ],
       "download_state": {
-        "status": "not_attempted_in_restoration",
-        "restoration_date": "2026-11-15"
+        "checked_at": "2026-11-15T01:16:14.410457+00:00",
+        "status": "manual",
+        "scope": "Selected explicitly registered export files, not all database tables or upstream collections",
+        "expected_files": 0,
+        "successful_files": 0,
+        "total_bytes": 0,
+        "files": []
       }
     },
     {
@@ -1058,8 +1584,13 @@
         "Record counts overlap other resources; do not sum as unique molecules."
       ],
       "download_state": {
-        "status": "not_attempted_in_restoration",
-        "restoration_date": "2026-11-15"
+        "checked_at": "2026-11-15T01:16:14.410457+00:00",
+        "status": "manual",
+        "scope": "Selected explicitly registered export files, not all database tables or upstream collections",
+        "expected_files": 0,
+        "successful_files": 0,
+        "total_bytes": 0,
+        "files": []
       }
     },
     {
@@ -1096,8 +1627,13 @@
         "Record counts overlap other resources; do not sum as unique molecules."
       ],
       "download_state": {
-        "status": "not_attempted_in_restoration",
-        "restoration_date": "2026-11-15"
+        "checked_at": "2026-11-15T01:16:14.410457+00:00",
+        "status": "manual",
+        "scope": "Selected explicitly registered export files, not all database tables or upstream collections",
+        "expected_files": 0,
+        "successful_files": 0,
+        "total_bytes": 0,
+        "files": []
       }
     },
     {
@@ -1134,8 +1670,13 @@
         "Record counts overlap other resources; do not sum as unique molecules."
       ],
       "download_state": {
-        "status": "not_attempted_in_restoration",
-        "restoration_date": "2026-11-15"
+        "checked_at": "2026-11-15T01:16:14.410457+00:00",
+        "status": "manual",
+        "scope": "Selected explicitly registered export files, not all database tables or upstream collections",
+        "expected_files": 0,
+        "successful_files": 0,
+        "total_bytes": 0,
+        "files": []
       }
     },
     {
@@ -1172,8 +1713,13 @@
         "Record counts overlap other resources; do not sum as unique molecules."
       ],
       "download_state": {
-        "status": "not_attempted_in_restoration",
-        "restoration_date": "2026-11-15"
+        "checked_at": "2026-11-15T01:16:14.410457+00:00",
+        "status": "manual",
+        "scope": "Selected explicitly registered export files, not all database tables or upstream collections",
+        "expected_files": 0,
+        "successful_files": 0,
+        "total_bytes": 0,
+        "files": []
       }
     },
     {
@@ -1210,8 +1756,13 @@
         "Record counts overlap other resources; do not sum as unique molecules."
       ],
       "download_state": {
-        "status": "not_attempted_in_restoration",
-        "restoration_date": "2026-11-15"
+        "checked_at": "2026-11-15T01:16:14.410457+00:00",
+        "status": "manual",
+        "scope": "Selected explicitly registered export files, not all database tables or upstream collections",
+        "expected_files": 0,
+        "successful_files": 0,
+        "total_bytes": 0,
+        "files": []
       }
     },
     {
@@ -1247,8 +1798,13 @@
         "Record counts overlap other resources; do not sum as unique molecules."
       ],
       "download_state": {
-        "status": "not_attempted_in_restoration",
-        "restoration_date": "2026-11-15"
+        "checked_at": "2026-11-15T01:16:14.410457+00:00",
+        "status": "manual",
+        "scope": "Selected explicitly registered export files, not all database tables or upstream collections",
+        "expected_files": 0,
+        "successful_files": 0,
+        "total_bytes": 0,
+        "files": []
       }
     },
     {
@@ -1284,8 +1840,13 @@
         "Record counts overlap other resources; do not sum as unique molecules."
       ],
       "download_state": {
-        "status": "not_attempted_in_restoration",
-        "restoration_date": "2026-11-15"
+        "checked_at": "2026-11-15T01:16:14.410457+00:00",
+        "status": "manual",
+        "scope": "Selected explicitly registered export files, not all database tables or upstream collections",
+        "expected_files": 0,
+        "successful_files": 0,
+        "total_bytes": 0,
+        "files": []
       }
     },
     {
@@ -1322,8 +1883,13 @@
         "Record counts overlap other resources; do not sum as unique molecules."
       ],
       "download_state": {
-        "status": "not_attempted_in_restoration",
-        "restoration_date": "2026-11-15"
+        "checked_at": "2026-11-15T01:16:14.410457+00:00",
+        "status": "manual",
+        "scope": "Selected explicitly registered export files, not all database tables or upstream collections",
+        "expected_files": 0,
+        "successful_files": 0,
+        "total_bytes": 0,
+        "files": []
       }
     },
     {
@@ -1360,8 +1926,13 @@
         "Record counts overlap other resources; do not sum as unique molecules."
       ],
       "download_state": {
-        "status": "not_attempted_in_restoration",
-        "restoration_date": "2026-11-15"
+        "checked_at": "2026-11-15T01:16:14.410457+00:00",
+        "status": "manual",
+        "scope": "Selected explicitly registered export files, not all database tables or upstream collections",
+        "expected_files": 0,
+        "successful_files": 0,
+        "total_bytes": 0,
+        "files": []
       }
     },
     {
@@ -1398,8 +1969,13 @@
         "Record counts overlap other resources; do not sum as unique molecules."
       ],
       "download_state": {
-        "status": "not_attempted_in_restoration",
-        "restoration_date": "2026-11-15"
+        "checked_at": "2026-11-15T01:16:14.410457+00:00",
+        "status": "manual",
+        "scope": "Selected explicitly registered export files, not all database tables or upstream collections",
+        "expected_files": 0,
+        "successful_files": 0,
+        "total_bytes": 0,
+        "files": []
       }
     },
     {
@@ -1435,8 +2011,13 @@
         "Record counts overlap other resources; do not sum as unique molecules."
       ],
       "download_state": {
-        "status": "not_attempted_in_restoration",
-        "restoration_date": "2026-11-15"
+        "checked_at": "2026-11-15T01:16:14.410457+00:00",
+        "status": "manual",
+        "scope": "Selected explicitly registered export files, not all database tables or upstream collections",
+        "expected_files": 0,
+        "successful_files": 0,
+        "total_bytes": 0,
+        "files": []
       }
     },
     {
@@ -1473,8 +2054,13 @@
         "Record counts overlap other resources; do not sum as unique molecules."
       ],
       "download_state": {
-        "status": "not_attempted_in_restoration",
-        "restoration_date": "2026-11-15"
+        "checked_at": "2026-11-15T01:16:14.410457+00:00",
+        "status": "manual",
+        "scope": "Selected explicitly registered export files, not all database tables or upstream collections",
+        "expected_files": 0,
+        "successful_files": 0,
+        "total_bytes": 0,
+        "files": []
       }
     },
     {
@@ -1511,8 +2097,13 @@
         "Record counts overlap other resources; do not sum as unique molecules."
       ],
       "download_state": {
-        "status": "not_attempted_in_restoration",
-        "restoration_date": "2026-11-15"
+        "checked_at": "2026-11-15T01:16:14.410457+00:00",
+        "status": "manual",
+        "scope": "Selected explicitly registered export files, not all database tables or upstream collections",
+        "expected_files": 0,
+        "successful_files": 0,
+        "total_bytes": 0,
+        "files": []
       }
     },
     {
@@ -1549,8 +2140,13 @@
         "Record counts overlap other resources; do not sum as unique molecules."
       ],
       "download_state": {
-        "status": "not_attempted_in_restoration",
-        "restoration_date": "2026-11-15"
+        "checked_at": "2026-11-15T01:16:14.410457+00:00",
+        "status": "manual",
+        "scope": "Selected explicitly registered export files, not all database tables or upstream collections",
+        "expected_files": 0,
+        "successful_files": 0,
+        "total_bytes": 0,
+        "files": []
       }
     },
     {
@@ -1588,8 +2184,13 @@
         "Record counts overlap other resources; do not sum as unique molecules."
       ],
       "download_state": {
-        "status": "not_attempted_in_restoration",
-        "restoration_date": "2026-11-15"
+        "checked_at": "2026-11-15T01:16:14.410457+00:00",
+        "status": "manual",
+        "scope": "Selected explicitly registered export files, not all database tables or upstream collections",
+        "expected_files": 0,
+        "successful_files": 0,
+        "total_bytes": 0,
+        "files": []
       }
     },
     {
@@ -1625,8 +2226,13 @@
         "Record counts overlap other resources; do not sum as unique molecules."
       ],
       "download_state": {
-        "status": "not_attempted_in_restoration",
-        "restoration_date": "2026-11-15"
+        "checked_at": "2026-11-15T01:16:14.410457+00:00",
+        "status": "manual",
+        "scope": "Selected explicitly registered export files, not all database tables or upstream collections",
+        "expected_files": 0,
+        "successful_files": 0,
+        "total_bytes": 0,
+        "files": []
       }
     },
     {
@@ -1662,8 +2268,13 @@
         "Record counts overlap other resources; do not sum as unique molecules."
       ],
       "download_state": {
-        "status": "not_attempted_in_restoration",
-        "restoration_date": "2026-11-15"
+        "checked_at": "2026-11-15T01:16:14.410457+00:00",
+        "status": "manual",
+        "scope": "Selected explicitly registered export files, not all database tables or upstream collections",
+        "expected_files": 0,
+        "successful_files": 0,
+        "total_bytes": 0,
+        "files": []
       }
     }
   ]

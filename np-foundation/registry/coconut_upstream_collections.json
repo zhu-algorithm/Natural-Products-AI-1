@@ -1,0 +1,455 @@
+{
+  "checked_date": "2026-11-15",
+  "collection_count": 71,
+  "entries": [
+    {
+      "name": "NAPRORE-CR",
+      "description_excerpt": "Costa Rica Natural products",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=NAPRORE-CR&tagType=dataSource",
+      "catalog_page": 1
+    },
+    {
+      "name": "PhytoLab phyproof® Reference Substances",
+      "description_excerpt": "A collection of more than 1,500 comprehensively documented phytochemicals provid...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=PhytoLab%20phyproof%C2%AE%20Reference%20Substances&tagType=dataSource",
+      "catalog_page": 1
+    },
+    {
+      "name": "Wikidata Natural Products",
+      "description_excerpt": "Wikidata - Natural Products represents natural products as chemical compounds pr...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=Wikidata%20Natural%20Products&tagType=dataSource",
+      "catalog_page": 1
+    },
+    {
+      "name": "Nat-UV DB",
+      "description_excerpt": "Nat-UV DB is the first curated natural products database from Mexico’s coastal z...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=Nat-UV%20DB&tagType=dataSource",
+      "catalog_page": 1
+    },
+    {
+      "name": "PeruNPDB",
+      "description_excerpt": "Peruvian Natural Product Database is a curated open-access search database of Pe...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=PeruNPDB&tagType=dataSource",
+      "catalog_page": 1
+    },
+    {
+      "name": "NPDBEjeCol",
+      "description_excerpt": "Natural Products DataBase EjeCol is the first curated natural products database...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=NPDBEjeCol&tagType=dataSource",
+      "catalog_page": 1
+    },
+    {
+      "name": "COCONUT Community NPs",
+      "description_excerpt": "Collection of natural products (NPs) submitted by the community to the COCONUT d...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=COCONUT%20Community%20NPs&tagType=dataSource",
+      "catalog_page": 1
+    },
+    {
+      "name": "TerPenoids database embedded with Content information (TPCN)",
+      "description_excerpt": "Terpenoids are the largest class of natural products that are widely found in pl...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=TerPenoids%20database%20embedded%20with%20Content%20information%20%28TPCN%29&tagType=dataSource",
+      "catalog_page": 1
+    },
+    {
+      "name": "Supernatural3",
+      "description_excerpt": "SuperNatural 3.0 is a freely accessible database of natural products and their d...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=Supernatural3&tagType=dataSource",
+      "catalog_page": 1
+    },
+    {
+      "name": "CMNPD",
+      "description_excerpt": "CMNPD, a comprehensive marine natural products database, has been developed to m...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=CMNPD&tagType=dataSource",
+      "catalog_page": 1
+    },
+    {
+      "name": "Latin America dataset",
+      "description_excerpt": "The number of databases of natural products (NPs) has increased substantially. L...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=Latin%20America%20dataset&tagType=dataSource",
+      "catalog_page": 1
+    },
+    {
+      "name": "Watermelon",
+      "description_excerpt": "The Watermelon Database presents a comprehensive catalog of small molecules foun...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=Watermelon&tagType=dataSource",
+      "catalog_page": 1
+    },
+    {
+      "name": "Piel Lab DB",
+      "description_excerpt": "The Natural Products dataset, curated by The Piel Lab - Bacterial Natural Produc...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=Piel%20Lab%20DB&tagType=dataSource",
+      "catalog_page": 1
+    },
+    {
+      "name": "Phyto4Health",
+      "description_excerpt": "Phyto4Health is a comprehensive database focusing on medicinal plants native to...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=Phyto4Health&tagType=dataSource",
+      "catalog_page": 1
+    },
+    {
+      "name": "ANPDB",
+      "description_excerpt": "The African Natural Products Database (ANPDB) is a comprehensive collection of n...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=ANPDB&tagType=dataSource",
+      "catalog_page": 1
+    },
+    {
+      "name": "EMNPD",
+      "description_excerpt": "EMNPD, a comprehensive endophytic microorganism natural products database, has b...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=EMNPD&tagType=dataSource",
+      "catalog_page": 1
+    },
+    {
+      "name": "Australian natural products",
+      "description_excerpt": "The ongoing enhancement of the \"Phytochemistry of Australian Plants\" database, o...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=Australian%20natural%20products&tagType=dataSource",
+      "catalog_page": 1
+    },
+    {
+      "name": "DrugBankNP",
+      "description_excerpt": "DrugBank is a vital resource for your pharmaceutical research, offering comprehe...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=DrugBankNP&tagType=dataSource",
+      "catalog_page": 1
+    },
+    {
+      "name": "CyanoMetNP",
+      "description_excerpt": "CyanoMetDB is a comprehensive, openly-accessible database of cyanobacterial seco...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=CyanoMetNP&tagType=dataSource",
+      "catalog_page": 1
+    },
+    {
+      "name": "ZINC NP",
+      "description_excerpt": "Subset of Natural Products from ZINC 15 database.",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=ZINC%20NP&tagType=dataSource",
+      "catalog_page": 1
+    },
+    {
+      "name": "VietHerb",
+      "description_excerpt": "VIETHERB is a comprehensive database of Vietnamese traditional medicinal herbs....",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=VietHerb&tagType=dataSource",
+      "catalog_page": 2
+    },
+    {
+      "name": "UNPD (Universal Natural Products Database)",
+      "description_excerpt": "The Universal Natural Products Database provides a comprehensive collection of n...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=UNPD%20%28Universal%20Natural%20Products%20Database%29&tagType=dataSource",
+      "catalog_page": 2
+    },
+    {
+      "name": "UEFS (Natural Products Databse of the UEFS)",
+      "description_excerpt": "Natural Products Database of the UEFS, maintained by the State University of Fei...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=UEFS%20%28Natural%20Products%20Databse%20of%20the%20UEFS%29&tagType=dataSource",
+      "catalog_page": 2
+    },
+    {
+      "name": "TPPT (Toxic Plants–PhytoToxins)",
+      "description_excerpt": "The Toxic Plants–PhytoToxins (TPPT) database is a new, freely accessible resourc...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=TPPT%20%28Toxic%20Plants%E2%80%93PhytoToxins%29&tagType=dataSource",
+      "catalog_page": 2
+    },
+    {
+      "name": "TIPdb (database of Taiwan indigenous plants)",
+      "description_excerpt": "TIPdb-3D is a comprehensive three-dimensional chemical structure database derive...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=TIPdb%20%28database%20of%20Taiwan%20indigenous%20plants%29&tagType=dataSource",
+      "catalog_page": 2
+    },
+    {
+      "name": "TCMID (Traditional Chinese Medicine Integrated Database)",
+      "description_excerpt": "Traditional Chinese Medicine Integrated Database (TCMID) is a comprehensive reso...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=TCMID%20%28Traditional%20Chinese%20Medicine%20Integrated%20Database%29&tagType=dataSource",
+      "catalog_page": 2
+    },
+    {
+      "name": "TCMDB-Taiwan (Traditional Chinese Medicine database)",
+      "description_excerpt": "TCM Database@Taiwan is a groundbreaking resource in the field of computer-aided...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=TCMDB-Taiwan%20%28Traditional%20Chinese%20Medicine%20database%29&tagType=dataSource",
+      "catalog_page": 2
+    },
+    {
+      "name": "Super Natural II",
+      "description_excerpt": "Super Natural II is a comprehensive natural product database that serves as a va...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=Super%20Natural%20II&tagType=dataSource",
+      "catalog_page": 2
+    },
+    {
+      "name": "StreptomeDB",
+      "description_excerpt": "StreptomeDB is a pioneering online database that facilitates interactive phyloge...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=StreptomeDB&tagType=dataSource",
+      "catalog_page": 2
+    },
+    {
+      "name": "Spektraris NMR",
+      "description_excerpt": "Spektraris-NMR is an online spectral resource developed for the structural ident...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=Spektraris%20NMR&tagType=dataSource",
+      "catalog_page": 2
+    },
+    {
+      "name": "Specs Natural Products",
+      "description_excerpt": "Specs Natural Products is a chemical vendor catalogue specializing in natural pr...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=Specs%20Natural%20Products&tagType=dataSource",
+      "catalog_page": 2
+    },
+    {
+      "name": "Seaweed Metabolite Database (SWMD)",
+      "description_excerpt": "The Seaweed Metabolite Database (SWMD) is a vital resource for marine bioprospec...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=Seaweed%20Metabolite%20Database%20%28SWMD%29&tagType=dataSource",
+      "catalog_page": 2
+    },
+    {
+      "name": "SANCDB",
+      "description_excerpt": "SANCDB is a pioneering South African natural compound database, representing a s...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=SANCDB&tagType=dataSource",
+      "catalog_page": 2
+    },
+    {
+      "name": "ReSpect",
+      "description_excerpt": "ReSpect (RIKEN tandem mass spectral database) is a web-based database of MS/MS d...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=ReSpect&tagType=dataSource",
+      "catalog_page": 2
+    },
+    {
+      "name": "PubChem NPs",
+      "description_excerpt": "Natural Products subset of PubChem.",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=PubChem%20NPs&tagType=dataSource",
+      "catalog_page": 2
+    },
+    {
+      "name": "Phenol-explorer",
+      "description_excerpt": "Phenol-Explorer, launched in 2009, is the premier freely accessible web-based da...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=Phenol-explorer&tagType=dataSource",
+      "catalog_page": 2
+    },
+    {
+      "name": "p-ANAPL",
+      "description_excerpt": "The p-ANAPL database contains a significant collection of natural products deriv...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=p-ANAPL&tagType=dataSource",
+      "catalog_page": 2
+    },
+    {
+      "name": "NuBBEDB",
+      "description_excerpt": "The Nuclei of Bioassays, Ecophysiology and Biosynthesis of Natural Products Data...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=NuBBEDB&tagType=dataSource",
+      "catalog_page": 2
+    },
+    {
+      "name": "NPEdia",
+      "description_excerpt": "RIKEN Natural Products Encyclopedia (RIKEN NPEdia) is a comprehensive natural pr...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=NPEdia&tagType=dataSource",
+      "catalog_page": 2
+    },
+    {
+      "name": "NPCARE",
+      "description_excerpt": "NPCARE, is a comprehensive online database of natural products and fractional ex...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=NPCARE&tagType=dataSource",
+      "catalog_page": 2
+    },
+    {
+      "name": "NPAtlas",
+      "description_excerpt": "The Natural Products Atlas (www.npatlas.org) is an open-access database of micro...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=NPAtlas&tagType=dataSource",
+      "catalog_page": 3
+    },
+    {
+      "name": "NPASS",
+      "description_excerpt": "The NPASS natural product activity and species source database has been updated...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=NPASS&tagType=dataSource",
+      "catalog_page": 3
+    },
+    {
+      "name": "NPACT",
+      "description_excerpt": "The Naturally Occurring Plant-based Anti-cancer Compound-Activity-Target databas...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=NPACT&tagType=dataSource",
+      "catalog_page": 3
+    },
+    {
+      "name": "NCI DTP data",
+      "description_excerpt": "The National Cancer Institute Developmental Therapeutics Program (NCI/DTP) is a...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=NCI%20DTP%20data&tagType=dataSource",
+      "catalog_page": 3
+    },
+    {
+      "name": "NANPDB (Natural Products from Northern African Sources)",
+      "description_excerpt": "NANPDB, the Northern African Natural Products Database, is a comprehensive onlin...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=NANPDB%20%28Natural%20Products%20from%20Northern%20African%20Sources%29&tagType=dataSource",
+      "catalog_page": 3
+    },
+    {
+      "name": "Mitishamba database",
+      "description_excerpt": "Mitishamba Database is a comprehensive collection of chemical structures from na...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=Mitishamba%20database&tagType=dataSource",
+      "catalog_page": 3
+    },
+    {
+      "name": "Marine Natural Products",
+      "description_excerpt": "The Marine Natural Product (MNP) library was screened to identify potential inhi...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=Marine%20Natural%20Products&tagType=dataSource",
+      "catalog_page": 3
+    },
+    {
+      "name": "Lichen Database",
+      "description_excerpt": "Lichen Database, an open access MS/MS library, is announced to meet the need for...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=Lichen%20Database&tagType=dataSource",
+      "catalog_page": 3
+    },
+    {
+      "name": "KNApSaCK",
+      "description_excerpt": "KNApSAcK-3D is a database that expands on the original KNApSAcK metabolite datab...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=KNApSaCK&tagType=dataSource",
+      "catalog_page": 3
+    },
+    {
+      "name": "InterBioScreen Ltd",
+      "description_excerpt": "InterBioScreen Ltd's Natural Compound collection is globally recognized for its...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=InterBioScreen%20Ltd&tagType=dataSource",
+      "catalog_page": 3
+    },
+    {
+      "name": "InPACdb",
+      "description_excerpt": "InPACdb, the Indian Plant Anticancer Compounds Database, is a free online resour...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=InPACdb&tagType=dataSource",
+      "catalog_page": 3
+    },
+    {
+      "name": "InflamNat",
+      "description_excerpt": "The InflamNat dataset comprises natural products (NPs) reported to have anti-inf...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=InflamNat&tagType=dataSource",
+      "catalog_page": 3
+    },
+    {
+      "name": "Indofine Chemical Company",
+      "description_excerpt": "INDOFINE Chemical Company is a custom synthesis, contract research, and toll man...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=Indofine%20Chemical%20Company&tagType=dataSource",
+      "catalog_page": 3
+    },
+    {
+      "name": "HIT (Herbal Ingredients Targets)",
+      "description_excerpt": "The Herb Ingredients' Targets (HIT) database is a comprehensive and curated reso...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=HIT%20%28Herbal%20Ingredients%20Targets%29&tagType=dataSource",
+      "catalog_page": 3
+    },
+    {
+      "name": "HIM (Herbal Ingredients in-vivo Metabolism database)",
+      "description_excerpt": "The Herbal Ingredients' Metabolites (HIM) database is the most comprehensive col...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=HIM%20%28Herbal%20Ingredients%20in-vivo%20Metabolism%20database%29&tagType=dataSource",
+      "catalog_page": 3
+    },
+    {
+      "name": "GNPS (Global Natural Products Social Molecular Networking)",
+      "description_excerpt": "The Global Natural Products Social Molecular Networking (GNPS) dataset consists...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=GNPS%20%28Global%20Natural%20Products%20Social%20Molecular%20Networking%29&tagType=dataSource",
+      "catalog_page": 3
+    },
+    {
+      "name": "FooDB",
+      "description_excerpt": "FooDB is a resource for information on food constituents, chemistry and biology....",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=FooDB&tagType=dataSource",
+      "catalog_page": 3
+    },
+    {
+      "name": "Exposome-explorer",
+      "description_excerpt": "Exposome-Explorer is a comprehensive database focused on biomarkers of exposure...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=Exposome-explorer&tagType=dataSource",
+      "catalog_page": 3
+    },
+    {
+      "name": "ETM (Ethiopian Traditional Medicine) DB",
+      "description_excerpt": "The ETM-DB (Ethiopian Traditional Medicine Database) is a comprehensive dataset...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=ETM%20%28Ethiopian%20Traditional%20Medicine%29%20DB&tagType=dataSource",
+      "catalog_page": 3
+    },
+    {
+      "name": "ConMedNP",
+      "description_excerpt": "ConMedNP evaluates the medicinal potential and \"drug-likeness\" of roughly 3200 n...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=ConMedNP&tagType=dataSource",
+      "catalog_page": 3
+    },
+    {
+      "name": "CMAUP (cCollective molecular activities of useful plants)",
+      "description_excerpt": "CMAUP, the Collective Molecular Activities of Useful Plants database, provides c...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=CMAUP%20%28cCollective%20molecular%20activities%20of%20useful%20plants%29&tagType=dataSource",
+      "catalog_page": 4
+    },
+    {
+      "name": "ChemSpider NPs",
+      "description_excerpt": "ChemSpider is a free, online chemical database offering access to physical and c...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=ChemSpider%20NPs&tagType=dataSource",
+      "catalog_page": 4
+    },
+    {
+      "name": "ChEMBL NPs",
+      "description_excerpt": "ChEMBL is an open large-scale bioactivity database previously described in the 2...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=ChEMBL%20NPs&tagType=dataSource",
+      "catalog_page": 4
+    },
+    {
+      "name": "ChEBI NPs",
+      "description_excerpt": "ChEBI is a constantly growing database and ontology of chemical entities of biol...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=ChEBI%20NPs&tagType=dataSource",
+      "catalog_page": 4
+    },
+    {
+      "name": "Carotenoids Database",
+      "description_excerpt": "The Carotenoids Database contains chemical information on 1117 natural carotenoi...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=Carotenoids%20Database&tagType=dataSource",
+      "catalog_page": 4
+    },
+    {
+      "name": "BitterDB",
+      "description_excerpt": "BitterDB, introduced in 2012, is a comprehensive resource containing information...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=BitterDB&tagType=dataSource",
+      "catalog_page": 4
+    },
+    {
+      "name": "BIOFACQUIM",
+      "description_excerpt": "BIOFACQUIM is a meticulously curated compound database containing natural produc...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=BIOFACQUIM&tagType=dataSource",
+      "catalog_page": 4
+    },
+    {
+      "name": "AnalytiCon Discovery NPs",
+      "description_excerpt": "AnalytiCon's natural product database showcases their expertise in natural produ...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=AnalytiCon%20Discovery%20NPs&tagType=dataSource",
+      "catalog_page": 4
+    },
+    {
+      "name": "AfroMalariaDB",
+      "description_excerpt": "A comprehensive collection of over 500 anti-malarial compounds sourced from Afri...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=AfroMalariaDB&tagType=dataSource",
+      "catalog_page": 4
+    },
+    {
+      "name": "AfroDB",
+      "description_excerpt": "A Select Highly Potent and Diverse Natural Product Library from African Medicina...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=AfroDB&tagType=dataSource",
+      "catalog_page": 4
+    },
+    {
+      "name": "AfroCancer",
+      "description_excerpt": "AfroCancer is a curated database housing approximately 400 compounds sourced fro...",
+      "coconut_search_url": "https://coconut.naturalproducts.net/search?type=tags&q=AfroCancer&tagType=dataSource",
+      "catalog_page": 4
+    }
+  ],
+  "source_pages": [
+    {
+      "url": "https://coconut.naturalproducts.net/collections?page=1",
+      "sha256": "5f3cf8926cd581d223e844fcb2820193854ae7f5017ae35c6820fb7ce7b64b38",
+      "cards": 20
+    },
+    {
+      "url": "https://coconut.naturalproducts.net/collections?page=2",
+      "sha256": "dcd66eabb80c7df419b3d6df2b205f931e0da60490c847ae6aa2811a82b52f72",
+      "cards": 20
+    },
+    {
+      "url": "https://coconut.naturalproducts.net/collections?page=3",
+      "sha256": "bac6c986553aeca6802caf8ea5686696903ff6b1d6be78ee1a6e03e986246083",
+      "cards": 20
+    },
+    {
+      "url": "https://coconut.naturalproducts.net/collections?page=4",
+      "sha256": "28f41a353510d02d6b0e2edd1fcf3615e186c8db71a69a3b63c0d923dc48d0d1",
+      "cards": 11
+    }
+  ],
+  "scope": "Public COCONUT upstream directory only; not independent acquisition or license approval of each upstream database."
+}

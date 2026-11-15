@@ -1,0 +1,34 @@
+{
+  "source_file": "/workspace/scratch/14a752057ad3/natural-product-foundation-model/data/training/joint.csv",
+  "source_file_sha256": "ffa6f13fe47c2fca924272a18ba1d52b13bfb0cbf3d6941aa9c20e2e53dd0459",
+  "used_records_sha256": "258784ba8518c730f1dd0725aab931d8926dbc0d712cdb531e6813fca5c23f72",
+  "max_records": 10000,
+  "used_records": 3176,
+  "unique_smiles": 3171,
+  "python": "3.12.14",
+  "torch": "2.15.0+cpu",
+  "rdkit": "2026.09.2",
+  "use_graph": true,
+  "graph_encoder_supervised": true,
+  "contrastive_weight": 0.1,
+  "graph_and_fusion_contrastive_objective_enabled": true,
+  "contrastive_updates_in_selected_checkpoint": 556,
+  "graph_encoder_trained": true,
+  "fusion_trained": true,
+  "tokenizer_fitted_on": "training_partition_only",
+  "initialization": {
+    "mode": "random_initialization"
+  },
+  "unseen_token_fraction": {
+    "train": 0.0,
+    "validation": 7.886435331230284e-05,
+    "test": 0.0
+  },
+  "parameter_count": 126082,
+  "limitations": [
+    "Small research baseline, not a clinically validated model.",
+    "2D graph features, not 3D binding.",
+    "Disease tasks require separately supplied evidence and labels.",
+    "Selected CSV records are loaded into memory; this pilot is not a distributed full-corpus trainer."
+  ]
+}

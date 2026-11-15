@@ -1,0 +1,123 @@
+{
+  "release": "0.1.1",
+  "date": "2026-11-15",
+  "database_registry_entries": 37,
+  "main_algorithm_rows": 57,
+  "external_unique_entries": 68,
+  "distinct_algorithms_and_tools_including_project": 69,
+  "upstream_source_snapshots": 56,
+  "source_snapshot_status_counts": {
+    "cached_verified": 44,
+    "license_unverified_or_requires_permission": 10,
+    "downloaded_source_snapshot": 12,
+    "no_github_source_url": 2
+  },
+  "downloaded_source_files": 49,
+  "downloaded_source_bytes": 2390324546,
+  "database_status_counts": {
+    "downloaded": 11,
+    "partial": 0,
+    "failed": 1,
+    "manual": 25,
+    "blocked": 0,
+    "not_attempted": 0
+  },
+  "coconut_lotus_union": {
+    "input_rows": 955687,
+    "written": 764701,
+    "duplicate_rows": 190986,
+    "output": "data/normalized/coconut_lotus_union_compounds.csv",
+    "identity": "complete 27-character InChIKey",
+    "representative_smiles": "first input record",
+    "provenance": "all source IDs retained; raw occurrences remain separate",
+    "restored_at": "2026-11-15T01:08:37.421901+00:00",
+    "bytes": 238371765,
+    "sha256": "08765cdfebced158b308978f08dba106b878b6f87ea09c6e93da9c553a4c0685",
+    "coconut_full_keys": 728389,
+    "lotus_full_keys": 227298,
+    "intersection_full_keys": 190986,
+    "union_full_keys": 764701,
+    "licenses": [
+      "CC0-1.0",
+      "CC-BY-4.0"
+    ],
+    "warning": "Two dated exported databases only, not all known natural compounds. Actual files reacquired after prior workspace loss."
+  },
+  "tests": {
+    "tests": 39,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "joint_training": {
+    "source_file": "np-foundation/data/training/joint.csv",
+    "source_file_sha256": "ffa6f13fe47c2fca924272a18ba1d52b13bfb0cbf3d6941aa9c20e2e53dd0459",
+    "used_records_sha256": "258784ba8518c730f1dd0725aab931d8926dbc0d712cdb531e6813fca5c23f72",
+    "max_records": 10000,
+    "used_records": 3176,
+    "unique_smiles": 3171,
+    "python": "3.12.14",
+    "torch": "2.15.0+cpu",
+    "rdkit": "2026.09.2",
+    "use_graph": true,
+    "graph_encoder_supervised": true,
+    "contrastive_weight": 0.1,
+    "graph_and_fusion_contrastive_objective_enabled": true,
+    "contrastive_updates_in_selected_checkpoint": 556,
+    "graph_encoder_trained": true,
+    "fusion_trained": true,
+    "tokenizer_fitted_on": "training_partition_only",
+    "initialization": {
+      "mode": "random_initialization"
+    },
+    "unseen_token_fraction": {
+      "train": 0.0,
+      "validation": 7.886435331230284e-05,
+      "test": 0.0
+    },
+    "parameter_count": 126082,
+    "limitations": [
+      "Small research baseline, not a clinically validated model.",
+      "2D graph features, not 3D binding.",
+      "Disease tasks require separately supplied evidence and labels.",
+      "Selected CSV records are loaded into memory; this pilot is not a distributed full-corpus trainer."
+    ]
+  },
+  "joint_test": {
+    "n_rows": 476,
+    "language_token_nll": 1.821437954302449,
+    "contrastive_objective": 1.7505427360534669,
+    "contrastive_evaluable_batches": 30,
+    "tasks": {
+      "logS": {
+        "n_labels": 143,
+        "mae": 0.8073813363037831,
+        "rmse": 1.0410871070580858,
+        "normalized_mse": 0.2523067518288485
+      }
+    },
+    "supervised_objective": 0.2523067518288485
+  },
+  "same_split_baselines": {
+    "source_sha256": "ffa6f13fe47c2fca924272a18ba1d52b13bfb0cbf3d6941aa9c20e2e53dd0459",
+    "split_sha256": "5948840d83e0befed70420f6a2f4d02dd9e247fbb072e489856758a3fe7b6110",
+    "n_train_labels": 831,
+    "n_test_labels": 143,
+    "morgan_random_forest": {
+      "mae": 1.0553859239529075,
+      "rmse": 1.4053400245466026,
+      "n_labels": 143
+    },
+    "constant_training_mean": {
+      "mae": 1.862238216656989,
+      "rmse": 2.2633234308284957,
+      "n_labels": 143
+    },
+    "scope": "One pilot split; no external natural-product validation"
+  },
+  "trained_endpoints": [
+    "logS"
+  ],
+  "disease_model_status": "Evidence retrieval only; no trained or calibrated disease efficacy predictor",
+  "release_note": "Recovered code was independently retrained as model format 2; all reported metrics derive from the current checkpoint."
+}

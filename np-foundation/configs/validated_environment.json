@@ -1,0 +1,13 @@
+{
+  "platform": "Linux CPU",
+  "python": "3.12.14",
+  "versions": {
+    "torch": "2.15.0+cpu",
+    "rdkit": "2026.9.2",
+    "numpy": "2.5.4",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "pytest": "9.2.0"
+  },
+  "other_platforms": "Not executed during this build"
+}

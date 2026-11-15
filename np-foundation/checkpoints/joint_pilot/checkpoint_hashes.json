@@ -1,0 +1,8 @@
+{
+  "model.pt": "db52c82d95c4ea1c7cc5ab8408306e06b2d404d28398a9ad92bc0effcad293df",
+  "vocab.json": "d8fd7fa980f9bbd58311ca2a1708bea1b3225547f7b5d03a507642b77d4d9f38",
+  "resolved_config.json": "64ff98074f3ca8a99147894aebb171921515e69ee9f1168c48b71d515ef917df",
+  "task_states.json": "45dbd8986fa78c1ffcd6a9a4f6bac2929085bc8c281f5d044a5503a4402657c1",
+  "splits.json": "5948840d83e0befed70420f6a2f4d02dd9e247fbb072e489856758a3fe7b6110",
+  "data_manifest.json": "ef465a0a1db5027d196941abd3077d3471ddbd45a899eaec71e8af569d1c4f01"
+}

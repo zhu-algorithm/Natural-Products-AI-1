@@ -1,0 +1,19 @@
+[
+  {
+    "name": "logS",
+    "column": "logS",
+    "kind": "regression",
+    "domain": "aqueous_solubility",
+    "label_source": "ESOL measured log solubility (log10 mol/L); https://doi.org/10.1021/ci034243x",
+    "weight": 1.0,
+    "output_dim": 1,
+    "trained": true,
+    "n_train_labels": 831,
+    "trainable": true,
+    "untrained_reason": null,
+    "mean": -3.04434055354994,
+    "std": 2.0726340654979376,
+    "optimizer_updates_with_labels": 556,
+    "total_run_updates_with_labels": 695
+  }
+]

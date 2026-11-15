@@ -83,3 +83,17 @@ All outputs from this framework are computational predictions intended to genera
 - Expand the compound library with additional natural product structures and bioactivity data
 - Incorporate wet-lab feedback data to continuously calibrate model prediction accuracy
 - Extend prediction capability to ASEAN-region natural medicine resources (e.g., Tongkat Ali, cat's whiskers)
+
+## Runnable natural-product foundation module (NP-FM 0.1.1)
+
+The [`np-foundation/`](np-foundation/README.md) module connects database acquisition, molecular structure processing, SMILES/graph learning, measured-property prediction and traceable indication evidence. It contains an actually trained pilot checkpoint, reproducible splits and 39 passing tests.
+
+The catalog covers 37 data resources and 69 distinct methods/tools including this implementation. Separate downloadable archives preserve 49 acquired source files, 56 fixed-version source snapshots and a COCONUT–LOTUS union of 764,701 full-InChIKey structure entries. The raw databases retain their own licenses and are kept outside public Git history.
+
+The joint pilot uses 2,048 COCONUT structures and 1,128 ESOL measured-solubility records. Its only supervised endpoint is logS; disease output retrieves cited evidence. This release does not claim full-corpus pretraining or validated clinical efficacy prediction. See the [delivery report](np-foundation/docs/DELIVERY_STATUS.md) and [database access matrix](np-foundation/docs/DATABASES.md).
+
+```bash
+cd np-foundation
+python -m pip install -e '.[train,test]'
+npfm analyze --input examples/compounds.csv --checkpoint checkpoints/joint_pilot --output runs/analysis
+```

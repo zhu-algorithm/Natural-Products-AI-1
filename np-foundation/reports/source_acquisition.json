@@ -1,0 +1,1475 @@
+{
+  "date": "2026-11-15T01:17:01.661210+00:00",
+  "filter_version": "3",
+  "sources": [
+    {
+      "model": "NaFM",
+      "repository": "TomAIDD/NaFM-Official",
+      "code_url": "https://github.com/TomAIDD/NaFM-Official",
+      "license": "代码MIT；数据与权重独立核验",
+      "license_evidence_url": "https://github.com/TomAIDD/NaFM-Official",
+      "catalog_aliases": [
+        "NaFM"
+      ],
+      "commit": "23aa34a56e9addc3059e817819c2600436862a45",
+      "path": "upstream_sources/TomAIDD__NaFM-Official__23aa34a56e9a.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/TomAIDD/NaFM-Official/zip/23aa34a56e9addc3059e817819c2600436862a45",
+      "bytes": 44413,
+      "sha256": "2faca5054498fb82a9311ae1438c3af69c1259ef60e8bb24910ccff30bfd8e81",
+      "source_files": 29,
+      "license_files": [
+        "NaFM-Official-23aa34a56e9addc3059e817819c2600436862a45/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:12:11.064186+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "NPGPT",
+      "repository": "ohuelab/npgpt",
+      "code_url": "https://github.com/ohuelab/npgpt",
+      "license": "代码MIT；上游模型与数据独立核验",
+      "license_evidence_url": "https://github.com/ohuelab/npgpt",
+      "catalog_aliases": [
+        "NPGPT"
+      ],
+      "commit": "221757d1aac6b15f0e296a0a6179e3a40a56445c",
+      "path": "upstream_sources/ohuelab__npgpt__221757d1aac6.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/ohuelab/npgpt/zip/221757d1aac6b15f0e296a0a6179e3a40a56445c",
+      "bytes": 8643,
+      "sha256": "8247053aa920e3c1751b9f514a1f2d954ca6bad04a0e930e3e7ccb7fdb91ed77",
+      "source_files": 10,
+      "license_files": [
+        "npgpt-221757d1aac6b15f0e296a0a6179e3a40a56445c/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:12:11.153002+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "NPCLMs (Mamba/Mamba-2/GPT)",
+      "repository": "rozariwang/CLMs-for-NPs",
+      "code_url": "https://github.com/rozariwang/CLMs-for-NPs",
+      "license": "本轮官方页未见明确license；待核验",
+      "license_evidence_url": "https://github.com/rozariwang/CLMs-for-NPs",
+      "catalog_aliases": [
+        "NPCLMs (Mamba/Mamba-2/GPT)"
+      ],
+      "status": "license_unverified_or_requires_permission"
+    },
+    {
+      "model": "NP-VAE",
+      "repository": "toshikiochiai/NPVAE",
+      "code_url": "https://github.com/toshikiochiai/NPVAE",
+      "license": "定制许可：学术免费；商业使用需联系作者",
+      "license_evidence_url": "https://github.com/toshikiochiai/NPVAE",
+      "catalog_aliases": [
+        "NP-VAE"
+      ],
+      "status": "license_unverified_or_requires_permission"
+    },
+    {
+      "model": "FragFM / NPGen",
+      "repository": "lee-jwon/FragFM",
+      "code_url": "https://github.com/lee-jwon/FragFM",
+      "license": "代码MIT；数据独立核验",
+      "license_evidence_url": "https://github.com/lee-jwon/FragFM",
+      "catalog_aliases": [
+        "FragFM / NPGen"
+      ],
+      "commit": "dcc66521911c923b10df8eb8b262b21cb06344ac",
+      "path": "upstream_sources/lee-jwon__FragFM__dcc66521911c.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/lee-jwon/FragFM/zip/dcc66521911c923b10df8eb8b262b21cb06344ac",
+      "bytes": 94266,
+      "sha256": "e50962db490b945587ef2f601b0de526648ec5bae9073afd1336f7c1816a19d8",
+      "source_files": 47,
+      "license_files": [
+        "FragFM-dcc66521911c923b10df8eb8b262b21cb06344ac/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:12:16.222665+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "BGC-MLM",
+      "repository": "aswalker-lab/BGC-MLM",
+      "code_url": "https://github.com/aswalker-lab/BGC-MLM",
+      "license": "代码MIT；权重与数据独立核验",
+      "license_evidence_url": "https://github.com/aswalker-lab/BGC-MLM",
+      "catalog_aliases": [
+        "BGC-MLM"
+      ],
+      "commit": "5b6686d4aa845a7e05c7144924c0c4ede9c0520f",
+      "path": "upstream_sources/aswalker-lab__BGC-MLM__5b6686d4aa84.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/aswalker-lab/BGC-MLM/zip/5b6686d4aa845a7e05c7144924c0c4ede9c0520f",
+      "bytes": 77619,
+      "sha256": "3ef4dc5852afd538dbd86b794f9e7adb9832a38fa9b93138f7f7a281a818e188",
+      "source_files": 31,
+      "license_files": [
+        "BGC-MLM-5b6686d4aa845a7e05c7144924c0c4ede9c0520f/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:12:11.153323+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "SELFIES",
+      "repository": "the-matter-lab/selfies",
+      "code_url": "https://github.com/the-matter-lab/selfies",
+      "license": "代码Apache-2.0；依赖另核验",
+      "license_evidence_url": "https://github.com/the-matter-lab/selfies",
+      "catalog_aliases": [
+        "SELFIES"
+      ],
+      "commit": "eb6177e5f20cfd8787f2ac4423f5b38dce6eeeb8",
+      "path": "upstream_sources/the-matter-lab__selfies__eb6177e5f20c.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/the-matter-lab/selfies/zip/eb6177e5f20cfd8787f2ac4423f5b38dce6eeeb8",
+      "bytes": 1308779,
+      "sha256": "fd2b5d2eb4727b9c353437045ddff1b7eaf611e78b0edcb24c517f75d013cc30",
+      "source_files": 66,
+      "license_files": [
+        "selfies-eb6177e5f20cfd8787f2ac4423f5b38dce6eeeb8/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:12:23.607380+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "SAFE / SAFE-GPT",
+      "repository": "datamol-io/safe",
+      "code_url": "https://github.com/datamol-io/safe",
+      "license": "Apache-2.0",
+      "license_evidence_url": "https://github.com/datamol-io/safe/blob/main/LICENSE",
+      "catalog_aliases": [
+        "SAFE / SAFE-GPT"
+      ],
+      "commit": "d162d23e3e8c8a77b54c559e88a35d08b3b1d1b5",
+      "path": "upstream_sources/datamol-io__safe__d162d23e3e8c.source.zip",
+      "filter_version": "3",
+      "status": "downloaded_source_snapshot",
+      "url": "https://codeload.github.com/datamol-io/safe/zip/d162d23e3e8c8a77b54c559e88a35d08b3b1d1b5",
+      "bytes": 119715,
+      "sha256": "f629f8e2f6ad661d8fbedda24f764739ee7d1825a94502f0b5a1e3aa4ed9ae16",
+      "source_files": 61,
+      "license_files": [
+        "safe-d162d23e3e8c8a77b54c559e88a35d08b3b1d1b5/LICENSE",
+        "safe-d162d23e3e8c8a77b54c559e88a35d08b3b1d1b5/docs/license.md"
+      ],
+      "retrieved_at": "2026-11-15T01:15:36.776286+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "NPClassifier",
+      "repository": "mwang87/NP-Classifier",
+      "code_url": "https://github.com/mwang87/NP-Classifier",
+      "license": "代码MIT；分类器权重和数据独立核验",
+      "license_evidence_url": "https://github.com/mwang87/NP-Classifier",
+      "catalog_aliases": [
+        "NPClassifier"
+      ],
+      "commit": "78e52f1d27484841b303417dc2847430036092d6",
+      "path": "upstream_sources/mwang87__NP-Classifier__78e52f1d2748.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/mwang87/NP-Classifier/zip/78e52f1d27484841b303417dc2847430036092d6",
+      "bytes": 22924,
+      "sha256": "8b953ae0d0605b93c3098ef8a710452d891a8d7bb70228afc5c371d0bebe25a4",
+      "source_files": 29,
+      "license_files": [
+        "NP-Classifier-78e52f1d27484841b303417dc2847430036092d6/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:12:19.869104+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "ChemBERTa / ChemBERTa-2",
+      "repository": "seyonechithrananda/bert-loves-chemistry",
+      "code_url": "https://github.com/seyonechithrananda/bert-loves-chemistry",
+      "license": "代码MIT；具体权重独立核验",
+      "license_evidence_url": "https://github.com/seyonechithrananda/bert-loves-chemistry",
+      "catalog_aliases": [
+        "ChemBERTa / ChemBERTa-2"
+      ],
+      "commit": "695bc28cbaa0b00410711f1b2ab5953cd668530d",
+      "path": "upstream_sources/seyonechithrananda__bert-loves-chemistry__695bc28cbaa0.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/seyonechithrananda/bert-loves-chemistry/zip/695bc28cbaa0b00410711f1b2ab5953cd668530d",
+      "bytes": 208866,
+      "sha256": "b10ca8409ebcc6d6b2faf54bfec0d56ffb4a43ffac3fdec26a8e0037c25576a4",
+      "source_files": 67,
+      "license_files": [
+        "bert-loves-chemistry-695bc28cbaa0b00410711f1b2ab5953cd668530d/LICENSE",
+        "bert-loves-chemistry-695bc28cbaa0b00410711f1b2ab5953cd668530d/chemberta/bertviz_clone/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:12:27.547515+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "ChemBERTa-3",
+      "repository": "deepforestsci/chemberta3",
+      "code_url": "https://github.com/deepforestsci/chemberta3",
+      "license": "代码MIT；底层数据与权重独立核验",
+      "license_evidence_url": "https://github.com/deepforestsci/chemberta3",
+      "catalog_aliases": [
+        "ChemBERTa-3"
+      ],
+      "commit": "706f58472c351825960edc05ee9dd9aebd7bec6c",
+      "path": "upstream_sources/deepforestsci__chemberta3__706f58472c35.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/deepforestsci/chemberta3/zip/706f58472c351825960edc05ee9dd9aebd7bec6c",
+      "bytes": 177688,
+      "sha256": "8c0902749eeb86b9eacfa562ccd0377b4fb6070bb92063caa33a9a53a7661be1",
+      "source_files": 121,
+      "license_files": [
+        "chemberta3-706f58472c351825960edc05ee9dd9aebd7bec6c/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:12:24.258547+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "MoLFormer / MoLFormer-XL",
+      "repository": "IBM/molformer",
+      "code_url": "https://github.com/IBM/molformer",
+      "license": "代码Apache-2.0；具体权重独立核验",
+      "license_evidence_url": "https://github.com/IBM/molformer",
+      "catalog_aliases": [
+        "MoLFormer / MoLFormer-XL"
+      ],
+      "commit": "3b9ac434db387fadf2cf99b99def654cbf193841",
+      "path": "upstream_sources/IBM__molformer__3b9ac434db38.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/IBM/molformer/zip/3b9ac434db387fadf2cf99b99def654cbf193841",
+      "bytes": 85348,
+      "sha256": "541f689229b8a134c9b2ff01c09315149f0bd2590c21243aae20d7da7a661f0b",
+      "source_files": 51,
+      "license_files": [
+        "molformer-3b9ac434db387fadf2cf99b99def654cbf193841/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:12:27.659777+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "GP-MoLFormer",
+      "repository": "IBM/gp-molformer",
+      "code_url": "https://github.com/IBM/gp-molformer",
+      "license": "具体代码和权重许可本轮未逐项核验",
+      "license_evidence_url": "https://github.com/IBM/gp-molformer",
+      "catalog_aliases": [
+        "GP-MoLFormer"
+      ],
+      "status": "license_unverified_or_requires_permission"
+    },
+    {
+      "model": "Chemformer / MolBART",
+      "repository": "MolecularAI/Chemformer",
+      "code_url": "https://github.com/MolecularAI/Chemformer",
+      "license": "代码MIT；模型与数据独立核验",
+      "license_evidence_url": "https://github.com/MolecularAI/Chemformer",
+      "catalog_aliases": [
+        "Chemformer / MolBART"
+      ],
+      "commit": "53a2819076bd16f36131839c7fb88157cfc2ce92",
+      "path": "upstream_sources/MolecularAI__Chemformer__53a2819076bd.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/MolecularAI/Chemformer/zip/53a2819076bd16f36131839c7fb88157cfc2ce92",
+      "bytes": 91078,
+      "sha256": "e5063b406343cbf02b6ac2f680ace12f6a489b96299fa6a168772ef984593ba7",
+      "source_files": 67,
+      "license_files": [
+        "Chemformer-53a2819076bd16f36131839c7fb88157cfc2ce92/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:12:32.014974+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "MegaMolBART",
+      "repository": "NVIDIA/MegaMolBART",
+      "code_url": "https://github.com/NVIDIA/MegaMolBART",
+      "license": "BioNeMo v1.10.1文档列Apache；具体旧仓库/NGC包条款需核验",
+      "license_evidence_url": "https://github.com/NVIDIA/MegaMolBART",
+      "catalog_aliases": [
+        "MegaMolBART"
+      ],
+      "commit": "b8f29f8064a8ca1c45db5722cae34da576c70685",
+      "path": "upstream_sources/NVIDIA__MegaMolBART__b8f29f8064a8.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/NVIDIA/MegaMolBART/zip/b8f29f8064a8ca1c45db5722cae34da576c70685",
+      "bytes": 71006,
+      "sha256": "fc689ea44f36650de847ac019dc43cb99364bfac67c934947a62b623f7f3027d",
+      "source_files": 47,
+      "license_files": [
+        "MegaMolBART-b8f29f8064a8ca1c45db5722cae34da576c70685/LICENSE/license.txt"
+      ],
+      "retrieved_at": "2026-11-15T01:12:31.999169+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "ChemGPT",
+      "repository": "ncfrey/litmatter",
+      "code_url": "https://github.com/ncfrey/litmatter",
+      "license": "具体代码与模型许可本轮未逐项核验",
+      "license_evidence_url": "https://github.com/ncfrey/litmatter",
+      "catalog_aliases": [
+        "ChemGPT"
+      ],
+      "status": "license_unverified_or_requires_permission"
+    },
+    {
+      "model": "Chemprop / D-MPNN",
+      "repository": "chemprop/chemprop",
+      "code_url": "https://github.com/chemprop/chemprop",
+      "license": "代码MIT",
+      "license_evidence_url": "https://github.com/chemprop/chemprop",
+      "catalog_aliases": [
+        "Chemprop / D-MPNN"
+      ],
+      "commit": "934d43b7c2b33f4dc2439da5c1434a7a22b79ced",
+      "path": "upstream_sources/chemprop__chemprop__934d43b7c2b3.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/chemprop/chemprop/zip/934d43b7c2b33f4dc2439da5c1434a7a22b79ced",
+      "bytes": 279437,
+      "sha256": "5eeb55e3c829fc565dd1217b03062992db9eda86ff0b3cb472d51d236b8882cd",
+      "source_files": 164,
+      "license_files": [
+        "chemprop-934d43b7c2b33f4dc2439da5c1434a7a22b79ced/LICENSE.txt",
+        "chemprop-934d43b7c2b33f4dc2439da5c1434a7a22b79ced/docs/source/_static/images/logo/LICENSE.txt"
+      ],
+      "retrieved_at": "2026-11-15T01:12:43.084596+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "GROVER",
+      "repository": "tencent-ailab/grover",
+      "code_url": "https://github.com/tencent-ailab/grover",
+      "license": "代码MIT；保留Chemprop MIT版权声明；权重/数据独立核验",
+      "license_evidence_url": "https://github.com/tencent-ailab/grover/blob/main/LICENSE",
+      "catalog_aliases": [
+        "GROVER"
+      ],
+      "commit": "40b6d97098e4508687912f3c05eca369fc2c6213",
+      "path": "upstream_sources/tencent-ailab__grover__40b6d97098e4.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/tencent-ailab/grover/zip/40b6d97098e4508687912f3c05eca369fc2c6213",
+      "bytes": 59360,
+      "sha256": "1351cc86caf5b388c8862f145179b7595df6213c0b4eb86dd28eff78b6184c4d",
+      "source_files": 25,
+      "license_files": [
+        "grover-40b6d97098e4508687912f3c05eca369fc2c6213/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:12:36.623001+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "GraphMVP",
+      "repository": "chao1224/GraphMVP",
+      "code_url": "https://github.com/chao1224/GraphMVP",
+      "license": "代码MIT",
+      "license_evidence_url": "https://github.com/chao1224/GraphMVP",
+      "catalog_aliases": [
+        "GraphMVP"
+      ],
+      "commit": "80c42aff21ece462c951cfda110f8eaf866aea0c",
+      "path": "upstream_sources/chao1224__GraphMVP__80c42aff21ec.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/chao1224/GraphMVP/zip/80c42aff21ece462c951cfda110f8eaf866aea0c",
+      "bytes": 119528,
+      "sha256": "282115890bab7115efd3a4d2b0b9b8f044ab1c99c69828f242748d247d40be52",
+      "source_files": 82,
+      "license_files": [
+        "GraphMVP-80c42aff21ece462c951cfda110f8eaf866aea0c/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:12:40.412934+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "MolCLR",
+      "repository": "yuyangw/MolCLR",
+      "code_url": "https://github.com/yuyangw/MolCLR",
+      "license": "代码MIT",
+      "license_evidence_url": "https://github.com/yuyangw/MolCLR",
+      "catalog_aliases": [
+        "MolCLR"
+      ],
+      "commit": "3d3bc1912be27b0c97435fd9134f4d4c73d4c5ab",
+      "path": "upstream_sources/yuyangw__MolCLR__3d3bc1912be2.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/yuyangw/MolCLR/zip/3d3bc1912be27b0c97435fd9134f4d4c73d4c5ab",
+      "bytes": 19268,
+      "sha256": "51a4d451e5e0267e8517449a5040521d7374de4c97d0e9dcb8a6d9e88cfcdaec",
+      "source_files": 11,
+      "license_files": [
+        "MolCLR-3d3bc1912be27b0c97435fd9134f4d4c73d4c5ab/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:12:41.347351+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "Uni-Mol / Uni-Mol2",
+      "repository": "deepmodeling/Uni-Mol",
+      "code_url": "https://github.com/deepmodeling/Uni-Mol",
+      "license": "代码MIT；数据与具体权重独立核验",
+      "license_evidence_url": "https://github.com/deepmodeling/Uni-Mol",
+      "catalog_aliases": [
+        "Uni-Mol / Uni-Mol2"
+      ],
+      "commit": "90f52c41299a1a582da0f9765e9f87aa21faa16a",
+      "path": "upstream_sources/deepmodeling__Uni-Mol__90f52c41299a.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/deepmodeling/Uni-Mol/zip/90f52c41299a1a582da0f9765e9f87aa21faa16a",
+      "bytes": 247246,
+      "sha256": "fcf38aa00e10ab92a24a51cfe6df19e595f9f5d06e10f7344b5b82935cef2a3a",
+      "source_files": 143,
+      "license_files": [
+        "Uni-Mol-90f52c41299a1a582da0f9765e9f87aa21faa16a/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:12:46.075851+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "MolT5",
+      "repository": "blender-nlp/MolT5",
+      "code_url": "https://github.com/blender-nlp/MolT5",
+      "license": "代码BSD-3-Clause；底层语料独立核验",
+      "license_evidence_url": "https://github.com/blender-nlp/MolT5",
+      "catalog_aliases": [
+        "MolT5"
+      ],
+      "commit": "754f9bffa4a638e2f1386d0ca19b5c3ed0a5b4aa",
+      "path": "upstream_sources/blender-nlp__MolT5__754f9bffa4a6.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/blender-nlp/MolT5/zip/754f9bffa4a638e2f1386d0ca19b5c3ed0a5b4aa",
+      "bytes": 10019121,
+      "sha256": "594b4f189dbafc89a9796b1b7917db3630457b6b313c4287e4a9df2bcb6ea660",
+      "source_files": 49,
+      "license_files": [
+        "MolT5-754f9bffa4a638e2f1386d0ca19b5c3ed0a5b4aa/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:12:59.601364+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "BioT5 / BioT5+",
+      "repository": "QizhiPei/BioT5",
+      "code_url": "https://github.com/QizhiPei/BioT5",
+      "license": "代码MIT；各语料与具体模型条款独立核验",
+      "license_evidence_url": "https://github.com/QizhiPei/BioT5",
+      "catalog_aliases": [
+        "BioT5 / BioT5+"
+      ],
+      "commit": "cf65ae6dff63fdea8883dd17d46728a61bba386c",
+      "path": "upstream_sources/QizhiPei__BioT5__cf65ae6dff63.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/QizhiPei/BioT5/zip/cf65ae6dff63fdea8883dd17d46728a61bba386c",
+      "bytes": 97477,
+      "sha256": "adf60633eb24d6cce78266dafed0d9bb9b175adc5e721bbb5a3ba212b2e5c982",
+      "source_files": 54,
+      "license_files": [
+        "BioT5-cf65ae6dff63fdea8883dd17d46728a61bba386c/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:12:48.488340+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "MolCA",
+      "repository": "acharkq/MolCA",
+      "code_url": "https://github.com/acharkq/MolCA",
+      "license": "本轮官方页未见明确license；待核验",
+      "license_evidence_url": "https://github.com/acharkq/MolCA",
+      "catalog_aliases": [
+        "MolCA"
+      ],
+      "status": "license_unverified_or_requires_permission"
+    },
+    {
+      "model": "MoleculeSTM",
+      "repository": "chao1224/MoleculeSTM",
+      "code_url": "https://github.com/chao1224/MoleculeSTM",
+      "license": "NVIDIA自定义许可；PubChem关联文本权属须独立核验",
+      "license_evidence_url": "https://github.com/chao1224/MoleculeSTM",
+      "catalog_aliases": [
+        "MoleculeSTM"
+      ],
+      "status": "license_unverified_or_requires_permission"
+    },
+    {
+      "model": "LlaSMol / SMolInstruct",
+      "repository": "OSU-NLP-Group/LLM4Chem",
+      "code_url": "https://github.com/OSU-NLP-Group/LLM4Chem",
+      "license": "代码MIT；底座模型及数据独立核验",
+      "license_evidence_url": "https://github.com/OSU-NLP-Group/LLM4Chem",
+      "catalog_aliases": [
+        "LlaSMol / SMolInstruct"
+      ],
+      "commit": "43ab5fccd14514ddf756534d18a6917e7e11d0ae",
+      "path": "upstream_sources/OSU-NLP-Group__LLM4Chem__43ab5fccd145.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/OSU-NLP-Group/LLM4Chem/zip/43ab5fccd14514ddf756534d18a6917e7e11d0ae",
+      "bytes": 41865,
+      "sha256": "19f09827c42c5f4966a1675054517fb68408349d761685aaae8dde0a097b8ac4",
+      "source_files": 17,
+      "license_files": [
+        "LLM4Chem-43ab5fccd14514ddf756534d18a6917e7e11d0ae/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:12:48.469160+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "MolGen",
+      "repository": "zjunlp/MolGen",
+      "code_url": "https://github.com/zjunlp/MolGen",
+      "license": "代码MIT；模型和数据独立核验",
+      "license_evidence_url": "https://github.com/zjunlp/MolGen",
+      "catalog_aliases": [
+        "MolGen"
+      ],
+      "commit": "ad16142ad3b6f162126cae62f0bddbd314300dc8",
+      "path": "upstream_sources/zjunlp__MolGen__ad16142ad3b6.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/zjunlp/MolGen/zip/ad16142ad3b6f162126cae62f0bddbd314300dc8",
+      "bytes": 78803,
+      "sha256": "68c24cb26847bd5ab8dedf96c4d54e0dc89e658d3e3453160f757aa75ebf11c8",
+      "source_files": 30,
+      "license_files": [
+        "MolGen-ad16142ad3b6f162126cae62f0bddbd314300dc8/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:12:56.230869+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "DiffDock / DiffDock-L",
+      "repository": "gcorso/DiffDock",
+      "code_url": "https://github.com/gcorso/DiffDock",
+      "license": "代码和模型权重MIT（官方README）",
+      "license_evidence_url": "https://github.com/gcorso/DiffDock",
+      "catalog_aliases": [
+        "DiffDock / DiffDock-L"
+      ],
+      "commit": "85c49b60d3e0b0182a59ee43a34a6d7036981284",
+      "path": "upstream_sources/gcorso__DiffDock__85c49b60d3e0.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/gcorso/DiffDock/zip/85c49b60d3e0b0182a59ee43a34a6d7036981284",
+      "bytes": 141903,
+      "sha256": "1c2bb7b346d8919ef87b9b8ec7ed8c77c3562f1c64d305dc3e780c067e544be1",
+      "source_files": 65,
+      "license_files": [
+        "DiffDock-85c49b60d3e0b0182a59ee43a34a6d7036981284/LICENSE",
+        "DiffDock-85c49b60d3e0b0182a59ee43a34a6d7036981284/spyrmsd/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:12:54.067729+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "TargetDiff",
+      "repository": "guanjq/targetdiff",
+      "code_url": "https://github.com/guanjq/targetdiff",
+      "license": "本轮官方页未见明确license；待核验",
+      "license_evidence_url": "https://github.com/guanjq/targetdiff",
+      "catalog_aliases": [
+        "TargetDiff"
+      ],
+      "status": "license_unverified_or_requires_permission"
+    },
+    {
+      "model": "DiffSBDD",
+      "repository": "arneschneuing/DiffSBDD",
+      "code_url": "https://github.com/arneschneuing/DiffSBDD",
+      "license": "代码MIT；数据与权重独立核验",
+      "license_evidence_url": "https://github.com/arneschneuing/DiffSBDD",
+      "catalog_aliases": [
+        "DiffSBDD"
+      ],
+      "commit": "5d0d38d16c8932a0339fd2ce3f67ade98bbdff27",
+      "path": "upstream_sources/arneschneuing__DiffSBDD__5d0d38d16c89.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/arneschneuing/DiffSBDD/zip/5d0d38d16c8932a0339fd2ce3f67ade98bbdff27",
+      "bytes": 93536,
+      "sha256": "7d85080172b2cd1e0bdc391610591d1d529e979f3f2b72e038983206eca34a2b",
+      "source_files": 34,
+      "license_files": [
+        "DiffSBDD-5d0d38d16c8932a0339fd2ce3f67ade98bbdff27/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:12:54.208989+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "FlowMol3",
+      "repository": "Dunni3/FlowMol",
+      "code_url": "https://github.com/Dunni3/FlowMol",
+      "license": "具体许可本轮未逐项核验",
+      "license_evidence_url": "https://github.com/Dunni3/FlowMol",
+      "catalog_aliases": [
+        "FlowMol3"
+      ],
+      "status": "license_unverified_or_requires_permission"
+    },
+    {
+      "model": "REINVENT4",
+      "repository": "MolecularAI/REINVENT4",
+      "code_url": "https://github.com/MolecularAI/REINVENT4",
+      "license": "代码Apache-2.0；各模型/打分器独立核验",
+      "license_evidence_url": "https://github.com/MolecularAI/REINVENT4",
+      "catalog_aliases": [
+        "REINVENT4"
+      ],
+      "commit": "0f075b349ed22015e0406350c6f426701bb0815d",
+      "path": "upstream_sources/MolecularAI__REINVENT4__0f075b349ed2.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/MolecularAI/REINVENT4/zip/0f075b349ed22015e0406350c6f426701bb0815d",
+      "bytes": 754893,
+      "sha256": "637486d450ab282bfc2618456cae7a590224d2d4e67f40cc60cb77cca4c7b849",
+      "source_files": 706,
+      "license_files": [
+        "REINVENT4-0f075b349ed22015e0406350c6f426701bb0815d/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:13:29.781622+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "RxnFlow",
+      "repository": "SeonghwanSeo/RxnFlow",
+      "code_url": "https://github.com/SeonghwanSeo/RxnFlow",
+      "license": "代码MIT；砌块、反应库及权重独立核验",
+      "license_evidence_url": "https://github.com/SeonghwanSeo/RxnFlow",
+      "catalog_aliases": [
+        "RxnFlow"
+      ],
+      "commit": "0693e9825d89552ef5dc5ea8f265a2581dfa62a6",
+      "path": "upstream_sources/SeonghwanSeo__RxnFlow__0693e9825d89.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/SeonghwanSeo/RxnFlow/zip/0693e9825d89552ef5dc5ea8f265a2581dfa62a6",
+      "bytes": 102552,
+      "sha256": "50cf054a3d04c46a220d94e4f8b830c4a15e2073d96f7d33e830e91f06178420",
+      "source_files": 57,
+      "license_files": [
+        "RxnFlow-0693e9825d89552ef5dc5ea8f265a2581dfa62a6/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:13:03.939170+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "AiZynthFinder",
+      "repository": "MolecularAI/aizynthfinder",
+      "code_url": "https://github.com/MolecularAI/aizynthfinder",
+      "license": "代码MIT；反应模型和库存独立核验",
+      "license_evidence_url": "https://github.com/MolecularAI/aizynthfinder",
+      "catalog_aliases": [
+        "AiZynthFinder"
+      ],
+      "commit": "21ff546d5f22331b078390a2f12dc04defc3f39c",
+      "path": "upstream_sources/MolecularAI__aizynthfinder__21ff546d5f22.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/MolecularAI/aizynthfinder/zip/21ff546d5f22331b078390a2f12dc04defc3f39c",
+      "bytes": 227269,
+      "sha256": "4f2b4cef927f79f4d75a64ed36672098ec8ded5f31a7a8092b5c0d057268e660",
+      "source_files": 137,
+      "license_files": [
+        "aizynthfinder-21ff546d5f22331b078390a2f12dc04defc3f39c/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:13:03.997271+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "SynFormer",
+      "repository": "wenhao-gao/synformer",
+      "code_url": "https://github.com/wenhao-gao/synformer",
+      "license": "代码Apache-2.0；Enamine预处理砌块数据仅研究，商业需权限",
+      "license_evidence_url": "https://github.com/wenhao-gao/synformer",
+      "catalog_aliases": [
+        "SynFormer"
+      ],
+      "commit": "bef02bc4481adf3ed792090fc6169331d4d0553a",
+      "path": "upstream_sources/wenhao-gao__synformer__bef02bc4481a.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/wenhao-gao/synformer/zip/bef02bc4481adf3ed792090fc6169331d4d0553a",
+      "bytes": 91390,
+      "sha256": "d73338aa29302f214f0eed1db9931a18ee458f7265ba7db90507b8fb875fdee2",
+      "source_files": 69,
+      "license_files": [
+        "synformer-bef02bc4481adf3ed792090fc6169331d4d0553a/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:13:08.660849+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "RetroBioCat",
+      "repository": "willfinnigan/retrobiocat",
+      "code_url": "https://github.com/willfinnigan/retrobiocat",
+      "license": "原始论文明确代码MIT",
+      "license_evidence_url": "https://github.com/willfinnigan/retrobiocat",
+      "catalog_aliases": [
+        "RetroBioCat"
+      ],
+      "commit": "55b8fe840d6b16914f4ab09ebe97309c3c3bdb90",
+      "path": "upstream_sources/willfinnigan__retrobiocat__55b8fe840d6b.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/willfinnigan/retrobiocat/zip/55b8fe840d6b16914f4ab09ebe97309c3c3bdb90",
+      "bytes": 4010061,
+      "sha256": "27234e88f9ce20d2a4d83637639375ab66445acbeb2bc0caa0bf98f45a11e245",
+      "source_files": 380,
+      "license_files": [
+        "RetroBioCat-55b8fe840d6b16914f4ab09ebe97309c3c3bdb90/LICENSE",
+        "RetroBioCat-55b8fe840d6b16914f4ab09ebe97309c3c3bdb90/retrobiocat_web/app/static/js/vis/LICENSE-APACHE-2.0",
+        "RetroBioCat-55b8fe840d6b16914f4ab09ebe97309c3c3bdb90/retrobiocat_web/app/static/js/vis/LICENSE-MIT"
+      ],
+      "retrieved_at": "2026-11-15T01:13:15.348713+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "RDKit / ETKDGv3 / BRICS",
+      "repository": "rdkit/rdkit",
+      "code_url": "https://github.com/rdkit/rdkit",
+      "license": "RDKit主体BSD-3-Clause；具体依赖独立核验",
+      "license_evidence_url": "https://github.com/rdkit/rdkit",
+      "catalog_aliases": [
+        "RDKit / ETKDGv3 / BRICS",
+        "NP-likeness score",
+        "RDKit Pharm2D / Pharm3D",
+        "RDKit shape alignment"
+      ],
+      "commit": "79045367d04b6f9d11e29ae73f3e1d6b210d9641",
+      "path": "upstream_sources/rdkit__rdkit__79045367d04b.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/rdkit/rdkit/zip/79045367d04b6f9d11e29ae73f3e1d6b210d9641",
+      "bytes": 8277835,
+      "sha256": "7ccb990de9b1af1040488eee1e01eaafa9f3c3d1f0ce14409b9032e17dd4905f",
+      "source_files": 2839,
+      "license_files": [
+        "rdkit-79045367d04b6f9d11e29ae73f3e1d6b210d9641/Code/GraphMol/ChemReactions/license.txt",
+        "rdkit-79045367d04b6f9d11e29ae73f3e1d6b210d9641/Code/GraphMol/MolDraw2D/Qt/Demo/LICENSE",
+        "rdkit-79045367d04b6f9d11e29ae73f3e1d6b210d9641/license.txt"
+      ],
+      "retrieved_at": "2026-11-15T01:13:20.097330+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "Morgan fingerprints + XGBoost",
+      "repository": "dmlc/xgboost",
+      "code_url": "https://github.com/dmlc/xgboost",
+      "license": "XGBoost代码Apache-2.0；RDKit指纹BSD-3-Clause",
+      "license_evidence_url": "https://github.com/dmlc/xgboost",
+      "catalog_aliases": [
+        "Morgan fingerprints + XGBoost"
+      ],
+      "commit": "293cad1a89ab749e3266e190c68118af2db09982",
+      "path": "upstream_sources/dmlc__xgboost__293cad1a89ab.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/dmlc/xgboost/zip/293cad1a89ab749e3266e190c68118af2db09982",
+      "bytes": 2654888,
+      "sha256": "c468d16bcd83cbba7ce85efd082e8fbae0e4a578413172c4f2a4352bfe436648",
+      "source_files": 1183,
+      "license_files": [
+        "xgboost-293cad1a89ab749e3266e190c68118af2db09982/LICENSE",
+        "xgboost-293cad1a89ab749e3266e190c68118af2db09982/jvm-packages/xgboost4j-example/LICENSE",
+        "xgboost-293cad1a89ab749e3266e190c68118af2db09982/jvm-packages/xgboost4j/LICENSE",
+        "xgboost-293cad1a89ab749e3266e190c68118af2db09982/python-package/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:13:17.638640+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "antiSMASH",
+      "repository": "antismash/antismash",
+      "code_url": "https://github.com/antismash/antismash",
+      "license": "AGPLv3+",
+      "license_evidence_url": "https://github.com/antismash/antismash",
+      "catalog_aliases": [
+        "antiSMASH"
+      ],
+      "commit": "d83996316e480f5bfffc3810f3b4fed1bd501699",
+      "path": "upstream_sources/antismash__antismash__d83996316e48.source.zip",
+      "filter_version": "3",
+      "status": "downloaded_source_snapshot",
+      "url": "https://codeload.github.com/antismash/antismash/zip/d83996316e480f5bfffc3810f3b4fed1bd501699",
+      "bytes": 978651,
+      "sha256": "bdcc80ac680a061933fe7d9126fd4a96c2ef7a72e9306cc528907051961909d3",
+      "source_files": 432,
+      "license_files": [
+        "antismash-d83996316e480f5bfffc3810f3b4fed1bd501699/LICENSE.txt"
+      ],
+      "retrieved_at": "2026-11-15T01:16:15.348039+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "AutoDock Vina",
+      "repository": "forlilab/AutoDock-Vina",
+      "code_url": "https://github.com/forlilab/AutoDock-Vina",
+      "license": "代码Apache-2.0",
+      "license_evidence_url": "https://github.com/forlilab/AutoDock-Vina",
+      "catalog_aliases": [
+        "AutoDock Vina"
+      ],
+      "commit": "bb64e5e26b520569a86360d69248069b5e665b3f",
+      "path": "upstream_sources/forlilab__AutoDock-Vina__bb64e5e26b52.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/forlilab/AutoDock-Vina/zip/bb64e5e26b520569a86360d69248069b5e665b3f",
+      "bytes": 224946,
+      "sha256": "c4565ce15dc3d7c1353c122bbc45da1347de611f1e481bad5383b20b1d31c940",
+      "source_files": 101,
+      "license_files": [
+        "AutoDock-Vina-bb64e5e26b520569a86360d69248069b5e665b3f/LICENSE",
+        "AutoDock-Vina-bb64e5e26b520569a86360d69248069b5e665b3f/build/python/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:13:33.069259+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "GNINA",
+      "repository": "gnina/gnina",
+      "code_url": "https://github.com/gnina/gnina",
+      "license": "Apache与GPL；默认OpenBabel依赖涉及GPL，不能标Apache-only",
+      "license_evidence_url": "https://github.com/gnina/gnina",
+      "catalog_aliases": [
+        "GNINA"
+      ],
+      "commit": "0002d8b59bbc62aa1d1ff165cacc79e76b0d4452",
+      "path": "upstream_sources/gnina__gnina__0002d8b59bbc.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/gnina/gnina/zip/0002d8b59bbc62aa1d1ff165cacc79e76b0d4452",
+      "bytes": 1643304,
+      "sha256": "9c46f92f3ff83439e2540da05f563e19745cd256b822bfa411991ea26cc91ffe",
+      "source_files": 598,
+      "license_files": [
+        "gnina-0002d8b59bbc62aa1d1ff165cacc79e76b0d4452/LICENSE.APACHE",
+        "gnina-0002d8b59bbc62aa1d1ff165cacc79e76b0d4452/LICENSE.GNU",
+        "gnina-0002d8b59bbc62aa1d1ff165cacc79e76b0d4452/docs/rsc_workshop2021/reveal.js/LICENSE",
+        "gnina-0002d8b59bbc62aa1d1ff165cacc79e76b0d4452/docs/rsc_workshop2021/reveal.js/lib/font/league-gothic/LICENSE",
+        "gnina-0002d8b59bbc62aa1d1ff165cacc79e76b0d4452/docs/rsc_workshop2021/reveal.js/lib/font/source-sans-pro/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:13:31.434219+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "OpenMM",
+      "repository": "openmm/openmm",
+      "code_url": "https://github.com/openmm/openmm",
+      "license": "分组件MIT/LGPL；保留发行版许可证",
+      "license_evidence_url": "https://github.com/openmm/openmm",
+      "catalog_aliases": [
+        "OpenMM"
+      ],
+      "commit": "3e34aa2091bfff5306206b4239c4654776342fd8",
+      "path": "upstream_sources/openmm__openmm__3e34aa2091bf.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/openmm/openmm/zip/3e34aa2091bfff5306206b4239c4654776342fd8",
+      "bytes": 6309829,
+      "sha256": "bae4fb45faf2106f16efeb3ce3b70994ff955793c52217ae4be4dc05064796bb",
+      "source_files": 2057,
+      "license_files": [
+        "openmm-3e34aa2091bfff5306206b4239c4654776342fd8/docs-source/developerguide/license.rst",
+        "openmm-3e34aa2091bfff5306206b4239c4654776342fd8/docs-source/licenses/Licenses.txt",
+        "openmm-3e34aa2091bfff5306206b4239c4654776342fd8/docs-source/usersguide/license.rst",
+        "openmm-3e34aa2091bfff5306206b4239c4654776342fd8/libraries/asmjit/asmjit/LICENSE.md",
+        "openmm-3e34aa2091bfff5306206b4239c4654776342fd8/libraries/metal-cpp/LICENSE.txt",
+        "openmm-3e34aa2091bfff5306206b4239c4654776342fd8/libraries/sfmt/LICENSE.txt"
+      ],
+      "retrieved_at": "2026-11-15T01:11:57.341129+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "GROMACS",
+      "repository": "gromacs/gromacs",
+      "code_url": "https://github.com/gromacs/gromacs",
+      "license": "LGPL-2.1-or-later",
+      "license_evidence_url": "https://github.com/gromacs/gromacs",
+      "catalog_aliases": [
+        "GROMACS"
+      ],
+      "commit": "fb41eeec500d25d643adcefa8296e02514cab4fa",
+      "path": "upstream_sources/gromacs__gromacs__fb41eeec500d.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/gromacs/gromacs/zip/fb41eeec500d25d643adcefa8296e02514cab4fa",
+      "bytes": 25580911,
+      "sha256": "c77d64942b0daf9835d92854aaa7b2e4c196fb02f87a86e1e05a8695fc71d946",
+      "source_files": 7839,
+      "license_files": [
+        "gromacs-fb41eeec500d25d643adcefa8296e02514cab4fa/COPYING",
+        "gromacs-fb41eeec500d25d643adcefa8296e02514cab4fa/admin/copyright.py",
+        "gromacs-fb41eeec500d25d643adcefa8296e02514cab4fa/admin/copyright.sh",
+        "gromacs-fb41eeec500d25d643adcefa8296e02514cab4fa/docs/reference-manual/plots/GMX_logos/LICENSE.txt",
+        "gromacs-fb41eeec500d25d643adcefa8296e02514cab4fa/python_packaging/gmxapi/LICENSE",
+        "gromacs-fb41eeec500d25d643adcefa8296e02514cab4fa/src/external/boost/LICENSE",
+        "gromacs-fb41eeec500d25d643adcefa8296e02514cab4fa/src/external/clFFT/LICENSE",
+        "gromacs-fb41eeec500d25d643adcefa8296e02514cab4fa/src/external/clFFT/NOTICE",
+        "gromacs-fb41eeec500d25d643adcefa8296e02514cab4fa/src/external/googletest/LICENSE",
+        "gromacs-fb41eeec500d25d643adcefa8296e02514cab4fa/src/external/lmfit/LICENSE",
+        "gromacs-fb41eeec500d25d643adcefa8296e02514cab4fa/src/external/mmcif-dict-suite/LICENSE",
+        "gromacs-fb41eeec500d25d643adcefa8296e02514cab4fa/src/external/muparser/LICENSE",
+        "gromacs-fb41eeec500d25d643adcefa8296e02514cab4fa/src/external/scope_guard/LICENSE",
+        "gromacs-fb41eeec500d25d643adcefa8296e02514cab4fa/src/external/sz3/copyright-and-BSD-license.txt",
+        "gromacs-fb41eeec500d25d643adcefa8296e02514cab4fa/src/external/sz3/tools/zstd/COPYING",
+        "gromacs-fb41eeec500d25d643adcefa8296e02514cab4fa/src/external/sz3/tools/zstd/LICENSE",
+        "gromacs-fb41eeec500d25d643adcefa8296e02514cab4fa/src/external/thread_mpi/LICENSE",
+        "gromacs-fb41eeec500d25d643adcefa8296e02514cab4fa/src/external/tinyxml2/LICENSE.txt",
+        "gromacs-fb41eeec500d25d643adcefa8296e02514cab4fa/src/external/tng_io/COPYING"
+      ],
+      "retrieved_at": "2026-11-15T01:12:01.006196+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "OpenFF Toolkit",
+      "repository": "openforcefield/openff-toolkit",
+      "code_url": "https://github.com/openforcefield/openff-toolkit",
+      "license": "代码MIT；可选商业依赖独立核验",
+      "license_evidence_url": "https://github.com/openforcefield/openff-toolkit",
+      "catalog_aliases": [
+        "OpenFF Toolkit"
+      ],
+      "commit": "ec093f910089d930dd556c6939673ce5be6fc58c",
+      "path": "upstream_sources/openforcefield__openff-toolkit__ec093f910089.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/openforcefield/openff-toolkit/zip/ec093f910089d930dd556c6939673ce5be6fc58c",
+      "bytes": 1246864,
+      "sha256": "fced1405f0f52b7d847d47e619e287bff02d183668196d568e50c5149b420bc3",
+      "source_files": 147,
+      "license_files": [
+        "openff-toolkit-ec093f910089d930dd556c6939673ce5be6fc58c/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:13:38.663439+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "PySCF",
+      "repository": "pyscf/pyscf",
+      "code_url": "https://github.com/pyscf/pyscf",
+      "license": "代码Apache-2.0；外部库独立核验",
+      "license_evidence_url": "https://github.com/pyscf/pyscf",
+      "catalog_aliases": [
+        "PySCF"
+      ],
+      "commit": "3ac3bd11914d9bc57c9e299eab6e040fc29fa79c",
+      "path": "upstream_sources/pyscf__pyscf__3ac3bd11914d.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/pyscf/pyscf/zip/3ac3bd11914d9bc57c9e299eab6e040fc29fa79c",
+      "bytes": 7783045,
+      "sha256": "64655fe79c90b872342cc40d70d77bc6141ccaf910def2d79572184bb3841cb4",
+      "source_files": 1994,
+      "license_files": [
+        "pyscf-3ac3bd11914d9bc57c9e299eab6e040fc29fa79c/LICENSE",
+        "pyscf-3ac3bd11914d9bc57c9e299eab6e040fc29fa79c/NOTICE"
+      ],
+      "retrieved_at": "2026-11-15T01:13:39.161797+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "xTB",
+      "repository": "grimme-lab/xtb",
+      "code_url": "https://github.com/grimme-lab/xtb",
+      "license": "LGPL-3.0；发行版亦含GPL许可文本，保留组件说明",
+      "license_evidence_url": "https://github.com/grimme-lab/xtb",
+      "catalog_aliases": [
+        "xTB"
+      ],
+      "commit": "4b8c987066c7e9bd0c2b727ce026fb9a581c273a",
+      "path": "upstream_sources/grimme-lab__xtb__4b8c987066c7.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/grimme-lab/xtb/zip/4b8c987066c7e9bd0c2b727ce026fb9a581c273a",
+      "bytes": 2183581,
+      "sha256": "154ac90f4b6e80f85079356779053ebf270d938430c5eb71ce7a9f44559fabff",
+      "source_files": 469,
+      "license_files": [
+        "xtb-4b8c987066c7e9bd0c2b727ce026fb9a581c273a/COPYING",
+        "xtb-4b8c987066c7e9bd0c2b727ce026fb9a581c273a/COPYING.LESSER",
+        "xtb-4b8c987066c7e9bd0c2b727ce026fb9a581c273a/src/solv/ddcosmo/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:11:53.497855+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "mmpdb",
+      "repository": "rdkit/mmpdb",
+      "code_url": "https://github.com/rdkit/mmpdb",
+      "license": "BSD-3-Clause；部分源文件保留MIT来源",
+      "license_evidence_url": "https://github.com/rdkit/mmpdb",
+      "catalog_aliases": [
+        "mmpdb"
+      ],
+      "commit": "f98373614446cbee24a7963517e3e86b82b03b92",
+      "path": "upstream_sources/rdkit__mmpdb__f98373614446.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/rdkit/mmpdb/zip/f98373614446cbee24a7963517e3e86b82b03b92",
+      "bytes": 266351,
+      "sha256": "926265c897b2e774724fd16481d2813519ea291ddcfde930845d236a2ae9caa6",
+      "source_files": 59,
+      "license_files": [
+        "mmpdb-f98373614446cbee24a7963517e3e86b82b03b92/LICENSE.txt"
+      ],
+      "retrieved_at": "2026-11-15T01:11:53.193400+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "BoTorch",
+      "repository": "meta-pytorch/botorch",
+      "code_url": "https://github.com/meta-pytorch/botorch",
+      "license": "代码MIT",
+      "license_evidence_url": "https://github.com/meta-pytorch/botorch",
+      "catalog_aliases": [
+        "BoTorch"
+      ],
+      "commit": "194c19ad06bc9a360d93cb2e368dc92a4df882e1",
+      "path": "upstream_sources/meta-pytorch__botorch__194c19ad06bc.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/meta-pytorch/botorch/zip/194c19ad06bc9a360d93cb2e368dc92a4df882e1",
+      "bytes": 1749678,
+      "sha256": "06cd8e0c7abd586563cb52c191ee03061d2ea1169bb73d210468e6429bdb6c34",
+      "source_files": 552,
+      "license_files": [
+        "botorch-194c19ad06bc9a360d93cb2e368dc92a4df882e1/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:13:41.391388+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "OpenFE",
+      "repository": "OpenFreeEnergy/openfe",
+      "code_url": "https://github.com/OpenFreeEnergy/openfe",
+      "license": "代码MIT；底层MD和力场组件各自许可",
+      "license_evidence_url": "https://github.com/OpenFreeEnergy/openfe",
+      "catalog_aliases": [
+        "OpenFE"
+      ],
+      "commit": "7652a16fea4d6d0e63a03404bc5a7474c34eaa6f",
+      "path": "upstream_sources/OpenFreeEnergy__openfe__7652a16fea4d.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/OpenFreeEnergy/openfe/zip/7652a16fea4d6d0e63a03404bc5a7474c34eaa6f",
+      "bytes": 786657,
+      "sha256": "4461e2059db70b7faf52e384b530cc0cdb46d6fa1063df280f97b56e7ea5e455",
+      "source_files": 370,
+      "license_files": [
+        "openfe-7652a16fea4d6d0e63a03404bc5a7474c34eaa6f/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:13:45.928878+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "alchemlyb",
+      "repository": "alchemistry/alchemlyb",
+      "code_url": "https://github.com/alchemistry/alchemlyb",
+      "license": "代码BSD-3-Clause；PyMBAR等依赖独立保留许可",
+      "license_evidence_url": "https://github.com/alchemistry/alchemlyb",
+      "catalog_aliases": [
+        "alchemlyb"
+      ],
+      "commit": "2ee6900be44bb4971227433ec4ce889d0994a41c",
+      "path": "upstream_sources/alchemistry__alchemlyb__2ee6900be44b.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/alchemistry/alchemlyb/zip/2ee6900be44bb4971227433ec4ce889d0994a41c",
+      "bytes": 178088,
+      "sha256": "9a7623b1a91ddb8ee822b4deb27b752294a59f674e7ffcaba5e85eaea90e4551",
+      "source_files": 101,
+      "license_files": [
+        "alchemlyb-2ee6900be44bb4971227433ec4ce889d0994a41c/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:13:45.174673+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "PoseBusters",
+      "repository": "maabuu/posebusters",
+      "code_url": "https://github.com/maabuu/posebusters",
+      "license": "代码MIT",
+      "license_evidence_url": "https://github.com/maabuu/posebusters",
+      "catalog_aliases": [
+        "PoseBusters"
+      ],
+      "commit": "5fa994f92ffe50a2bcdd2b9665057c8b70576834",
+      "path": "upstream_sources/maabuu__posebusters__5fa994f92ffe.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/maabuu/posebusters/zip/5fa994f92ffe50a2bcdd2b9665057c8b70576834",
+      "bytes": 105182,
+      "sha256": "23adf98357f72e1f066a98395c78242ed7eaef6a092cc8856a0af09ce0fd6636",
+      "source_files": 66,
+      "license_files": [
+        "posebusters-5fa994f92ffe50a2bcdd2b9665057c8b70576834/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:13:45.767214+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "ADMET-AI",
+      "repository": "swansonk14/admet_ai",
+      "code_url": "https://github.com/swansonk14/admet_ai",
+      "license": "代码MIT；发布权重与数据独立核验",
+      "license_evidence_url": "https://github.com/swansonk14/admet_ai",
+      "catalog_aliases": [
+        "ADMET-AI"
+      ],
+      "commit": "c65bf0418e19c65d7228f9e40da5d0152aade756",
+      "path": "upstream_sources/swansonk14__admet_ai__c65bf0418e19.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/swansonk14/admet_ai/zip/c65bf0418e19c65d7228f9e40da5d0152aade756",
+      "bytes": 831937,
+      "sha256": "75f2fad319f77b54a10483d2d368b533f6ec22c8ce5d0342cfac2fb5aaa48bbe",
+      "source_files": 77,
+      "license_files": [
+        "admet_ai-c65bf0418e19c65d7228f9e40da5d0152aade756/LICENSE.txt",
+        "admet_ai-c65bf0418e19c65d7228f9e40da5d0152aade756/admet_ai/web/app/static/jsme/license.txt"
+      ],
+      "retrieved_at": "2026-11-15T01:13:52.339047+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "PyMBAR",
+      "repository": "choderalab/pymbar",
+      "code_url": "https://github.com/choderalab/pymbar",
+      "license": "代码MIT",
+      "license_evidence_url": "https://github.com/choderalab/pymbar",
+      "catalog_aliases": [
+        "PyMBAR"
+      ],
+      "commit": "ed40ec3bbef03bb08938ad1a74d459b0d1ab81f7",
+      "path": "upstream_sources/choderalab__pymbar__ed40ec3bbef0.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/choderalab/pymbar/zip/ed40ec3bbef03bb08938ad1a74d459b0d1ab81f7",
+      "bytes": 230741,
+      "sha256": "fdcea2a50c6525461ed431c9d746411b828e1c52f7986692e196207571c96788",
+      "source_files": 74,
+      "license_files": [
+        "pymbar-ed40ec3bbef03bb08938ad1a74d459b0d1ab81f7/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:13:53.627641+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "Morgan fingerprints + Random Forest (scikit-learn)",
+      "repository": "scikit-learn/scikit-learn",
+      "code_url": "https://github.com/scikit-learn/scikit-learn",
+      "license": "scikit-learn代码BSD-3-Clause；RDKit指纹BSD-3-Clause",
+      "license_evidence_url": "https://github.com/scikit-learn/scikit-learn",
+      "catalog_aliases": [
+        "Morgan fingerprints + Random Forest (scikit-learn)"
+      ],
+      "commit": "ee56c8b5d809dc7b970a140ed501269b63c69cf8",
+      "path": "upstream_sources/scikit-learn__scikit-learn__ee56c8b5d809.source.zip",
+      "filter_version": "3",
+      "status": "cached_verified",
+      "url": "https://codeload.github.com/scikit-learn/scikit-learn/zip/ee56c8b5d809dc7b970a140ed501269b63c69cf8",
+      "bytes": 5009892,
+      "sha256": "6fe1b1a735c9eae32f41fd37d881f6e02fab1eab3f7296f87a360ce497d0dd1f",
+      "source_files": 1219,
+      "license_files": [
+        "scikit-learn-ee56c8b5d809dc7b970a140ed501269b63c69cf8/COPYING",
+        "scikit-learn-ee56c8b5d809dc7b970a140ed501269b63c69cf8/sklearn/externals/array_api_compat/LICENSE",
+        "scikit-learn-ee56c8b5d809dc7b970a140ed501269b63c69cf8/sklearn/externals/array_api_extra/LICENSE",
+        "scikit-learn-ee56c8b5d809dc7b970a140ed501269b63c69cf8/sklearn/svm/src/liblinear/COPYRIGHT"
+      ],
+      "retrieved_at": "2026-11-15T01:13:52.576460+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "ConPLex",
+      "repository": "samsledje/ConPLex",
+      "code_url": "https://github.com/samsledje/ConPLex",
+      "license": "MIT；所用蛋白编码器和训练数据单独核验",
+      "license_evidence_url": "https://github.com/samsledje/ConPLex",
+      "catalog_aliases": [
+        "ConPLex"
+      ],
+      "commit": "ccd8c804a76dff41649e58f692293b55c8907129",
+      "path": "upstream_sources/samsledje__ConPLex__ccd8c804a76d.source.zip",
+      "filter_version": "3",
+      "status": "downloaded_source_snapshot",
+      "url": "https://codeload.github.com/samsledje/ConPLex/zip/ccd8c804a76dff41649e58f692293b55c8907129",
+      "bytes": 54999,
+      "sha256": "3f419ef4201e033469a9e2f7202d8b0c33c99420807ffff093c5eb9c90d86668",
+      "source_files": 46,
+      "license_files": [
+        "ConPLex-ccd8c804a76dff41649e58f692293b55c8907129/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:16:30.903166+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "MolTrans",
+      "repository": "kexinhuang12345/MolTrans",
+      "code_url": "https://github.com/kexinhuang12345/MolTrans",
+      "license": "BSD-3-Clause；数据与权重独立核验",
+      "license_evidence_url": "https://github.com/kexinhuang12345/MolTrans",
+      "catalog_aliases": [
+        "MolTrans"
+      ],
+      "commit": "47ac16b8c158b080ba6cdaec74cd7aa9c1332b73",
+      "path": "upstream_sources/kexinhuang12345__MolTrans__47ac16b8c158.source.zip",
+      "filter_version": "3",
+      "status": "downloaded_source_snapshot",
+      "url": "https://codeload.github.com/kexinhuang12345/MolTrans/zip/47ac16b8c158b080ba6cdaec74cd7aa9c1332b73",
+      "bytes": 157786,
+      "sha256": "762b0b5fcf310bd308964421c47a32312ecf381cb205a6fb6086ee99d717b2f4",
+      "source_files": 10,
+      "license_files": [
+        "MolTrans-47ac16b8c158b080ba6cdaec74cd7aa9c1332b73/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:16:37.774674+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "DrugBAN",
+      "repository": "peizhenbai/DrugBAN",
+      "code_url": "https://github.com/peizhenbai/DrugBAN",
+      "license": "MIT；数据与权重独立核验",
+      "license_evidence_url": "https://github.com/peizhenbai/DrugBAN",
+      "catalog_aliases": [
+        "DrugBAN"
+      ],
+      "commit": "9923f8c99959e00263103ff9ac61ba0eaccc8e02",
+      "path": "upstream_sources/peizhenbai__DrugBAN__9923f8c99959.source.zip",
+      "filter_version": "3",
+      "status": "downloaded_source_snapshot",
+      "url": "https://codeload.github.com/peizhenbai/DrugBAN/zip/9923f8c99959e00263103ff9ac61ba0eaccc8e02",
+      "bytes": 19557,
+      "sha256": "c3e6446cf03a27f53183ccbd2845319ef1c366f647ad079b9017e1c9484db726",
+      "source_files": 14,
+      "license_files": [
+        "DrugBAN-9923f8c99959e00263103ff9ac61ba0eaccc8e02/LICENSE.md"
+      ],
+      "retrieved_at": "2026-11-15T01:16:36.958825+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "DeepDTA",
+      "repository": "hkmztrk/DeepDTA",
+      "code_url": "https://github.com/hkmztrk/DeepDTA",
+      "license": "未发现明确LICENSE声明；恢复时尚未确认源码再分发许可",
+      "license_evidence_url": "https://github.com/hkmztrk/DeepDTA",
+      "catalog_aliases": [
+        "DeepDTA"
+      ],
+      "status": "license_unverified_or_requires_permission"
+    },
+    {
+      "model": "TxGNN",
+      "repository": "mims-harvard/TxGNN",
+      "code_url": "https://github.com/mims-harvard/TxGNN",
+      "license": "MIT；图谱组成数据和模型权重许可独立核验",
+      "license_evidence_url": "https://github.com/mims-harvard/TxGNN",
+      "catalog_aliases": [
+        "TxGNN"
+      ],
+      "commit": "0e0203c3939f7d12da27aaf10e55daaff5424023",
+      "path": "upstream_sources/mims-harvard__TxGNN__0e0203c3939f.source.zip",
+      "filter_version": "3",
+      "status": "downloaded_source_snapshot",
+      "url": "https://codeload.github.com/mims-harvard/TxGNN/zip/0e0203c3939f7d12da27aaf10e55daaff5424023",
+      "bytes": 52561,
+      "sha256": "e097d84f01552a74f9356997052cbb8bcd08fcff4c24c9247781e30b5b99427a",
+      "source_files": 26,
+      "license_files": [
+        "TxGNN-0e0203c3939f7d12da27aaf10e55daaff5424023/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:16:35.991802+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "CMap / L1000 connectivity",
+      "repository": null,
+      "code_url": "https://clue.io/",
+      "license": "方法与平台参考；具体软件和固定数据发布版分别核验许可",
+      "license_evidence_url": "https://clue.io/",
+      "catalog_aliases": [
+        "CMap / L1000 connectivity"
+      ],
+      "status": "no_github_source_url"
+    },
+    {
+      "model": "CPA",
+      "repository": "theislab/cpa",
+      "code_url": "https://github.com/theislab/cpa",
+      "license": "BSD-3-Clause；实验数据与预训练权重另核验",
+      "license_evidence_url": "https://github.com/theislab/cpa",
+      "catalog_aliases": [
+        "CPA"
+      ],
+      "commit": "fbd7c0250edc23eff003a10c99655579c53afd63",
+      "path": "upstream_sources/theislab__cpa__fbd7c0250edc.source.zip",
+      "filter_version": "3",
+      "status": "downloaded_source_snapshot",
+      "url": "https://codeload.github.com/theislab/cpa/zip/fbd7c0250edc23eff003a10c99655579c53afd63",
+      "bytes": 67274,
+      "sha256": "d85bddfe70bfcad90facd5999bd738bd4964db04ca0e96bf66ec54ef4f7bf89c",
+      "source_files": 32,
+      "license_files": [
+        "cpa-fbd7c0250edc23eff003a10c99655579c53afd63/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:16:36.562463+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "chemCPA",
+      "repository": "theislab/chemCPA",
+      "code_url": "https://github.com/theislab/chemCPA",
+      "license": "MIT；数据与权重独立核验",
+      "license_evidence_url": "https://github.com/theislab/chemCPA",
+      "catalog_aliases": [
+        "chemCPA"
+      ],
+      "commit": "43e830eb0958c54e4aa64442c17ec0fed19b3f15",
+      "path": "upstream_sources/theislab__chemCPA__43e830eb0958.source.zip",
+      "filter_version": "3",
+      "status": "downloaded_source_snapshot",
+      "url": "https://codeload.github.com/theislab/chemCPA/zip/43e830eb0958c54e4aa64442c17ec0fed19b3f15",
+      "bytes": 330049,
+      "sha256": "770d5a0364d450d8ae072639b15be9d7fbc42c5042479aa3c3fd09858f5c8e8e",
+      "source_files": 156,
+      "license_files": [
+        "chemCPA-43e830eb0958c54e4aa64442c17ec0fed19b3f15/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:16:54.109673+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "scGen",
+      "repository": "theislab/scgen",
+      "code_url": "https://github.com/theislab/scgen",
+      "license": "GPL-3.0；遵守原源码许可，不能改标为项目MIT；数据与权重另核验",
+      "license_evidence_url": "https://github.com/theislab/scgen",
+      "catalog_aliases": [
+        "scGen"
+      ],
+      "commit": "d79e1f04233c30f9a4eb5b8d57718127909807d7",
+      "path": "upstream_sources/theislab__scgen__d79e1f04233c.source.zip",
+      "filter_version": "3",
+      "status": "downloaded_source_snapshot",
+      "url": "https://codeload.github.com/theislab/scgen/zip/d79e1f04233c30f9a4eb5b8d57718127909807d7",
+      "bytes": 37224,
+      "sha256": "164ae3446e1ccd88a6a6ba8780559a29bac3c5d3395465d86b9f7621813b8405",
+      "source_files": 26,
+      "license_files": [
+        "scgen-d79e1f04233c30f9a4eb5b8d57718127909807d7/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:16:52.427773+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "GEARS",
+      "repository": "snap-stanford/GEARS",
+      "code_url": "https://github.com/snap-stanford/GEARS",
+      "license": "MIT；数据独立核验",
+      "license_evidence_url": "https://github.com/snap-stanford/GEARS",
+      "catalog_aliases": [
+        "GEARS"
+      ],
+      "commit": "f374e43e197b295016d80395d7a54ddb81cc6769",
+      "path": "upstream_sources/snap-stanford__GEARS__f374e43e197b.source.zip",
+      "filter_version": "3",
+      "status": "downloaded_source_snapshot",
+      "url": "https://codeload.github.com/snap-stanford/GEARS/zip/f374e43e197b295016d80395d7a54ddb81cc6769",
+      "bytes": 32741,
+      "sha256": "a9b3a5e9d3f77fc2d5645f430e8b36fcc64c44a87bb470aea3e45607732fbc68",
+      "source_files": 14,
+      "license_files": [
+        "GEARS-f374e43e197b295016d80395d7a54ddb81cc6769/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:16:52.651615+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "State",
+      "repository": "ArcInstitute/state",
+      "code_url": "https://github.com/ArcInstitute/state",
+      "license": "代码CC-BY-NC-SA-4.0；权重和输出另受Arc非商业模型许可及使用政策约束",
+      "license_evidence_url": "https://github.com/ArcInstitute/state",
+      "catalog_aliases": [
+        "State"
+      ],
+      "status": "license_unverified_or_requires_permission"
+    },
+    {
+      "model": "MAP",
+      "repository": "MAGIC-AI4Med/MAP",
+      "code_url": "https://github.com/MAGIC-AI4Med/MAP",
+      "license": "MIT；预训练编码器、原始知识图谱、细胞数据与权重分别核验",
+      "license_evidence_url": "https://github.com/MAGIC-AI4Med/MAP",
+      "catalog_aliases": [
+        "MAP"
+      ],
+      "commit": "629ebdc1617eaf89825185a1512d772eccc3dc7e",
+      "path": "upstream_sources/MAGIC-AI4Med__MAP__629ebdc1617e.source.zip",
+      "filter_version": "3",
+      "status": "downloaded_source_snapshot",
+      "url": "https://codeload.github.com/MAGIC-AI4Med/MAP/zip/629ebdc1617eaf89825185a1512d772eccc3dc7e",
+      "bytes": 406650,
+      "sha256": "10c48657d84c21e7337a56120e6c08c2dbf9726802b166f7d9effcd8d0bfb1d3",
+      "source_files": 137,
+      "license_files": [
+        "MAP-629ebdc1617eaf89825185a1512d772eccc3dc7e/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:16:52.610748+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "Non-negative PU learning (nnPU)",
+      "repository": "kiryor/nnPUlearning",
+      "code_url": "https://github.com/kiryor/nnPUlearning",
+      "license": "LICENSE为MIT许可文本，保留copyright与许可声明；原实现依赖旧Chainer环境",
+      "license_evidence_url": "https://github.com/kiryor/nnPUlearning",
+      "catalog_aliases": [
+        "Non-negative PU learning (nnPU)"
+      ],
+      "commit": "3d9769e60dd275e8e4dcf91e1853f3b76c69f39f",
+      "path": "upstream_sources/kiryor__nnPUlearning__3d9769e60dd2.source.zip",
+      "filter_version": "3",
+      "status": "downloaded_source_snapshot",
+      "url": "https://codeload.github.com/kiryor/nnPUlearning/zip/3d9769e60dd275e8e4dcf91e1853f3b76c69f39f",
+      "bytes": 10192,
+      "sha256": "db0cf1f198a503ecd84d355d63070b65705aaa2c3e48a6aa38fa3db367b53c7a",
+      "source_files": 6,
+      "license_files": [
+        "nnPUlearning-3d9769e60dd275e8e4dcf91e1853f3b76c69f39f/LICENSE"
+      ],
+      "retrieved_at": "2026-11-15T01:17:01.658200+00:00",
+      "scope": "Filtered source/documentation snapshot; excludes datasets, weights, notebooks and binary assets. Not an installation or reproduction claim."
+    },
+    {
+      "model": "Deep Ensembles",
+      "repository": null,
+      "code_url": "https://arxiv.org/abs/1612.01474",
+      "license": "此条为原始方法论文；具体代码实现的许可需单独核验",
+      "license_evidence_url": "https://arxiv.org/abs/1612.01474",
+      "catalog_aliases": [
+        "Deep Ensembles"
+      ],
+      "status": "no_github_source_url"
+    }
+  ]
+}

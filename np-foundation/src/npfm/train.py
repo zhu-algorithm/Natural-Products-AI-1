@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import copy
 import csv
+import gzip
 import hashlib
 import json
 import math
@@ -22,6 +23,7 @@ from .tokenizer import SmilesTokenizer
 MISSING = {"", "na", "n/a", "nan", "null", "none"}
 MODEL_DEFAULTS = {"d_model": 64, "nhead": 4, "num_layers": 2, "dim_feedforward": 128,
                   "dropout": .1, "graph_layers": 2}
+MAX_CHECKPOINT_GZIP_BYTES = 16 * 1024 * 1024
 
 
 def _write_json(path, value):
@@ -40,6 +42,23 @@ def _hash_text(value):
     return hashlib.sha256(value.encode("utf-8")).hexdigest()
 
 
+def checkpoint_bytes(path):
+    """Read original bytes, with a bounded lossless .gz distribution fallback.
+
+    Hash manifests continue to describe the original uncompressed file. A present
+    uncompressed file takes precedence; its failed hash never falls back to gzip.
+    """
+    path = Path(path)
+    if path.suffix != ".gz" and path.is_file():
+        return path.read_bytes()
+    compressed = path if path.suffix == ".gz" else path.with_name(path.name + ".gz")
+    with gzip.open(compressed, "rb") as stream:
+        content = stream.read(MAX_CHECKPOINT_GZIP_BYTES + 1)
+    if len(content) > MAX_CHECKPOINT_GZIP_BYTES:
+        raise ValueError("Compressed checkpoint metadata exceeds the 16 MiB decompression limit.")
+    return content
+
+
 def verify_checkpoint(directory):
     directory = Path(directory)
     checks = json.loads((directory / "checkpoint_hashes.json").read_text())
@@ -47,7 +66,11 @@ def verify_checkpoint(directory):
     if not required.issubset(checks):
         raise ValueError("Checkpoint manifest does not cover the required model metadata.")
     for name, expected in checks.items():
-        if Path(name).name != name or sha256_file(directory / name) != expected:
+        if Path(name).name != name:
+            raise ValueError(f"Checkpoint integrity failure: {name}")
+        path = directory / name
+        actual = sha256_file(path) if path.is_file() and path.suffix != ".gz" else hashlib.sha256(checkpoint_bytes(path)).hexdigest()
+        if actual != expected:
             raise ValueError(f"Checkpoint integrity failure: {name}")
 
 
@@ -349,9 +372,11 @@ def evaluate(model, rows, tokenizer, tasks, config, device):
 def _initialization_checks(directory, config, split_record):
     verify_checkpoint(directory)
     prior_config = json.loads((directory / "resolved_config.json").read_text())
+    if prior_config.get("model_format_version") != config.get("model_format_version"):
+        raise ValueError("Initial checkpoint architecture version differs; do not mix old weights with recovered metadata.")
     if prior_config["model"] != config["model"] or prior_config["max_seq_length"] != config["max_seq_length"] or prior_config["use_graph"] != config["use_graph"]:
         raise ValueError("initial_checkpoint must have a compatible model configuration, max_seq_length and graph mode.")
-    prior = json.loads((directory / "splits.json").read_text())
+    prior = json.loads(checkpoint_bytes(directory / "splits.json"))
     prior_rows = prior.get("rows", prior.get("metadata", {}).get("rows", []))
     if not prior_rows:
         raise ValueError("Initial checkpoint lacks auditable structure identities for leakage checking.")

@@ -1,0 +1,140 @@
+{
+  "history": [
+    {
+      "epoch": 1,
+      "training_objective": 1.1017657364015099,
+      "selection_criterion": "validation_mean_normalized_MSE_or_cross_entropy",
+      "selection_value": 0.5113243672831128,
+      "validation": {
+        "n_rows": 483,
+        "language_token_nll": 2.089764903980443,
+        "contrastive_objective": 2.477057699234255,
+        "contrastive_evaluable_batches": 31,
+        "tasks": {
+          "logS": {
+            "n_labels": 154,
+            "mae": 1.1503174039291215,
+            "rmse": 1.482077372222058,
+            "normalized_mse": 0.5113243672831128
+          }
+        },
+        "supervised_objective": 0.5113243672831128
+      }
+    },
+    {
+      "epoch": 2,
+      "training_objective": 0.6987488692184146,
+      "selection_criterion": "validation_mean_normalized_MSE_or_cross_entropy",
+      "selection_value": 0.46942840638227334,
+      "validation": {
+        "n_rows": 483,
+        "language_token_nll": 1.9449239401460658,
+        "contrastive_objective": 2.1717769618957274,
+        "contrastive_evaluable_batches": 31,
+        "tasks": {
+          "logS": {
+            "n_labels": 154,
+            "mae": 1.1000263001793882,
+            "rmse": 1.420062029258821,
+            "normalized_mse": 0.46942840638227334
+          }
+        },
+        "supervised_objective": 0.46942840638227334
+      }
+    },
+    {
+      "epoch": 3,
+      "training_objective": 0.593060629187728,
+      "selection_criterion": "validation_mean_normalized_MSE_or_cross_entropy",
+      "selection_value": 0.39524967551527546,
+      "validation": {
+        "n_rows": 483,
+        "language_token_nll": 1.907486344137525,
+        "contrastive_objective": 1.8468467247101568,
+        "contrastive_evaluable_batches": 31,
+        "tasks": {
+          "logS": {
+            "n_labels": 154,
+            "mae": 1.0201987396099137,
+            "rmse": 1.3030419360115364,
+            "normalized_mse": 0.39524967551527546
+          }
+        },
+        "supervised_objective": 0.39524967551527546
+      }
+    },
+    {
+      "epoch": 4,
+      "training_objective": 0.563098363310313,
+      "selection_criterion": "validation_mean_normalized_MSE_or_cross_entropy",
+      "selection_value": 0.2657086548235993,
+      "validation": {
+        "n_rows": 483,
+        "language_token_nll": 1.8567445470199715,
+        "contrastive_objective": 1.6931405394308028,
+        "contrastive_evaluable_batches": 31,
+        "tasks": {
+          "logS": {
+            "n_labels": 154,
+            "mae": 0.8366238912102658,
+            "rmse": 1.0683793426405248,
+            "normalized_mse": 0.2657086548235993
+          }
+        },
+        "supervised_objective": 0.2657086548235993
+      }
+    },
+    {
+      "epoch": 5,
+      "training_objective": 0.5108479604446631,
+      "selection_criterion": "validation_mean_normalized_MSE_or_cross_entropy",
+      "selection_value": 0.2935078494018352,
+      "validation": {
+        "n_rows": 483,
+        "language_token_nll": 1.8270533231649542,
+        "contrastive_objective": 1.4893996311772255,
+        "contrastive_evaluable_batches": 31,
+        "tasks": {
+          "logS": {
+            "n_labels": 154,
+            "mae": 0.8927153347916382,
+            "rmse": 1.1228777905861365,
+            "normalized_mse": 0.2935078494018352
+          }
+        },
+        "supervised_objective": 0.2935078494018352
+      }
+    }
+  ],
+  "validation": {
+    "n_rows": 483,
+    "language_token_nll": 1.8567445470199715,
+    "contrastive_objective": 1.6931405394308028,
+    "contrastive_evaluable_batches": 31,
+    "tasks": {
+      "logS": {
+        "n_labels": 154,
+        "mae": 0.8366238912102658,
+        "rmse": 1.0683793426405248,
+        "normalized_mse": 0.2657086548235993
+      }
+    },
+    "supervised_objective": 0.2657086548235993
+  },
+  "test": {
+    "n_rows": 476,
+    "language_token_nll": 1.821437954302449,
+    "contrastive_objective": 1.7505427360534669,
+    "contrastive_evaluable_batches": 30,
+    "tasks": {
+      "logS": {
+        "n_labels": 143,
+        "mae": 0.8073813363037831,
+        "rmse": 1.0410871070580858,
+        "normalized_mse": 0.2523067518288485
+      }
+    },
+    "supervised_objective": 0.2523067518288485
+  },
+  "note": "Test set was evaluated only after checkpoint selection. Pilot metrics do not establish generalization or clinical validity."
+}

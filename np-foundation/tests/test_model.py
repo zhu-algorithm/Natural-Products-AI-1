@@ -1,4 +1,7 @@
 """Scientific correctness invariants, rather than matching implementation details."""
+import gzip
+import hashlib
+import json
 import pytest
 import torch
 
@@ -6,6 +9,30 @@ from npfm.features import molecule_graph, rdkit_available, structure_group
 from npfm.model import NaturalProductModel
 from npfm.tokenizer import SmilesTokenizer
 from npfm.train import build_task_states, split_rows, supervised_loss, multimodal_contrastive_loss
+
+
+def test_compressed_split_preserves_hash_and_rejects_tampering(tmp_path):
+    from npfm.train import checkpoint_bytes, verify_checkpoint, MAX_CHECKPOINT_GZIP_BYTES
+    files = {"model.pt": b"integrity-test-fixture", "vocab.json": b"{}", "resolved_config.json": b"{}",
+             "task_states.json": b"[]", "splits.json": b'{"train": [0], "validation": [1], "test": [2]}',
+             "data_manifest.json": b"{}"}
+    for name, content in files.items():
+        (tmp_path / name).write_bytes(content)
+    hashes = {name: hashlib.sha256(content).hexdigest() for name, content in files.items()}
+    (tmp_path / "checkpoint_hashes.json").write_text(json.dumps(hashes))
+    verify_checkpoint(tmp_path)
+    split = tmp_path / "splits.json"
+    compressed = tmp_path / "splits.json.gz"
+    compressed.write_bytes(gzip.compress(files["splits.json"], mtime=0))
+    split.unlink()
+    assert checkpoint_bytes(split) == files["splits.json"]
+    verify_checkpoint(tmp_path)
+    compressed.write_bytes(gzip.compress(files["splits.json"] + b" ", mtime=0))
+    with pytest.raises(ValueError, match="Checkpoint integrity failure: splits.json"):
+        verify_checkpoint(tmp_path)
+    compressed.write_bytes(gzip.compress(b"x" * (MAX_CHECKPOINT_GZIP_BYTES + 1), mtime=0))
+    with pytest.raises(ValueError, match="decompression limit"):
+        checkpoint_bytes(split)
 
 
 def test_tokenizer_preserves_stereo_and_ring_syntax():

@@ -1,0 +1,17 @@
+{
+  "source_sha256": "ffa6f13fe47c2fca924272a18ba1d52b13bfb0cbf3d6941aa9c20e2e53dd0459",
+  "split_sha256": "5948840d83e0befed70420f6a2f4d02dd9e247fbb072e489856758a3fe7b6110",
+  "n_train_labels": 831,
+  "n_test_labels": 143,
+  "morgan_random_forest": {
+    "mae": 1.0553859239529075,
+    "rmse": 1.4053400245466026,
+    "n_labels": 143
+  },
+  "constant_training_mean": {
+    "mae": 1.862238216656989,
+    "rmse": 2.2633234308284957,
+    "n_labels": 143
+  },
+  "scope": "One pilot split; no external natural-product validation"
+}

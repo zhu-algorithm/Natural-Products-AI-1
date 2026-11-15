@@ -1,0 +1,5 @@
+{
+  "epoch": 4,
+  "criterion": "validation_mean_normalized_MSE_or_cross_entropy",
+  "value": 0.2657086548235993
+}

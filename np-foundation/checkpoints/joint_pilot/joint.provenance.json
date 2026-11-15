@@ -1,0 +1,11 @@
+{
+  "url": "https://raw.githubusercontent.com/deepchem/deepchem/master/datasets/delaney-processed.csv",
+  "source_sha256": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189",
+  "measured_column": "measured log solubility in mols per litre",
+  "measured_rows": 1128,
+  "unlabeled_rows": 2048,
+  "output_rows": 3176,
+  "natural_product_source": "/workspace/scratch/14a752057ad3/natural-product-foundation-model/data/training/np_sample.csv",
+  "output_sha256": "ffa6f13fe47c2fca924272a18ba1d52b13bfb0cbf3d6941aa9c20e2e53dd0459",
+  "scope": "Measured aqueous solubility benchmark; no clinical or disease label"
+}
