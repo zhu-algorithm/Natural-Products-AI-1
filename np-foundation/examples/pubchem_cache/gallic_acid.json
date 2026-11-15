@@ -1,0 +1,19 @@
+{
+  "name": "gallic acid",
+  "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/gallic%20acid/property/SMILES,ConnectivitySMILES,InChIKey/JSON",
+  "retrieved_at": "2026-11-15T01:06:10.450549+00:00",
+  "http_status": 200,
+  "raw_response_sha256": "ffc4de54a98939ada8e19543f264e61953e67daa5a8df479974210c8ccc09a7c",
+  "response": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 370,
+          "SMILES": "C1=C(C=C(C(=C1O)O)O)C(=O)O",
+          "ConnectivitySMILES": "C1=C(C=C(C(=C1O)O)O)C(=O)O",
+          "InChIKey": "LNTHITQWFMADLM-UHFFFAOYSA-N"
+        }
+      ]
+    }
+  }
+}

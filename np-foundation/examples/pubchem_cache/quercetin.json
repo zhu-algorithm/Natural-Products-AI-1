@@ -1,0 +1,19 @@
+{
+  "name": "quercetin",
+  "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/quercetin/property/SMILES,ConnectivitySMILES,InChIKey/JSON",
+  "retrieved_at": "2026-11-15T01:05:21.814748+00:00",
+  "http_status": 200,
+  "raw_response_sha256": "a45391a3ed5737179c6ef81b3e96d545c9146565df59ec505d3fcf59ef08ecbc",
+  "response": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 5280343,
+          "SMILES": "C1=CC(=C(C=C1C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O)O",
+          "ConnectivitySMILES": "C1=CC(=C(C=C1C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O)O",
+          "InChIKey": "REFJWTPEDVJJIY-UHFFFAOYSA-N"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "shikonin",
+  "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/shikonin/property/SMILES,ConnectivitySMILES,InChIKey/JSON",
+  "retrieved_at": "2026-11-15T01:06:02.930822+00:00",
+  "http_status": 200,
+  "raw_response_sha256": "eeacaf30c7e8ad1fa8d1a488d7796cde0a732be29c459f5425dd2be4114fd727",
+  "response": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 479503,
+          "SMILES": "CC(=CC[C@H](C1=CC(=O)C2=C(C=CC(=C2C1=O)O)O)O)C",
+          "ConnectivitySMILES": "CC(=CCC(C1=CC(=O)C2=C(C=CC(=C2C1=O)O)O)O)C",
+          "InChIKey": "NEZONWMXZKDMKF-SNVBAGLBSA-N"
+        }
+      ]
+    }
+  }
+}

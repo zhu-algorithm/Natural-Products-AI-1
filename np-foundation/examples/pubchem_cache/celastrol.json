@@ -1,0 +1,19 @@
+{
+  "name": "celastrol",
+  "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/celastrol/property/SMILES,ConnectivitySMILES,InChIKey/JSON",
+  "retrieved_at": "2026-11-15T01:05:55.482624+00:00",
+  "http_status": 200,
+  "raw_response_sha256": "0a2433edb4943e27a93176742c8429d0a5e7f0f1f678bbd9a7c4e8ba21c98172",
+  "response": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 122724,
+          "SMILES": "CC1=C(C(=O)C=C2C1=CC=C3[C@]2(CC[C@@]4([C@@]3(CC[C@@]5([C@H]4C[C@](CC5)(C)C(=O)O)C)C)C)C)O",
+          "ConnectivitySMILES": "CC1=C(C(=O)C=C2C1=CC=C3C2(CCC4(C3(CCC5(C4CC(CC5)(C)C(=O)O)C)C)C)C)O",
+          "InChIKey": "KQJSQWZMSAGSHN-JJWQIEBTSA-N"
+        }
+      ]
+    }
+  }
+}

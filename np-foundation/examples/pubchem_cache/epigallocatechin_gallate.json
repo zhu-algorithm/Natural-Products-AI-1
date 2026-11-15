@@ -1,0 +1,19 @@
+{
+  "name": "epigallocatechin gallate",
+  "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/epigallocatechin%20gallate/property/SMILES,ConnectivitySMILES,InChIKey/JSON",
+  "retrieved_at": "2026-11-15T01:05:39.194854+00:00",
+  "http_status": 200,
+  "raw_response_sha256": "58512733d75faf5a023e424f1aa5d0ca0430c82650a48f51eb67fd396f468af8",
+  "response": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 65064,
+          "SMILES": "C1[C@H]([C@H](OC2=CC(=CC(=C21)O)O)C3=CC(=C(C(=C3)O)O)O)OC(=O)C4=CC(=C(C(=C4)O)O)O",
+          "ConnectivitySMILES": "C1C(C(OC2=CC(=CC(=C21)O)O)C3=CC(=C(C(=C3)O)O)O)OC(=O)C4=CC(=C(C(=C4)O)O)O",
+          "InChIKey": "WMBWREPUVVBILR-WIYYLYMNSA-N"
+        }
+      ]
+    }
+  }
+}

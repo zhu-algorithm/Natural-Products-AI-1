@@ -1,0 +1,19 @@
+{
+  "name": "thymoquinone",
+  "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/thymoquinone/property/SMILES,ConnectivitySMILES,InChIKey/JSON",
+  "retrieved_at": "2026-11-15T01:05:52.002682+00:00",
+  "http_status": 200,
+  "raw_response_sha256": "9a528c67ac886e80868b84d9bdab9bfb71afe99384baf223a12cd989b80490fe",
+  "response": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 10281,
+          "SMILES": "CC1=CC(=O)C(=CC1=O)C(C)C",
+          "ConnectivitySMILES": "CC1=CC(=O)C(=CC1=O)C(C)C",
+          "InChIKey": "KEQHJBNSCLWCAE-UHFFFAOYSA-N"
+        }
+      ]
+    }
+  }
+}

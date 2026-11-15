@@ -1,0 +1,19 @@
+{
+  "name": "ursolic acid",
+  "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/ursolic%20acid/property/SMILES,ConnectivitySMILES,InChIKey/JSON",
+  "retrieved_at": "2026-11-15T01:05:55.446589+00:00",
+  "http_status": 200,
+  "raw_response_sha256": "80a67eb317e10be2fc1d91ae02a61b06afd5a52a3cea65e0af054af308781df1",
+  "response": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 64945,
+          "SMILES": "C[C@@H]1CC[C@@]2(CC[C@@]3(C(=CC[C@H]4[C@]3(CC[C@@H]5[C@@]4(CC[C@@H](C5(C)C)O)C)C)[C@@H]2[C@H]1C)C)C(=O)O",
+          "ConnectivitySMILES": "CC1CCC2(CCC3(C(=CCC4C3(CCC5C4(CCC(C5(C)C)O)C)C)C2C1C)C)C(=O)O",
+          "InChIKey": "WCGUUGGRBIKTOS-GPOJBZKASA-N"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "artemisinin",
+  "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/artemisinin/property/SMILES,ConnectivitySMILES,InChIKey/JSON",
+  "retrieved_at": "2026-11-15T01:05:22.006858+00:00",
+  "http_status": 200,
+  "raw_response_sha256": "bf58e9a196df2f4cf7bc203764ca739186d5030fe5f2d3247a431e2f7238c006",
+  "response": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 68827,
+          "SMILES": "C[C@@H]1CC[C@H]2[C@H](C(=O)O[C@H]3[C@@]24[C@H]1CC[C@](O3)(OO4)C)C",
+          "ConnectivitySMILES": "CC1CCC2C(C(=O)OC3C24C1CCC(O3)(OO4)C)C",
+          "InChIKey": "BLUAFEHZUWYNDE-NNWCWBAJSA-N"
+        }
+      ]
+    }
+  }
+}

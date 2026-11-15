@@ -1,0 +1,19 @@
+{
+  "name": "berberine",
+  "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/berberine/property/SMILES,ConnectivitySMILES,InChIKey/JSON",
+  "retrieved_at": "2026-11-15T01:05:26.430623+00:00",
+  "http_status": 200,
+  "raw_response_sha256": "2dac26faf4b48d3c31db1bb881149696b99db3126cd5f2f018e4734b27ccd0dc",
+  "response": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 2353,
+          "SMILES": "COC1=C(C2=C[N+]3=C(C=C2C=C1)C4=CC5=C(C=C4CC3)OCO5)OC",
+          "ConnectivitySMILES": "COC1=C(C2=C[N+]3=C(C=C2C=C1)C4=CC5=C(C=C4CC3)OCO5)OC",
+          "InChIKey": "YBHILYKTIRIUTE-UHFFFAOYSA-N"
+        }
+      ]
+    }
+  }
+}

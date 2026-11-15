@@ -1,0 +1,19 @@
+{
+  "name": "piperine",
+  "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/piperine/property/SMILES,ConnectivitySMILES,InChIKey/JSON",
+  "retrieved_at": "2026-11-15T01:06:06.634472+00:00",
+  "http_status": 200,
+  "raw_response_sha256": "f2d1dd68f1f49cc6c3f091a54a1c98a46f3585a5d3fc3805d5ea350387bdff6b",
+  "response": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 638024,
+          "SMILES": "C1CCN(CC1)C(=O)/C=C/C=C/C2=CC3=C(C=C2)OCO3",
+          "ConnectivitySMILES": "C1CCN(CC1)C(=O)C=CC=CC2=CC3=C(C=C2)OCO3",
+          "InChIKey": "MXXWOMGUGJBKIW-YPCIICBESA-N"
+        }
+      ]
+    }
+  }
+}

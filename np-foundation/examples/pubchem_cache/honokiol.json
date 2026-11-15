@@ -1,0 +1,19 @@
+{
+  "name": "honokiol",
+  "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/honokiol/property/SMILES,ConnectivitySMILES,InChIKey/JSON",
+  "retrieved_at": "2026-11-15T01:05:52.014625+00:00",
+  "http_status": 200,
+  "raw_response_sha256": "75a965b08fc677f807ef627433c3e24a58efe45b5695dcb021b987eb04b02fc5",
+  "response": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 72303,
+          "SMILES": "C=CCC1=CC(=C(C=C1)O)C2=CC(=C(C=C2)O)CC=C",
+          "ConnectivitySMILES": "C=CCC1=CC(=C(C=C1)O)C2=CC(=C(C=C2)O)CC=C",
+          "InChIKey": "FVYXIJYOAGAUQK-UHFFFAOYSA-N"
+        }
+      ]
+    }
+  }
+}

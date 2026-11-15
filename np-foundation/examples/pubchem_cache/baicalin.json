@@ -1,0 +1,19 @@
+{
+  "name": "baicalin",
+  "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/baicalin/property/SMILES,ConnectivitySMILES,InChIKey/JSON",
+  "retrieved_at": "2026-11-15T01:05:59.162448+00:00",
+  "http_status": 200,
+  "raw_response_sha256": "e0016f587d552d67611c9538baf67fcbe3768ebfa81d7e267fbf9e3740585240",
+  "response": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 64982,
+          "SMILES": "C1=CC=C(C=C1)C2=CC(=O)C3=C(C(=C(C=C3O2)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)C(=O)O)O)O)O)O)O",
+          "ConnectivitySMILES": "C1=CC=C(C=C1)C2=CC(=O)C3=C(C(=C(C=C3O2)OC4C(C(C(C(O4)C(=O)O)O)O)O)O)O",
+          "InChIKey": "IKIIZLYTISPENI-ZFORQUDYSA-N"
+        }
+      ]
+    }
+  }
+}

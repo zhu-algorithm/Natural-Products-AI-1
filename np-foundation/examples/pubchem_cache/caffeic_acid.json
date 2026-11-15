@@ -1,0 +1,19 @@
+{
+  "name": "caffeic acid",
+  "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/caffeic%20acid/property/SMILES,ConnectivitySMILES,InChIKey/JSON",
+  "retrieved_at": "2026-11-15T01:06:10.378635+00:00",
+  "http_status": 200,
+  "raw_response_sha256": "3b68eee7683b73b24115748897cf302aa7b59dbc69e480147abc7d56657fc4d8",
+  "response": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 689043,
+          "SMILES": "C1=CC(=C(C=C1/C=C/C(=O)O)O)O",
+          "ConnectivitySMILES": "C1=CC(=C(C=C1C=CC(=O)O)O)O",
+          "InChIKey": "QAIPRVGONGVQAS-DUXPYHPUSA-N"
+        }
+      ]
+    }
+  }
+}

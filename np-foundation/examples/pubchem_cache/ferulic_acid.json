@@ -1,0 +1,19 @@
+{
+  "name": "ferulic acid",
+  "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/ferulic%20acid/property/SMILES,ConnectivitySMILES,InChIKey/JSON",
+  "retrieved_at": "2026-11-15T01:06:10.454453+00:00",
+  "http_status": 200,
+  "raw_response_sha256": "4fa7efbbafab615230049ebf5153801c70bea7bc5bd573b2bc7beb91cf5565a5",
+  "response": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 445858,
+          "SMILES": "COC1=C(C=CC(=C1)/C=C/C(=O)O)O",
+          "ConnectivitySMILES": "COC1=C(C=CC(=C1)C=CC(=O)O)O",
+          "InChIKey": "KSEBMYQBYZTDHS-HWKANZROSA-N"
+        }
+      ]
+    }
+  }
+}

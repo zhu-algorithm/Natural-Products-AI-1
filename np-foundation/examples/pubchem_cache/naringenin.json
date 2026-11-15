@@ -1,0 +1,19 @@
+{
+  "name": "naringenin",
+  "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/naringenin/property/SMILES,ConnectivitySMILES,InChIKey/JSON",
+  "retrieved_at": "2026-11-15T01:05:44.554658+00:00",
+  "http_status": 200,
+  "raw_response_sha256": "3a8f011d12e267e5a5206f641c967b130791aef75b7224bf09cdc99a306b67e5",
+  "response": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 439246,
+          "SMILES": "C1[C@H](OC2=CC(=CC(=C2C1=O)O)O)C3=CC=C(C=C3)O",
+          "ConnectivitySMILES": "C1C(OC2=CC(=CC(=C2C1=O)O)O)C3=CC=C(C=C3)O",
+          "InChIKey": "FTVWIRXFELQLPI-ZDUSSCGKSA-N"
+        }
+      ]
+    }
+  }
+}

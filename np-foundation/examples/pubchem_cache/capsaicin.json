@@ -1,0 +1,19 @@
+{
+  "name": "capsaicin",
+  "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/capsaicin/property/SMILES,ConnectivitySMILES,InChIKey/JSON",
+  "retrieved_at": "2026-11-15T01:06:06.566569+00:00",
+  "http_status": 200,
+  "raw_response_sha256": "988dcf18134f9ce8dd0f30eb27ab43858ff20e0811d6010d1436f88eb448e4ef",
+  "response": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 1548943,
+          "SMILES": "CC(C)/C=C/CCCCC(=O)NCC1=CC(=C(C=C1)O)OC",
+          "ConnectivitySMILES": "CC(C)C=CCCCCC(=O)NCC1=CC(=C(C=C1)O)OC",
+          "InChIKey": "YKPUWZUDDOIDPM-SOFGYWHQSA-N"
+        }
+      ]
+    }
+  }
+}

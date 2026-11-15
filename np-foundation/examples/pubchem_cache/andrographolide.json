@@ -1,0 +1,19 @@
+{
+  "name": "andrographolide",
+  "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/andrographolide/property/SMILES,ConnectivitySMILES,InChIKey/JSON",
+  "retrieved_at": "2026-11-15T01:06:02.910533+00:00",
+  "http_status": 200,
+  "raw_response_sha256": "1291f556786267508ead4cdd9c2a1cc7ad9dc9023b57a93a7c24d470d3823fdd",
+  "response": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 5318517,
+          "SMILES": "C[C@@]12CC[C@H]([C@@]([C@H]1CCC(=C)[C@H]2C/C=C/3\\[C@@H](COC3=O)O)(C)CO)O",
+          "ConnectivitySMILES": "CC12CCC(C(C1CCC(=C)C2CC=C3C(COC3=O)O)(C)CO)O",
+          "InChIKey": "BOJKULTULYSRAS-OTESTREVSA-N"
+        }
+      ]
+    }
+  }
+}

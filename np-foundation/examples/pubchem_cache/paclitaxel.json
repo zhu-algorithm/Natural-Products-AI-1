@@ -1,0 +1,19 @@
+{
+  "name": "paclitaxel",
+  "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/paclitaxel/property/SMILES,ConnectivitySMILES,InChIKey/JSON",
+  "retrieved_at": "2026-11-15T01:05:21.910633+00:00",
+  "http_status": 200,
+  "raw_response_sha256": "031fb5a0b73c1ee95bfbe795f721be484bb74016ac82510ddd3f1a9fa50e36ae",
+  "response": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 36314,
+          "SMILES": "CC1=C2[C@H](C(=O)[C@@]3([C@H](C[C@@H]4[C@]([C@H]3[C@@H]([C@@](C2(C)C)(C[C@@H]1OC(=O)[C@@H]([C@H](C5=CC=CC=C5)NC(=O)C6=CC=CC=C6)O)O)OC(=O)C7=CC=CC=C7)(CO4)OC(=O)C)O)C)OC(=O)C",
+          "ConnectivitySMILES": "CC1=C2C(C(=O)C3(C(CC4C(C3C(C(C2(C)C)(CC1OC(=O)C(C(C5=CC=CC=C5)NC(=O)C6=CC=CC=C6)O)O)OC(=O)C7=CC=CC=C7)(CO4)OC(=O)C)O)C)OC(=O)C",
+          "InChIKey": "RCINICONZNJXQF-MZXODVADSA-N"
+        }
+      ]
+    }
+  }
+}

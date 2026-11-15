@@ -1,0 +1,19 @@
+{
+  "name": "salicylic acid",
+  "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/salicylic%20acid/property/SMILES,ConnectivitySMILES,InChIKey/JSON",
+  "retrieved_at": "2026-11-15T01:05:39.194648+00:00",
+  "http_status": 200,
+  "raw_response_sha256": "afdde540b44473b0ced20654cc9a4fcb9e33fe509d28e4e9d79f36f42630768f",
+  "response": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 338,
+          "SMILES": "C1=CC=C(C(=C1)C(=O)O)O",
+          "ConnectivitySMILES": "C1=CC=C(C(=C1)C(=O)O)O",
+          "InChIKey": "YGSDEFSMJLZEOE-UHFFFAOYSA-N"
+        }
+      ]
+    }
+  }
+}

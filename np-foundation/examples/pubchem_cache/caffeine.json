@@ -1,0 +1,19 @@
+{
+  "name": "caffeine",
+  "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/caffeine/property/SMILES,ConnectivitySMILES,InChIKey/JSON",
+  "retrieved_at": "2026-11-15T01:05:35.156587+00:00",
+  "http_status": 200,
+  "raw_response_sha256": "5dc84b2e31efe50b69aa34ae73c2dc027793367f30946d91f93761caf6ebcde7",
+  "response": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 2519,
+          "SMILES": "CN1C=NC2=C1C(=O)N(C(=O)N2C)C",
+          "ConnectivitySMILES": "CN1C=NC2=C1C(=O)N(C(=O)N2C)C",
+          "InChIKey": "RYYVLZVUVIJVGH-UHFFFAOYSA-N"
+        }
+      ]
+    }
+  }
+}

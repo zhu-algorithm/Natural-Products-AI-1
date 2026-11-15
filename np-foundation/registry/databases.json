@@ -1,0 +1,1670 @@
+{
+  "schema_version": "1.1",
+  "updated_at": "2026-11-15",
+  "restoration_note": "Original workspace files disappeared between sessions. This registry was reconstructed from retained research context; all acquisition states start anew. Historical counts are explicitly labeled.",
+  "scope": "37 important natural-product and supporting chemistry/evidence resources; not an exhaustive claim of all known natural compounds or algorithms",
+  "count_unit_warning": "Molecules, full stereochemical keys, connectivity families, occurrences, assays, spectra and sequences are distinct denominators and overlap across databases.",
+  "resources": [
+    {
+      "id": "coconut",
+      "name": "COCONUT",
+      "category": "natural_product_aggregate",
+      "priority": "core",
+      "content_scope": "Aggregated structures including varying natural-origin certainty, supplier compounds and derivatives",
+      "version": "November 2026 export",
+      "scale": "Previous acquisition: 738793 rows, 728389 full keys; live website 738795 records / 71 collections. Recount required after restoration.",
+      "landing_url": "https://coconut.naturalproducts.net/download",
+      "source_urls": [
+        "https://coconut.naturalproducts.net/download",
+        "https://coconut.naturalproducts.net/stats",
+        "https://doi.org/10.1093/nar/gkae1063"
+      ],
+      "license": {
+        "spdx": "CC0-1.0",
+        "status": "verified",
+        "commercial_use": "yes_with_attribution",
+        "redistribution": "allowed_under_named_terms",
+        "notes": "Terms are for the named database release/channel, distinct from article/code license. Last reviewed 2026-11-14; restoration does not create new permission."
+      },
+      "access": {
+        "method": "public_bulk",
+        "files": [
+          {
+            "url": "https://coconut.s3.uni-jena.de/prod/downloads/2026-11/coconut_csv_lite-11-2026.zip",
+            "filename": "coconut_csv_lite-11-2026.zip"
+          }
+        ],
+        "requires_manual": false,
+        "license_gate": "open",
+        "notes": ""
+      },
+      "purposes": [
+        "structure_pretraining",
+        "chemical_classification",
+        "provenance"
+      ],
+      "caveats": [
+        "Aggregate origin annotations are not proof that every record is an isolated natural product.",
+        "Lite CSV lacks organism/publication occurrence evidence.",
+        "Computed QED and NP-likeness are descriptors, not clinical druggability labels."
+      ],
+      "download_state": {
+        "status": "not_attempted_in_restoration",
+        "restoration_date": "2026-11-15"
+      }
+    },
+    {
+      "id": "lotus",
+      "name": "LOTUS",
+      "category": "natural_product_occurrences",
+      "priority": "core",
+      "content_scope": "Structure-organism-publication occurrence exports",
+      "version": "Frozen 2026-04-13; Zenodo 19360665",
+      "scale": "Previous base 674454 rows; metadata 709740 rows; 227298 full keys. Recount required.",
+      "landing_url": "https://lotus.nprod.net/lotus-manuscript/",
+      "source_urls": [
+        "https://zenodo.org/records/19360665",
+        "https://doi.org/10.7554/eLife.70780"
+      ],
+      "license": {
+        "spdx": "CC-BY-4.0",
+        "status": "verified",
+        "commercial_use": "yes_with_attribution",
+        "redistribution": "allowed_under_named_terms",
+        "notes": "Terms are for the named database release/channel, distinct from article/code license. Last reviewed 2026-11-14; restoration does not create new permission."
+      },
+      "access": {
+        "method": "public_bulk",
+        "files": [
+          {
+            "url": "https://zenodo.org/api/records/19360665/files/260413_frozen.csv.gz/content",
+            "filename": "260413_frozen.csv.gz"
+          },
+          {
+            "url": "https://zenodo.org/api/records/19360665/files/260413_frozen_metadata.csv.gz/content",
+            "filename": "260413_frozen_metadata.csv.gz"
+          }
+        ],
+        "requires_manual": false,
+        "license_gate": "open",
+        "notes": "Base occurrence table has no SMILES; expanded metadata has structures. Frozen Zenodo channel is CC BY 4.0; Wikidata is a distinct CC0 channel."
+      },
+      "purposes": [
+        "structure_pretraining",
+        "natural_origin_provenance",
+        "taxonomy"
+      ],
+      "caveats": [
+        "Record counts overlap other resources; do not sum as unique molecules."
+      ],
+      "download_state": {
+        "status": "not_attempted_in_restoration",
+        "restoration_date": "2026-11-15"
+      }
+    },
+    {
+      "id": "theobroma",
+      "name": "THEOBROMA",
+      "category": "natural_product_aggregate",
+      "priority": "extension",
+      "content_scope": "Aggregated structures with per-compound/source license annotations",
+      "version": "v1.36 / 2026-09-17 dump; paper 2026-11-02",
+      "scale": "Paper 1132805 full keys, 486032 connectivity families, 896242 author-classified open-use entries; binary dump not independently counted.",
+      "landing_url": "https://theobroma.l3s.uni-hannover.de/",
+      "source_urls": [
+        "https://doi.org/10.1093/nar/gkag1083",
+        "https://zenodo.org/records/22816330"
+      ],
+      "license": {
+        "spdx": "MIXED",
+        "status": "requires_review",
+        "commercial_use": "unverified",
+        "redistribution": "not_cleared_for_public_github",
+        "notes": "Terms are for the named database release/channel, distinct from article/code license. Last reviewed 2026-11-14; restoration does not create new permission."
+      },
+      "access": {
+        "method": "public_bulk",
+        "files": [
+          {
+            "url": "https://zenodo.org/api/records/22816330/files/theobroma_v136_20260917.dump/content",
+            "filename": "theobroma_v136_20260917.dump"
+          },
+          {
+            "url": "https://zenodo.org/api/records/22816330/files/sources.yaml/content",
+            "filename": "sources.yaml"
+          }
+        ],
+        "requires_manual": false,
+        "license_gate": "mixed",
+        "notes": "Full database is mixed-license; top-level archive license does not clear all records. Keep full raw archive outside public GitHub."
+      },
+      "purposes": [
+        "structure_pretraining",
+        "license_provenance",
+        "stereoisomer_families"
+      ],
+      "caveats": [
+        "Do not use connectivity families as stereochemically unique compound count.",
+        "Upstream YAML may contain version/permission inconsistencies; verify original source terms."
+      ],
+      "download_state": {
+        "status": "not_attempted_in_restoration",
+        "restoration_date": "2026-11-15"
+      }
+    },
+    {
+      "id": "npass",
+      "name": "NPASS",
+      "category": "natural_product_experiments",
+      "priority": "core",
+      "content_scope": "NP structures, activities, toxicity, sources and engineered production evidence",
+      "version": "3.0 / 2026 paper",
+      "scale": "204023 NP information records; 1048756 activities; 34975 toxicity measurements; paper 9713 ADME measurements covering 744 compounds.",
+      "landing_url": "https://bidd.group/NPASS/downloadnpass.html",
+      "source_urls": [
+        "https://bidd.group/NPASS/downloadnpass.html",
+        "https://doi.org/10.1093/nar/gkaf1196"
+      ],
+      "license": {
+        "spdx": "UNVERIFIED",
+        "status": "requires_review",
+        "commercial_use": "unverified",
+        "redistribution": "not_cleared_for_public_github",
+        "notes": "Terms are for the named database release/channel, distinct from article/code license. Last reviewed 2026-11-14; restoration does not create new permission."
+      },
+      "access": {
+        "method": "public_bulk",
+        "files": [
+          {
+            "url": "https://bidd.group/NPASS/downloadFiles/NPASS3.0_naturalproducts_generalinfo.txt",
+            "filename": "NPASS3.0_naturalproducts_generalinfo.txt"
+          },
+          {
+            "url": "https://bidd.group/NPASS/downloadFiles/NPASS3.0_naturalproducts_structure.txt",
+            "filename": "NPASS3.0_naturalproducts_structure.txt"
+          },
+          {
+            "url": "https://bidd.group/NPASS/downloadFiles/NPASS3.0_activities.txt",
+            "filename": "NPASS3.0_activities.txt"
+          },
+          {
+            "url": "https://bidd.group/NPASS/downloadFiles/NPASS3.0_naturalproducts_species_pair.txt",
+            "filename": "NPASS3.0_naturalproducts_species_pair.txt"
+          },
+          {
+            "url": "https://bidd.group/NPASS/downloadFiles/NPASS3.0_target.txt",
+            "filename": "NPASS3.0_target.txt"
+          },
+          {
+            "url": "https://bidd.group/NPASS/downloadFiles/NPASS3.0_species_info.txt",
+            "filename": "NPASS3.0_species_info.txt"
+          },
+          {
+            "url": "https://bidd.group/NPASS/downloadFiles/NPASS3.0_toxicity.txt",
+            "filename": "NPASS3.0_toxicity.txt"
+          },
+          {
+            "url": "https://bidd.group/NPASS/downloadFiles/NPASS3.0_Symbiont.tsv",
+            "filename": "NPASS3.0_Symbiont.tsv"
+          },
+          {
+            "url": "https://bidd.group/NPASS/downloadFiles/NPASS3.0_Elicitation.tsv",
+            "filename": "NPASS3.0_Elicitation.tsv"
+          },
+          {
+            "url": "https://bidd.group/NPASS/downloadFiles/NPASS3.0_Coculture.tsv",
+            "filename": "NPASS3.0_Coculture.tsv"
+          },
+          {
+            "url": "https://bidd.group/NPASS/downloadFiles/NPASS3.0_Engineer.tsv",
+            "filename": "NPASS3.0_Engineer.tsv"
+          }
+        ],
+        "requires_manual": false,
+        "license_gate": "unknown",
+        "notes": "Official download page previously exposed these 11 files but no independent ADME bulk link. ADME paper statistic is not acquired training labels. Database redistribution permission remains unverified."
+      },
+      "purposes": [
+        "activity_supervision",
+        "adme_toxicity_supervision",
+        "taxonomy"
+      ],
+      "caveats": [
+        "Paper license does not establish database reuse permission.",
+        "Missing activity does not mean inactive.",
+        "ADME coverage is sparse and was not acquired as a separate file."
+      ],
+      "download_state": {
+        "status": "not_attempted_in_restoration",
+        "restoration_date": "2026-11-15"
+      }
+    },
+    {
+      "id": "npatlas",
+      "name": "Natural Products Atlas",
+      "category": "microbial_natural_products",
+      "priority": "core",
+      "content_scope": "Microbial NP structures, origin and biosynthesis annotations",
+      "version": "v2024_09 / website 3.0.2",
+      "scale": "Paper 36545 including deprecated records; prior TSV/JSON each 36454 active rows.",
+      "landing_url": "https://www.npatlas.org/download",
+      "source_urls": [
+        "https://www.npatlas.org/download",
+        "https://doi.org/10.1093/nar/gkae1093"
+      ],
+      "license": {
+        "spdx": "CC-BY-NC-4.0",
+        "status": "verified",
+        "commercial_use": "no_without_separate_permission",
+        "redistribution": "not_cleared_for_public_github",
+        "notes": "Terms are for the named database release/channel, distinct from article/code license. Last reviewed 2026-11-14; restoration does not create new permission."
+      },
+      "access": {
+        "method": "public_bulk",
+        "files": [
+          {
+            "url": "https://www.npatlas.org/static/downloads/NPAtlas_download.tsv",
+            "filename": "NPAtlas_download.tsv"
+          },
+          {
+            "url": "https://www.npatlas.org/static/downloads/NPAtlas_download.json",
+            "filename": "NPAtlas_download.json"
+          }
+        ],
+        "requires_manual": false,
+        "license_gate": "noncommercial",
+        "notes": "Current v2024_09 is NC; older pre-2024_09 licensing must not be assumed for this release."
+      },
+      "purposes": [
+        "structure_pretraining",
+        "microbial_np",
+        "classification"
+      ],
+      "caveats": [
+        "Record counts overlap other resources; do not sum as unique molecules."
+      ],
+      "download_state": {
+        "status": "not_attempted_in_restoration",
+        "restoration_date": "2026-11-15"
+      }
+    },
+    {
+      "id": "cmnpd",
+      "name": "CMNPD",
+      "category": "marine_natural_products",
+      "priority": "core",
+      "content_scope": "Marine NP structures, calculated properties, measured activities",
+      "version": "1.0 / 2021 paper",
+      "scale": "31561 chemical entities; paper 72343 activities; 3D conformers are a different denominator.",
+      "landing_url": "https://docs.cmnpd.org/downloads",
+      "source_urls": [
+        "https://docs.cmnpd.org/downloads",
+        "https://docs.cmnpd.org/terms-and-conditions",
+        "https://doi.org/10.1093/nar/gkaa763"
+      ],
+      "license": {
+        "spdx": "CC-BY-NC-SA-4.0",
+        "status": "verified",
+        "commercial_use": "no_without_separate_permission",
+        "redistribution": "not_cleared_for_public_github",
+        "notes": "Terms are for the named database release/channel, distinct from article/code license. Last reviewed 2026-11-14; restoration does not create new permission."
+      },
+      "access": {
+        "method": "public_bulk",
+        "files": [
+          {
+            "url": "https://www.cmnpd.org/cmnpd/supplement/Downloads/CMNPD_1.0_2d.sdf.gz",
+            "filename": "CMNPD_1.0_2d.sdf.gz"
+          },
+          {
+            "url": "https://www.cmnpd.org/cmnpd/supplement/Downloads/CMNPD_1.0_3d.sdf.gz",
+            "filename": "CMNPD_1.0_3d.sdf.gz"
+          },
+          {
+            "url": "https://www.cmnpd.org/cmnpd/supplement/Downloads/CMNPD_1.0_calc_prop.tsv",
+            "filename": "CMNPD_1.0_calc_prop.tsv"
+          },
+          {
+            "url": "https://www.cmnpd.org/cmnpd/supplement/Downloads/CMNPD_1.0_act_br.tsv",
+            "filename": "CMNPD_1.0_act_br.tsv"
+          },
+          {
+            "url": "https://www.cmnpd.org/cmnpd/supplement/Downloads/CMNPD_1.0_act_std.tsv",
+            "filename": "CMNPD_1.0_act_std.tsv"
+          }
+        ],
+        "requires_manual": false,
+        "license_gate": "noncommercial",
+        "notes": ""
+      },
+      "purposes": [
+        "marine_np",
+        "structure_pretraining",
+        "activity_supervision"
+      ],
+      "caveats": [
+        "Record counts overlap other resources; do not sum as unique molecules."
+      ],
+      "download_state": {
+        "status": "not_attempted_in_restoration",
+        "restoration_date": "2026-11-15"
+      }
+    },
+    {
+      "id": "imppat",
+      "name": "IMPPAT",
+      "category": "medicinal_plants",
+      "priority": "extension",
+      "content_scope": "Plant parts, phytochemicals, therapeutic use, formulations and target evidence",
+      "version": "3.0; batch files 2026-09-30",
+      "scale": "18314 phytochemicals; 4154 plants; 38842 experimentally supported target associations",
+      "landing_url": "https://cb.imsc.res.in/imppat/statistics",
+      "source_urls": [
+        "https://cb.imsc.res.in/imppat/statistics",
+        "https://cb.imsc.res.in/imppat/download"
+      ],
+      "license": {
+        "spdx": "CC-BY-NC-ND-4.0",
+        "status": "verified",
+        "commercial_use": "no_without_separate_permission",
+        "redistribution": "not_cleared_for_public_github",
+        "notes": "Terms are for the named database release/channel, distinct from article/code license. Last reviewed 2026-11-14; restoration does not create new permission."
+      },
+      "access": {
+        "method": "public_bulk",
+        "files": [
+          {
+            "url": "https://cb.imsc.res.in/imppat/images/Batch_Download/Plant_Information_IMPPAT.tsv",
+            "filename": "Plant_Information_IMPPAT.tsv"
+          },
+          {
+            "url": "https://cb.imsc.res.in/imppat/images/Batch_Download/Chemical_Information_IMPPAT_Phytochemicals.tsv",
+            "filename": "Chemical_Information_IMPPAT_Phytochemicals.tsv"
+          },
+          {
+            "url": "https://cb.imsc.res.in/imppat/images/Batch_Download/2D_Structures_IMPPAT_Phytochemicals.sdf",
+            "filename": "2D_Structures_IMPPAT_Phytochemicals.sdf"
+          },
+          {
+            "url": "https://cb.imsc.res.in/imppat/images/Batch_Download/3D_Structures_IMPPAT_Phytochemicals.sdf",
+            "filename": "3D_Structures_IMPPAT_Phytochemicals.sdf"
+          },
+          {
+            "url": "https://cb.imsc.res.in/imppat/images/Batch_Download/Target_IMPPAT_Phytochemicals.tsv",
+            "filename": "Target_IMPPAT_Phytochemicals.tsv"
+          },
+          {
+            "url": "https://cb.imsc.res.in/imppat/images/Batch_Download/Bioactivity_IMPPAT_Phytochemicals.tsv",
+            "filename": "Bioactivity_IMPPAT_Phytochemicals.tsv"
+          },
+          {
+            "url": "https://cb.imsc.res.in/imppat/images/Batch_Download/IMPPAT_Phytochemical_Plant_Association.tsv",
+            "filename": "IMPPAT_Phytochemical_Plant_Association.tsv"
+          },
+          {
+            "url": "https://cb.imsc.res.in/imppat/images/Batch_Download/IMPPAT_TherapeuticUse_Plant_Association.tsv",
+            "filename": "IMPPAT_TherapeuticUse_Plant_Association.tsv"
+          },
+          {
+            "url": "https://cb.imsc.res.in/imppat/images/Batch_Download/IMPPAT_SingleHerbalFormulations.tsv",
+            "filename": "IMPPAT_SingleHerbalFormulations.tsv"
+          },
+          {
+            "url": "https://cb.imsc.res.in/imppat/images/Batch_Download/IMPPAT_PolyHerbalFormulations.tsv",
+            "filename": "IMPPAT_PolyHerbalFormulations.tsv"
+          }
+        ],
+        "requires_manual": false,
+        "license_gate": "restricted",
+        "notes": "NC-ND: retain unmodified raw exports; no derivative public redistribution clearance."
+      },
+      "purposes": [
+        "taxonomy",
+        "traditional_use_evidence",
+        "target_evidence"
+      ],
+      "caveats": [
+        "Plant/formulation use cannot be automatically attributed to each purified constituent."
+      ],
+      "download_state": {
+        "status": "not_attempted_in_restoration",
+        "restoration_date": "2026-11-15"
+      }
+    },
+    {
+      "id": "npbs",
+      "name": "NPBS Atlas",
+      "category": "natural_product_occurrences",
+      "priority": "extension",
+      "content_scope": "Biological source and activity annotations for natural products",
+      "version": "2025 paper",
+      "scale": "218941 NPs in publication",
+      "landing_url": "https://biochemai.cstspace.cn/npbs/downloads/",
+      "source_urls": [
+        "https://doi.org/10.1186/s13321-025-01116-y",
+        "https://biochemai.cstspace.cn/npbs/downloads/",
+        "https://biochemai.cstspace.cn/npbs/license/"
+      ],
+      "license": {
+        "spdx": "CC-BY-NC-4.0",
+        "status": "verified",
+        "commercial_use": "no_without_separate_permission",
+        "redistribution": "not_cleared_for_public_github",
+        "notes": "Terms are for the named database release/channel, distinct from article/code license. Last reviewed 2026-11-14; restoration does not create new permission."
+      },
+      "access": {
+        "method": "public_bulk",
+        "files": [
+          {
+            "url": "https://biochemai.cstspace.cn/npbs/download/?file=NPBS_Atlas_Data",
+            "filename": "NPBS_Atlas_Data.tsv"
+          },
+          {
+            "url": "https://biochemai.cstspace.cn/npbs/download/?file=NPBS_Atlas_biological_source_annotations",
+            "filename": "NPBS_Atlas_biological_source_annotations.json"
+          },
+          {
+            "url": "https://biochemai.cstspace.cn/npbs/download/?file=NPBS_Atlas_bioactivity_annotations",
+            "filename": "NPBS_Atlas_bioactivity_annotations.json"
+          }
+        ],
+        "requires_manual": false,
+        "license_gate": "noncommercial",
+        "notes": "All three official links returned HTML on 2026-11-14. This is a recorded prior failure, not a successful dataset acquisition."
+      },
+      "purposes": [
+        "natural_origin_provenance",
+        "taxonomy"
+      ],
+      "caveats": [
+        "Record counts overlap other resources; do not sum as unique molecules."
+      ],
+      "download_state": {
+        "status": "not_attempted_in_restoration",
+        "restoration_date": "2026-11-15"
+      }
+    },
+    {
+      "id": "mibig",
+      "name": "MIBiG",
+      "category": "biosynthesis",
+      "priority": "extension",
+      "content_scope": "Experimentally characterized biosynthetic gene clusters and products",
+      "version": "4.0 / 2024-11-15",
+      "scale": "3059 BGC entries in release; archive/file/sequence counts differ",
+      "landing_url": "https://mibig.secondarymetabolites.org/download",
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11701617/",
+        "https://zenodo.org/records/14835872"
+      ],
+      "license": {
+        "spdx": "CC-BY-4.0",
+        "status": "verified",
+        "commercial_use": "yes_with_attribution",
+        "redistribution": "allowed_under_named_terms",
+        "notes": "Terms are for the named database release/channel, distinct from article/code license. Last reviewed 2026-11-14; restoration does not create new permission."
+      },
+      "access": {
+        "method": "public_bulk",
+        "files": [
+          {
+            "url": "https://zenodo.org/api/records/14835872/files/mibig_json_4.0.tar.gz/content",
+            "filename": "mibig_json_4.0.tar.gz",
+            "md5": "ce1736f4fac7168d85dae3b37c77d3d2",
+            "content_format": "tar",
+            "notes": "Publisher file has .tar.gz suffix but is plain TAR; verified with publisher MD5."
+          },
+          {
+            "url": "https://zenodo.org/api/records/14835872/files/mibig_gbk_4.0.tar.gz/content",
+            "filename": "mibig_gbk_4.0.tar.gz",
+            "md5": "4e905ea01e4d8990e24c36161aea5fbd"
+          },
+          {
+            "url": "https://zenodo.org/api/records/14835872/files/mibig_prot_seqs_4.0.fasta/content",
+            "filename": "mibig_prot_seqs_4.0.fasta",
+            "md5": "1dd73356e63d6ba3507f9199cfd22e1c"
+          }
+        ],
+        "requires_manual": false,
+        "license_gate": "open",
+        "notes": ""
+      },
+      "purposes": [
+        "biosynthesis_multimodal",
+        "gene_cluster_product_mapping"
+      ],
+      "caveats": [
+        "Record counts overlap other resources; do not sum as unique molecules."
+      ],
+      "download_state": {
+        "status": "not_attempted_in_restoration",
+        "restoration_date": "2026-11-15"
+      }
+    },
+    {
+      "id": "chebi",
+      "name": "ChEBI",
+      "category": "chemical_ontology",
+      "priority": "extension",
+      "content_scope": "Biologically relevant chemical ontology, structures and identifiers",
+      "version": "Monthly FTP snapshot; resolved URL and Last-Modified pinned in sidecar",
+      "scale": "Previous 2026-11-05 SDF 199902 records; current restoration must recount.",
+      "landing_url": "https://www.ebi.ac.uk/chebi/downloads",
+      "source_urls": [
+        "https://www.ebi.ac.uk/chebi/downloads"
+      ],
+      "license": {
+        "spdx": "CC-BY-4.0",
+        "status": "verified",
+        "commercial_use": "yes_with_attribution",
+        "redistribution": "allowed_under_named_terms",
+        "notes": "Terms are for the named database release/channel, distinct from article/code license. Last reviewed 2026-11-14; restoration does not create new permission."
+      },
+      "access": {
+        "method": "public_bulk",
+        "files": [
+          {
+            "url": "https://ftp.ebi.ac.uk/pub/databases/chebi/SDF/chebi.sdf.gz",
+            "filename": "chebi.sdf.gz"
+          },
+          {
+            "url": "https://ftp.ebi.ac.uk/pub/databases/chebi/LICENSE",
+            "filename": "LICENSE"
+          },
+          {
+            "url": "https://ftp.ebi.ac.uk/pub/databases/chebi/README",
+            "filename": "README"
+          }
+        ],
+        "requires_manual": false,
+        "license_gate": "open",
+        "notes": ""
+      },
+      "purposes": [
+        "ontology",
+        "identifier_mapping",
+        "structure_pretraining"
+      ],
+      "caveats": [
+        "Not all entries are discrete complete molecules.",
+        "Generic classes and invalid structures remain explicit missing structures."
+      ],
+      "download_state": {
+        "status": "not_attempted_in_restoration",
+        "restoration_date": "2026-11-15"
+      }
+    },
+    {
+      "id": "drugcentral",
+      "name": "DrugCentral",
+      "category": "drug_knowledge",
+      "priority": "extension",
+      "content_scope": "Small-molecule drug structures and target interactions",
+      "version": "Official download page dated 2026-09-25; path includes 2027",
+      "scale": "Previous SDF 4310 records; interactions 22364. Recount on restoration.",
+      "landing_url": "https://drugcentral.org/download",
+      "source_urls": [
+        "https://drugcentral.org/download",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5210665/"
+      ],
+      "license": {
+        "spdx": "CC-BY-SA-4.0",
+        "status": "verified",
+        "commercial_use": "yes_with_attribution",
+        "redistribution": "allowed_under_named_terms",
+        "notes": "Terms are for the named database release/channel, distinct from article/code license. Last reviewed 2026-11-14; restoration does not create new permission."
+      },
+      "access": {
+        "method": "public_bulk",
+        "files": [
+          {
+            "url": "https://unmtid-dbs.net/download/DrugCentral/2027/drug.target.interaction.tsv.gz",
+            "filename": "drug.target.interaction.tsv.gz"
+          },
+          {
+            "url": "https://unmtid-dbs.net/download/DrugCentral/2027/structures.molV3.sdf.gz",
+            "filename": "structures.molV3.sdf.gz"
+          }
+        ],
+        "requires_manual": false,
+        "license_gate": "open",
+        "notes": "Selected structures and target interactions only; no full PostgreSQL or complete indication graph in this package."
+      },
+      "purposes": [
+        "drug_mechanisms",
+        "target_evidence"
+      ],
+      "caveats": [
+        "Record counts overlap other resources; do not sum as unique molecules."
+      ],
+      "download_state": {
+        "status": "not_attempted_in_restoration",
+        "restoration_date": "2026-11-15"
+      }
+    },
+    {
+      "id": "sider",
+      "name": "SIDER",
+      "category": "adverse_effects",
+      "priority": "extension",
+      "content_scope": "Drug labels, adverse events, frequency and indication relations",
+      "version": "4.1 / 2015-10-21",
+      "scale": "Label-based drug-event associations; counts are relationships, not unique drugs",
+      "landing_url": "https://sideeffects.embl.de/download/",
+      "source_urls": [
+        "https://sideeffects.embl.de/download/"
+      ],
+      "license": {
+        "spdx": "CC-BY-NC-SA-4.0",
+        "status": "verified",
+        "commercial_use": "no_without_separate_permission",
+        "redistribution": "not_cleared_for_public_github",
+        "notes": "Terms are for the named database release/channel, distinct from article/code license. Last reviewed 2026-11-14; restoration does not create new permission."
+      },
+      "access": {
+        "method": "public_bulk",
+        "files": [
+          {
+            "url": "https://sideeffects.embl.de/media/download/README",
+            "filename": "README"
+          },
+          {
+            "url": "https://sideeffects.embl.de/media/download/drug_names.tsv",
+            "filename": "drug_names.tsv"
+          },
+          {
+            "url": "https://sideeffects.embl.de/media/download/drug_atc.tsv",
+            "filename": "drug_atc.tsv"
+          },
+          {
+            "url": "https://sideeffects.embl.de/media/download/meddra_all_indications.tsv.gz",
+            "filename": "meddra_all_indications.tsv.gz"
+          },
+          {
+            "url": "https://sideeffects.embl.de/media/download/meddra_all_se.tsv.gz",
+            "filename": "meddra_all_se.tsv.gz"
+          },
+          {
+            "url": "https://sideeffects.embl.de/media/download/meddra_freq.tsv.gz",
+            "filename": "meddra_freq.tsv.gz"
+          },
+          {
+            "url": "https://sideeffects.embl.de/media/download/meddra_all_label_indications.tsv.gz",
+            "filename": "meddra_all_label_indications.tsv.gz"
+          },
+          {
+            "url": "https://sideeffects.embl.de/media/download/meddra_all_label_se.tsv.gz",
+            "filename": "meddra_all_label_se.tsv.gz"
+          }
+        ],
+        "requires_manual": false,
+        "license_gate": "noncommercial",
+        "notes": ""
+      },
+      "purposes": [
+        "adverse_effect_supervision",
+        "indication_evidence"
+      ],
+      "caveats": [
+        "Record counts overlap other resources; do not sum as unique molecules."
+      ],
+      "download_state": {
+        "status": "not_attempted_in_restoration",
+        "restoration_date": "2026-11-15"
+      }
+    },
+    {
+      "id": "supernatural",
+      "name": "SuperNatural 3.0",
+      "category": "NP aggregate",
+      "priority": "extension",
+      "content_scope": "NPs and NP-derived supplier structures with calculated annotations",
+      "version": "3.0 / 2023 paper",
+      "scale": "449058 compounds",
+      "landing_url": "https://bioinf-applied.charite.de/supernatural_3/",
+      "source_urls": [
+        "https://bioinf-applied.charite.de/supernatural_3/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9825600/"
+      ],
+      "license": {
+        "spdx": "UNVERIFIED",
+        "status": "requires_review",
+        "commercial_use": "unverified",
+        "redistribution": "not_cleared_for_public_github",
+        "notes": "Terms are for the named database release/channel, distinct from article/code license. Last reviewed 2026-11-14; restoration does not create new permission."
+      },
+      "access": {
+        "method": "manual_or_api",
+        "files": [],
+        "requires_manual": true,
+        "license_gate": "unknown",
+        "notes": "Official website and FAQ returned HTTP 503 on 2026-11-14. No verified full CSV endpoint."
+      },
+      "purposes": [
+        "structure_pretraining",
+        "supplier_metadata"
+      ],
+      "caveats": [
+        "Record counts overlap other resources; do not sum as unique molecules."
+      ],
+      "download_state": {
+        "status": "not_attempted_in_restoration",
+        "restoration_date": "2026-11-15"
+      }
+    },
+    {
+      "id": "herb",
+      "name": "HERB 2.0",
+      "category": "traditional_medicine",
+      "priority": "extension",
+      "content_scope": "Ingredients, herbs, formulations, transcriptomics and clinical evidence",
+      "version": "2.0 / 2025 paper",
+      "scale": "44595 ingredients; 6892 herbs; 6743 formulae",
+      "landing_url": "https://herb.ac.cn/",
+      "source_urls": [
+        "https://herb.ac.cn/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11701625/"
+      ],
+      "license": {
+        "spdx": "UNVERIFIED",
+        "status": "requires_review",
+        "commercial_use": "unverified",
+        "redistribution": "not_cleared_for_public_github",
+        "notes": "Terms are for the named database release/channel, distinct from article/code license. Last reviewed 2026-11-14; restoration does not create new permission."
+      },
+      "access": {
+        "method": "manual_or_api",
+        "files": [],
+        "requires_manual": true,
+        "license_gate": "unknown",
+        "notes": "Official service returned HTTP 503 on 2026-11-14. Keep herb/extract/formula/compound entities distinct."
+      },
+      "purposes": [
+        "perturbation_supervision",
+        "traditional_use_evidence",
+        "clinical_evidence"
+      ],
+      "caveats": [
+        "Record counts overlap other resources; do not sum as unique molecules."
+      ],
+      "download_state": {
+        "status": "not_attempted_in_restoration",
+        "restoration_date": "2026-11-15"
+      }
+    },
+    {
+      "id": "knapsack",
+      "name": "KNApSAcK",
+      "category": "natural_occurrences",
+      "priority": "extension",
+      "content_scope": "Metabolite occurrence in organisms",
+      "version": "2026-07-03 statistics",
+      "scale": "63735 metabolites; 159606 species-metabolite pairs",
+      "landing_url": "https://www.knapsackfamily.com/knapsack_core/top.php",
+      "source_urls": [
+        "https://www.knapsackfamily.com/knapsack_core/top.php"
+      ],
+      "license": {
+        "spdx": "PROPRIETARY",
+        "status": "requires_review",
+        "commercial_use": "no_without_separate_permission",
+        "redistribution": "not_cleared_for_public_github",
+        "notes": "Terms are for the named database release/channel, distinct from article/code license. Last reviewed 2026-11-14; restoration does not create new permission."
+      },
+      "access": {
+        "method": "manual_or_api",
+        "files": [],
+        "requires_manual": true,
+        "license_gate": "restricted",
+        "notes": "Commercial permission required; use documented query/download arrangements."
+      },
+      "purposes": [
+        "taxonomy",
+        "natural_origin_provenance"
+      ],
+      "caveats": [
+        "Record counts overlap other resources; do not sum as unique molecules."
+      ],
+      "download_state": {
+        "status": "not_attempted_in_restoration",
+        "restoration_date": "2026-11-15"
+      }
+    },
+    {
+      "id": "gnps",
+      "name": "GNPS reference spectral libraries",
+      "category": "spectra",
+      "priority": "extension",
+      "content_scope": "Reference tandem-mass spectra and metadata",
+      "version": "Rolling; pin chosen library",
+      "scale": "Library-specific spectra and molecule counts",
+      "landing_url": "https://ccms-ucsd.github.io/GNPSDocumentation/downloadlibraries/",
+      "source_urls": [
+        "https://ccms-ucsd.github.io/GNPSDocumentation/downloadlibraries/"
+      ],
+      "license": {
+        "spdx": "MIXED",
+        "status": "requires_review",
+        "commercial_use": "unverified",
+        "redistribution": "not_cleared_for_public_github",
+        "notes": "Terms are for the named database release/channel, distinct from article/code license. Last reviewed 2026-11-14; restoration does not create new permission."
+      },
+      "access": {
+        "method": "manual_or_api",
+        "files": [],
+        "requires_manual": true,
+        "license_gate": "mixed",
+        "notes": "Some GNPS submissions are CC0; imported libraries retain separate terms."
+      },
+      "purposes": [
+        "spectra_structure_pretraining",
+        "dereplication"
+      ],
+      "caveats": [
+        "Record counts overlap other resources; do not sum as unique molecules."
+      ],
+      "download_state": {
+        "status": "not_attempted_in_restoration",
+        "restoration_date": "2026-11-15"
+      }
+    },
+    {
+      "id": "npmrd",
+      "name": "NP-MRD",
+      "category": "nmr",
+      "priority": "extension",
+      "content_scope": "Natural product NMR structure and spectral records",
+      "version": "Versioned downloads",
+      "scale": "Release-specific molecules and measured/predicted spectra",
+      "landing_url": "https://np-mrd.org/downloads",
+      "source_urls": [
+        "https://np-mrd.org/downloads",
+        "https://np-mrd.org/about"
+      ],
+      "license": {
+        "spdx": "CC-BY-NC-4.0",
+        "status": "verified",
+        "commercial_use": "no_without_separate_permission",
+        "redistribution": "not_cleared_for_public_github",
+        "notes": "Terms are for the named database release/channel, distinct from article/code license. Last reviewed 2026-11-14; restoration does not create new permission."
+      },
+      "access": {
+        "method": "manual_or_api",
+        "files": [],
+        "requires_manual": true,
+        "license_gate": "noncommercial",
+        "notes": "Select experimental versus predicted spectra and record separate evidence types."
+      },
+      "purposes": [
+        "nmr_structure_pretraining",
+        "structure_validation"
+      ],
+      "caveats": [
+        "Record counts overlap other resources; do not sum as unique molecules."
+      ],
+      "download_state": {
+        "status": "not_attempted_in_restoration",
+        "restoration_date": "2026-11-15"
+      }
+    },
+    {
+      "id": "pubchem",
+      "name": "PubChem",
+      "category": "general_chemistry",
+      "priority": "extension",
+      "content_scope": "Compounds, substances and bioassay records from many depositors",
+      "version": "Rolling FTP/API",
+      "scale": "Large collection; NP cross-reference subset recommended",
+      "landing_url": "https://pubchem.ncbi.nlm.nih.gov/docs/downloads",
+      "source_urls": [
+        "https://pubchem.ncbi.nlm.nih.gov/docs/downloads"
+      ],
+      "license": {
+        "spdx": "MIXED",
+        "status": "requires_review",
+        "commercial_use": "unverified",
+        "redistribution": "not_cleared_for_public_github",
+        "notes": "Terms are for the named database release/channel, distinct from article/code license. Last reviewed 2026-11-14; restoration does not create new permission."
+      },
+      "access": {
+        "method": "manual_or_api",
+        "files": [],
+        "requires_manual": true,
+        "license_gate": "mixed",
+        "notes": "PUG REST/FTP subset; source-specific data rights remain relevant."
+      },
+      "purposes": [
+        "general_structure_pretraining",
+        "identifier_mapping",
+        "bioassay_supervision"
+      ],
+      "caveats": [
+        "Record counts overlap other resources; do not sum as unique molecules."
+      ],
+      "download_state": {
+        "status": "not_attempted_in_restoration",
+        "restoration_date": "2026-11-15"
+      }
+    },
+    {
+      "id": "chembl",
+      "name": "ChEMBL",
+      "category": "bioactivity",
+      "priority": "extension",
+      "content_scope": "Quantitative assays, drugs, mechanisms, indications and ADME",
+      "version": "Resolve and pin release",
+      "scale": "Millions of molecules and experimental measurements",
+      "landing_url": "https://www.ebi.ac.uk/chembl/",
+      "source_urls": [
+        "https://www.ebi.ac.uk/chembl/"
+      ],
+      "license": {
+        "spdx": "CC-BY-SA-3.0",
+        "status": "verified",
+        "commercial_use": "yes_with_attribution",
+        "redistribution": "allowed_under_named_terms",
+        "notes": "Terms are for the named database release/channel, distinct from article/code license. Last reviewed 2026-11-14; restoration does not create new permission."
+      },
+      "access": {
+        "method": "manual_or_api",
+        "files": [],
+        "requires_manual": true,
+        "license_gate": "open",
+        "notes": "Use official API/SQLite subsets. Whole collection intentionally not acquired."
+      },
+      "purposes": [
+        "activity_supervision",
+        "admet_supervision",
+        "indication_evidence"
+      ],
+      "caveats": [
+        "Record counts overlap other resources; do not sum as unique molecules."
+      ],
+      "download_state": {
+        "status": "not_attempted_in_restoration",
+        "restoration_date": "2026-11-15"
+      }
+    },
+    {
+      "id": "bindingdb",
+      "name": "BindingDB",
+      "category": "binding",
+      "priority": "extension",
+      "content_scope": "Measured protein-ligand binding affinities",
+      "version": "Rolling download",
+      "scale": "Approximately 3.25m measurements / 1.45m molecules at prior inspection",
+      "landing_url": "https://bindingdb.org/rwd/bind/info.jsp",
+      "source_urls": [
+        "https://bindingdb.org/rwd/bind/info.jsp"
+      ],
+      "license": {
+        "spdx": "MIXED",
+        "status": "requires_review",
+        "commercial_use": "unverified",
+        "redistribution": "not_cleared_for_public_github",
+        "notes": "Terms are for the named database release/channel, distinct from article/code license. Last reviewed 2026-11-14; restoration does not create new permission."
+      },
+      "access": {
+        "method": "manual_or_api",
+        "files": [],
+        "requires_manual": true,
+        "license_gate": "mixed",
+        "notes": "Own data CC BY 3.0; imported ChEMBL has distinct share-alike terms."
+      },
+      "purposes": [
+        "affinity_supervision",
+        "target_prediction"
+      ],
+      "caveats": [
+        "Record counts overlap other resources; do not sum as unique molecules."
+      ],
+      "download_state": {
+        "status": "not_attempted_in_restoration",
+        "restoration_date": "2026-11-15"
+      }
+    },
+    {
+      "id": "opentargets",
+      "name": "Open Targets Platform",
+      "category": "target_disease",
+      "priority": "extension",
+      "content_scope": "Target-disease associations with evidence provenance",
+      "version": "Quarterly release",
+      "scale": "Release-specific target-disease evidence",
+      "landing_url": "https://platform.opentargets.org/downloads",
+      "source_urls": [
+        "https://platform.opentargets.org/downloads",
+        "https://platform-docs.opentargets.org/licence"
+      ],
+      "license": {
+        "spdx": "CC0-1.0",
+        "status": "verified",
+        "commercial_use": "yes_with_attribution",
+        "redistribution": "allowed_under_named_terms",
+        "notes": "Terms are for the named database release/channel, distinct from article/code license. Last reviewed 2026-11-14; restoration does not create new permission."
+      },
+      "access": {
+        "method": "manual_or_api",
+        "files": [],
+        "requires_manual": true,
+        "license_gate": "open",
+        "notes": "GraphQL or release Parquet; retain evidence type and strength."
+      },
+      "purposes": [
+        "disease_target_supervision",
+        "evidence_graph"
+      ],
+      "caveats": [
+        "Record counts overlap other resources; do not sum as unique molecules."
+      ],
+      "download_state": {
+        "status": "not_attempted_in_restoration",
+        "restoration_date": "2026-11-15"
+      }
+    },
+    {
+      "id": "ttd",
+      "name": "Therapeutic Target Database",
+      "category": "target_drug",
+      "priority": "extension",
+      "content_scope": "Therapeutic targets, drugs, disease and clinical stages",
+      "version": "2026 release",
+      "scale": "3798 targets / 40398 drugs reported",
+      "landing_url": "https://idrblab.org/ttd/",
+      "source_urls": [
+        "https://idrblab.org/ttd/"
+      ],
+      "license": {
+        "spdx": "UNVERIFIED",
+        "status": "requires_review",
+        "commercial_use": "unverified",
+        "redistribution": "not_cleared_for_public_github",
+        "notes": "Terms are for the named database release/channel, distinct from article/code license. Last reviewed 2026-11-14; restoration does not create new permission."
+      },
+      "access": {
+        "method": "manual_or_api",
+        "files": [],
+        "requires_manual": true,
+        "license_gate": "unknown",
+        "notes": "Use official downloads after checking named release permission."
+      },
+      "purposes": [
+        "target_disease_graph",
+        "clinical_stage_supervision"
+      ],
+      "caveats": [
+        "Record counts overlap other resources; do not sum as unique molecules."
+      ],
+      "download_state": {
+        "status": "not_attempted_in_restoration",
+        "restoration_date": "2026-11-15"
+      }
+    },
+    {
+      "id": "lincs",
+      "name": "LINCS CMap L1000",
+      "category": "perturbation",
+      "priority": "extension",
+      "content_scope": "Compound-induced cell transcriptomic profiles",
+      "version": "GSE92742/GSE70138 and subsequent releases",
+      "scale": "978 directly measured landmark transcripts plus inferred genes",
+      "landing_url": "https://clue.io/connectopedia/lincs_cmap_data",
+      "source_urls": [
+        "https://clue.io/connectopedia/lincs_cmap_data"
+      ],
+      "license": {
+        "spdx": "MIXED",
+        "status": "requires_review",
+        "commercial_use": "unverified",
+        "redistribution": "not_cleared_for_public_github",
+        "notes": "Terms are for the named database release/channel, distinct from article/code license. Last reviewed 2026-11-14; restoration does not create new permission."
+      },
+      "access": {
+        "method": "manual_or_api",
+        "files": [],
+        "requires_manual": true,
+        "license_gate": "mixed",
+        "notes": "GEO/clue metadata and cell/dose/time context required; inferred genes not direct measurements."
+      },
+      "purposes": [
+        "cell_response_supervision",
+        "mechanism_similarity"
+      ],
+      "caveats": [
+        "Record counts overlap other resources; do not sum as unique molecules."
+      ],
+      "download_state": {
+        "status": "not_attempted_in_restoration",
+        "restoration_date": "2026-11-15"
+      }
+    },
+    {
+      "id": "jump",
+      "name": "JUMP Cell Painting",
+      "category": "phenotypes",
+      "priority": "extension",
+      "content_scope": "Chemical perturbation morphology images and profiles",
+      "version": "Versioned gallery releases",
+      "scale": "Approximately 116k principal chemical perturbations; release-dependent",
+      "landing_url": "https://github.com/jump-cellpainting/datasets",
+      "source_urls": [
+        "https://github.com/jump-cellpainting/datasets"
+      ],
+      "license": {
+        "spdx": "CC0-1.0",
+        "status": "verified",
+        "commercial_use": "yes_with_attribution",
+        "redistribution": "allowed_under_named_terms",
+        "notes": "Terms are for the named database release/channel, distinct from article/code license. Last reviewed 2026-11-14; restoration does not create new permission."
+      },
+      "access": {
+        "method": "manual_or_api",
+        "files": [],
+        "requires_manual": true,
+        "license_gate": "open",
+        "notes": "Download metadata/profile subset before large image bulk."
+      },
+      "purposes": [
+        "phenotype_pretraining",
+        "mechanism_similarity"
+      ],
+      "caveats": [
+        "Record counts overlap other resources; do not sum as unique molecules."
+      ],
+      "download_state": {
+        "status": "not_attempted_in_restoration",
+        "restoration_date": "2026-11-15"
+      }
+    },
+    {
+      "id": "toxcast",
+      "name": "ToxCast invitrodb",
+      "category": "toxicity",
+      "priority": "extension",
+      "content_scope": "High-throughput toxicity screening and dose-response",
+      "version": "v4.3 at prior inspection",
+      "scale": "Release-specific chemicals and assays",
+      "landing_url": "https://www.epa.gov/comptox-tools/exploring-toxcast-data",
+      "source_urls": [
+        "https://www.epa.gov/comptox-tools/exploring-toxcast-data"
+      ],
+      "license": {
+        "spdx": "US-GOVERNMENT-OPEN-DATA",
+        "status": "verified",
+        "commercial_use": "yes_with_attribution",
+        "redistribution": "allowed_under_named_terms",
+        "notes": "Terms are for the named database release/channel, distinct from article/code license. Last reviewed 2026-11-14; restoration does not create new permission."
+      },
+      "access": {
+        "method": "manual_or_api",
+        "files": [],
+        "requires_manual": true,
+        "license_gate": "open",
+        "notes": "Retain assay interference, concentration, cytotoxicity and quality flags."
+      },
+      "purposes": [
+        "toxicity_supervision",
+        "dose_response"
+      ],
+      "caveats": [
+        "Record counts overlap other resources; do not sum as unique molecules."
+      ],
+      "download_state": {
+        "status": "not_attempted_in_restoration",
+        "restoration_date": "2026-11-15"
+      }
+    },
+    {
+      "id": "tox21",
+      "name": "Tox21",
+      "category": "toxicity",
+      "priority": "extension",
+      "content_scope": "Toxicity screening measurements",
+      "version": "Challenge and subsequent assay releases",
+      "scale": "Original challenge roughly 10000 chemicals",
+      "landing_url": "https://tox21.gov/",
+      "source_urls": [
+        "https://tox21.gov/"
+      ],
+      "license": {
+        "spdx": "CC0-1.0",
+        "status": "verified",
+        "commercial_use": "yes_with_attribution",
+        "redistribution": "allowed_under_named_terms",
+        "notes": "Terms are for the named database release/channel, distinct from article/code license. Last reviewed 2026-11-14; restoration does not create new permission."
+      },
+      "access": {
+        "method": "manual_or_api",
+        "files": [],
+        "requires_manual": true,
+        "license_gate": "open",
+        "notes": "Select official release; not every assay outcome is a clinical safety label."
+      },
+      "purposes": [
+        "toxicity_supervision"
+      ],
+      "caveats": [
+        "Record counts overlap other resources; do not sum as unique molecules."
+      ],
+      "download_state": {
+        "status": "not_attempted_in_restoration",
+        "restoration_date": "2026-11-15"
+      }
+    },
+    {
+      "id": "toxval",
+      "name": "EPA ToxValDB",
+      "category": "toxicity",
+      "priority": "extension",
+      "content_scope": "Toxicological reference values from multiple sources",
+      "version": "Version-specific",
+      "scale": "Release-specific measurements",
+      "landing_url": "https://www.epa.gov/comptox-tools/downloadable-computational-toxicology-data",
+      "source_urls": [
+        "https://www.epa.gov/comptox-tools/downloadable-computational-toxicology-data"
+      ],
+      "license": {
+        "spdx": "MIXED",
+        "status": "requires_review",
+        "commercial_use": "unverified",
+        "redistribution": "not_cleared_for_public_github",
+        "notes": "Terms are for the named database release/channel, distinct from article/code license. Last reviewed 2026-11-14; restoration does not create new permission."
+      },
+      "access": {
+        "method": "manual_or_api",
+        "files": [],
+        "requires_manual": true,
+        "license_gate": "mixed",
+        "notes": "Preserve species, route, duration, endpoint and original source restrictions."
+      },
+      "purposes": [
+        "toxicity_supervision"
+      ],
+      "caveats": [
+        "Record counts overlap other resources; do not sum as unique molecules."
+      ],
+      "download_state": {
+        "status": "not_attempted_in_restoration",
+        "restoration_date": "2026-11-15"
+      }
+    },
+    {
+      "id": "dailymed",
+      "name": "DailyMed",
+      "category": "clinical_labels",
+      "priority": "extension",
+      "content_scope": "Drug labeling, formulation, warnings and indications",
+      "version": "REST API v2; rolling",
+      "scale": "Query by ingredient/product",
+      "landing_url": "https://dailymed.nlm.nih.gov/dailymed/app-support-web-services.cfm",
+      "source_urls": [
+        "https://dailymed.nlm.nih.gov/dailymed/app-support-web-services.cfm"
+      ],
+      "license": {
+        "spdx": "US-GOVERNMENT-OPEN-DATA",
+        "status": "verified",
+        "commercial_use": "yes_with_attribution",
+        "redistribution": "allowed_under_named_terms",
+        "notes": "Terms are for the named database release/channel, distinct from article/code license. Last reviewed 2026-11-14; restoration does not create new permission."
+      },
+      "access": {
+        "method": "manual_or_api",
+        "files": [],
+        "requires_manual": true,
+        "license_gate": "open",
+        "notes": "Use selected natural drugs; labels attach to product/route/population, not arbitrary analogues."
+      },
+      "purposes": [
+        "approved_indication_evidence",
+        "formulation_context"
+      ],
+      "caveats": [
+        "Record counts overlap other resources; do not sum as unique molecules."
+      ],
+      "download_state": {
+        "status": "not_attempted_in_restoration",
+        "restoration_date": "2026-11-15"
+      }
+    },
+    {
+      "id": "clinicaltrials",
+      "name": "ClinicalTrials.gov",
+      "category": "clinical_trials",
+      "priority": "extension",
+      "content_scope": "Trial registrations, phases, outcomes and results",
+      "version": "API v2; daily updates",
+      "scale": "Query by intervention and disease",
+      "landing_url": "https://clinicaltrials.gov/data-api/how-download-study-records",
+      "source_urls": [
+        "https://clinicaltrials.gov/data-api/how-download-study-records"
+      ],
+      "license": {
+        "spdx": "US-GOVERNMENT-OPEN-DATA",
+        "status": "verified",
+        "commercial_use": "yes_with_attribution",
+        "redistribution": "allowed_under_named_terms",
+        "notes": "Terms are for the named database release/channel, distinct from article/code license. Last reviewed 2026-11-14; restoration does not create new permission."
+      },
+      "access": {
+        "method": "manual_or_api",
+        "files": [],
+        "requires_manual": true,
+        "license_gate": "open",
+        "notes": "Trial registration or completion does not mean positive efficacy."
+      },
+      "purposes": [
+        "clinical_stage_evidence",
+        "indication_evidence"
+      ],
+      "caveats": [
+        "Record counts overlap other resources; do not sum as unique molecules."
+      ],
+      "download_state": {
+        "status": "not_attempted_in_restoration",
+        "restoration_date": "2026-11-15"
+      }
+    },
+    {
+      "id": "tcmid",
+      "name": "TCMID 2.0",
+      "category": "traditional_medicine",
+      "priority": "extension",
+      "content_scope": "Herbs, ingredients, prescriptions and targets",
+      "version": "2018 publication",
+      "scale": "43413 ingredients; 8159 herbs; 46929 prescriptions",
+      "landing_url": "https://academic.oup.com/nar/article/46/D1/D1117/4584630",
+      "source_urls": [
+        "https://academic.oup.com/nar/article/46/D1/D1117/4584630"
+      ],
+      "license": {
+        "spdx": "UNVERIFIED",
+        "status": "requires_review",
+        "commercial_use": "unverified",
+        "redistribution": "not_cleared_for_public_github",
+        "notes": "Terms are for the named database release/channel, distinct from article/code license. Last reviewed 2026-11-14; restoration does not create new permission."
+      },
+      "access": {
+        "method": "manual_or_api",
+        "files": [],
+        "requires_manual": true,
+        "license_gate": "unknown",
+        "notes": "Legacy service, permissions and bulk availability require verification."
+      },
+      "purposes": [
+        "traditional_use_evidence",
+        "hypothesis_graph"
+      ],
+      "caveats": [
+        "Record counts overlap other resources; do not sum as unique molecules."
+      ],
+      "download_state": {
+        "status": "not_attempted_in_restoration",
+        "restoration_date": "2026-11-15"
+      }
+    },
+    {
+      "id": "batman_tcm",
+      "name": "BATMAN-TCM 2.0",
+      "category": "traditional_medicine",
+      "priority": "extension",
+      "content_scope": "Traditional medicine interaction and target hypotheses",
+      "version": "2024 publication",
+      "scale": "See versioned publication",
+      "landing_url": "https://doi.org/10.1093/nar/gkad926",
+      "source_urls": [
+        "https://doi.org/10.1093/nar/gkad926"
+      ],
+      "license": {
+        "spdx": "UNVERIFIED",
+        "status": "requires_review",
+        "commercial_use": "unverified",
+        "redistribution": "not_cleared_for_public_github",
+        "notes": "Terms are for the named database release/channel, distinct from article/code license. Last reviewed 2026-11-14; restoration does not create new permission."
+      },
+      "access": {
+        "method": "manual_or_api",
+        "files": [],
+        "requires_manual": true,
+        "license_gate": "unknown",
+        "notes": "Distinguish predicted from experimentally supported relationships."
+      },
+      "purposes": [
+        "target_hypothesis_graph"
+      ],
+      "caveats": [
+        "Record counts overlap other resources; do not sum as unique molecules."
+      ],
+      "download_state": {
+        "status": "not_attempted_in_restoration",
+        "restoration_date": "2026-11-15"
+      }
+    },
+    {
+      "id": "tcmsp",
+      "name": "TCMSP",
+      "category": "traditional_medicine",
+      "priority": "extension",
+      "content_scope": "Herb-ingredient-target relationships and computed pharmacology",
+      "version": "Legacy/live version",
+      "scale": "Not independently counted",
+      "landing_url": "https://tcmsp-e.com/tcmsp.php",
+      "source_urls": [
+        "https://tcmsp-e.com/tcmsp.php"
+      ],
+      "license": {
+        "spdx": "UNVERIFIED",
+        "status": "requires_review",
+        "commercial_use": "unverified",
+        "redistribution": "not_cleared_for_public_github",
+        "notes": "Terms are for the named database release/channel, distinct from article/code license. Last reviewed 2026-11-14; restoration does not create new permission."
+      },
+      "access": {
+        "method": "manual_or_api",
+        "files": [],
+        "requires_manual": true,
+        "license_gate": "unknown",
+        "notes": "Computed oral bioavailability/drug-likeness are not clinical labels."
+      },
+      "purposes": [
+        "traditional_use_evidence",
+        "computed_descriptors"
+      ],
+      "caveats": [
+        "Record counts overlap other resources; do not sum as unique molecules."
+      ],
+      "download_state": {
+        "status": "not_attempted_in_restoration",
+        "restoration_date": "2026-11-15"
+      }
+    },
+    {
+      "id": "uniprot",
+      "name": "UniProt",
+      "category": "protein",
+      "priority": "extension",
+      "content_scope": "Protein sequences and functional annotations",
+      "version": "Release-specific",
+      "scale": "Candidate-target subset",
+      "landing_url": "https://www.uniprot.org/help/downloads",
+      "source_urls": [
+        "https://www.uniprot.org/help/downloads"
+      ],
+      "license": {
+        "spdx": "CC-BY-4.0",
+        "status": "verified",
+        "commercial_use": "yes_with_attribution",
+        "redistribution": "allowed_under_named_terms",
+        "notes": "Terms are for the named database release/channel, distinct from article/code license. Last reviewed 2026-11-14; restoration does not create new permission."
+      },
+      "access": {
+        "method": "manual_or_api",
+        "files": [],
+        "requires_manual": true,
+        "license_gate": "open",
+        "notes": "REST API or bulk subset; reviewed and unreviewed entries separate."
+      },
+      "purposes": [
+        "protein_encoder",
+        "target_evidence"
+      ],
+      "caveats": [
+        "Record counts overlap other resources; do not sum as unique molecules."
+      ],
+      "download_state": {
+        "status": "not_attempted_in_restoration",
+        "restoration_date": "2026-11-15"
+      }
+    },
+    {
+      "id": "pdb",
+      "name": "wwPDB/RCSB PDB",
+      "category": "structures",
+      "priority": "extension",
+      "content_scope": "Experimental macromolecular structures and ligands",
+      "version": "Weekly releases",
+      "scale": "Selected protein-ligand complexes",
+      "landing_url": "https://www.rcsb.org/docs/programmatic-access/file-download-services",
+      "source_urls": [
+        "https://www.rcsb.org/docs/programmatic-access/file-download-services"
+      ],
+      "license": {
+        "spdx": "CC0-1.0",
+        "status": "verified",
+        "commercial_use": "yes_with_attribution",
+        "redistribution": "allowed_under_named_terms",
+        "notes": "Terms are for the named database release/channel, distinct from article/code license. Last reviewed 2026-11-14; restoration does not create new permission."
+      },
+      "access": {
+        "method": "manual_or_api",
+        "files": [],
+        "requires_manual": true,
+        "license_gate": "open",
+        "notes": "Retain structural resolution, missing atoms, ligand identities and artifacts."
+      },
+      "purposes": [
+        "structure_encoder",
+        "binding_geometry"
+      ],
+      "caveats": [
+        "Record counts overlap other resources; do not sum as unique molecules."
+      ],
+      "download_state": {
+        "status": "not_attempted_in_restoration",
+        "restoration_date": "2026-11-15"
+      }
+    },
+    {
+      "id": "pmc",
+      "name": "PubMed and PMC Open Access",
+      "category": "literature",
+      "priority": "extension",
+      "content_scope": "Primary literature, open-access full text and metadata",
+      "version": "Rolling; retain dates",
+      "scale": "Rights-filtered corpus",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/tools/openftlist/",
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/tools/openftlist/"
+      ],
+      "license": {
+        "spdx": "MIXED",
+        "status": "requires_review",
+        "commercial_use": "unverified",
+        "redistribution": "not_cleared_for_public_github",
+        "notes": "Terms are for the named database release/channel, distinct from article/code license. Last reviewed 2026-11-14; restoration does not create new permission."
+      },
+      "access": {
+        "method": "manual_or_api",
+        "files": [],
+        "requires_manual": true,
+        "license_gate": "mixed",
+        "notes": "OA availability does not give identical training/commercial rights to every article."
+      },
+      "purposes": [
+        "evidence_retrieval",
+        "relation_extraction",
+        "text_molecule_alignment"
+      ],
+      "caveats": [
+        "Record counts overlap other resources; do not sum as unique molecules."
+      ],
+      "download_state": {
+        "status": "not_attempted_in_restoration",
+        "restoration_date": "2026-11-15"
+      }
+    },
+    {
+      "id": "dnp",
+      "name": "Dictionary of Natural Products",
+      "category": "licensed_np",
+      "priority": "extension",
+      "content_scope": "Curated licensed natural-product structures and references",
+      "version": "Subscription release",
+      "scale": "Not accessed",
+      "landing_url": "https://dnp.chemnetbase.com/",
+      "source_urls": [
+        "https://dnp.chemnetbase.com/"
+      ],
+      "license": {
+        "spdx": "PROPRIETARY",
+        "status": "requires_review",
+        "commercial_use": "no_without_separate_permission",
+        "redistribution": "not_cleared_for_public_github",
+        "notes": "Terms are for the named database release/channel, distinct from article/code license. Last reviewed 2026-11-14; restoration does not create new permission."
+      },
+      "access": {
+        "method": "manual_or_api",
+        "files": [],
+        "requires_manual": true,
+        "license_gate": "paid",
+        "notes": "Requires subscription and explicit rights; no automated restricted access."
+      },
+      "purposes": [
+        "licensed_structure_expansion"
+      ],
+      "caveats": [
+        "Record counts overlap other resources; do not sum as unique molecules."
+      ],
+      "download_state": {
+        "status": "not_attempted_in_restoration",
+        "restoration_date": "2026-11-15"
+      }
+    },
+    {
+      "id": "marinlit",
+      "name": "MarinLit",
+      "category": "licensed_marine_np",
+      "priority": "extension",
+      "content_scope": "Licensed marine natural-product chemistry and references",
+      "version": "Subscription release",
+      "scale": "Not accessed",
+      "landing_url": "https://marinlit.rsc.org/",
+      "source_urls": [
+        "https://marinlit.rsc.org/"
+      ],
+      "license": {
+        "spdx": "PROPRIETARY",
+        "status": "requires_review",
+        "commercial_use": "no_without_separate_permission",
+        "redistribution": "not_cleared_for_public_github",
+        "notes": "Terms are for the named database release/channel, distinct from article/code license. Last reviewed 2026-11-14; restoration does not create new permission."
+      },
+      "access": {
+        "method": "manual_or_api",
+        "files": [],
+        "requires_manual": true,
+        "license_gate": "paid",
+        "notes": "Requires subscription and explicit rights; no automated restricted access."
+      },
+      "purposes": [
+        "licensed_marine_expansion"
+      ],
+      "caveats": [
+        "Record counts overlap other resources; do not sum as unique molecules."
+      ],
+      "download_state": {
+        "status": "not_attempted_in_restoration",
+        "restoration_date": "2026-11-15"
+      }
+    }
+  ]
+}

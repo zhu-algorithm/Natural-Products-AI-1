@@ -1,0 +1,19 @@
+{
+  "name": "artemisinic acid",
+  "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/artemisinic%20acid/property/SMILES,ConnectivitySMILES,InChIKey/JSON",
+  "retrieved_at": "2026-11-15T01:06:02.930503+00:00",
+  "http_status": 200,
+  "raw_response_sha256": "600bec2bcc7e0e0b36f5d478068f328bc861db5beb7c77fe8e0b27df7bc3cb6c",
+  "response": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 10922465,
+          "SMILES": "C[C@@H]1CC[C@H]([C@@H]2[C@H]1CCC(=C2)C)C(=C)C(=O)O",
+          "ConnectivitySMILES": "CC1CCC(C2C1CCC(=C2)C)C(=C)C(=O)O",
+          "InChIKey": "PLQMEXSCSAIXGB-SAXRGWBVSA-N"
+        }
+      ]
+    }
+  }
+}

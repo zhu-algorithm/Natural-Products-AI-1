@@ -1,0 +1,19 @@
+{
+  "name": "magnolol",
+  "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/magnolol/property/SMILES,ConnectivitySMILES,InChIKey/JSON",
+  "retrieved_at": "2026-11-15T01:05:52.018488+00:00",
+  "http_status": 200,
+  "raw_response_sha256": "b786ad12c6aabefb5f94beccd9c996ec2b1da507883af5678d84fc342687837d",
+  "response": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 72300,
+          "SMILES": "C=CCC1=CC(=C(C=C1)O)C2=C(C=CC(=C2)CC=C)O",
+          "ConnectivitySMILES": "C=CCC1=CC(=C(C=C1)O)C2=C(C=CC(=C2)CC=C)O",
+          "InChIKey": "VVOAZFWZEDHOOU-UHFFFAOYSA-N"
+        }
+      ]
+    }
+  }
+}

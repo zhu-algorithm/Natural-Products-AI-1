@@ -1,0 +1,19 @@
+{
+  "name": "resveratrol",
+  "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/resveratrol/property/SMILES,ConnectivitySMILES,InChIKey/JSON",
+  "retrieved_at": "2026-11-15T01:05:26.454511+00:00",
+  "http_status": 200,
+  "raw_response_sha256": "2f91b3b263f7bd699c45d5a730e16d3a798a5c5af8908c62c09e6856ee938486",
+  "response": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 445154,
+          "SMILES": "C1=CC(=CC=C1/C=C/C2=CC(=CC(=C2)O)O)O",
+          "ConnectivitySMILES": "C1=CC(=CC=C1C=CC2=CC(=CC(=C2)O)O)O",
+          "InChIKey": "LUKBXSAWLPMMSZ-OWOJBTEDSA-N"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "emodin",
+  "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/emodin/property/SMILES,ConnectivitySMILES,InChIKey/JSON",
+  "retrieved_at": "2026-11-15T01:05:48.086725+00:00",
+  "http_status": 200,
+  "raw_response_sha256": "b6f2b22e9d164b13acd4ef4bfdaa4d4eee5fa7d53ec354c823b224a5e2bb2eca",
+  "response": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 3220,
+          "SMILES": "CC1=CC2=C(C(=C1)O)C(=O)C3=C(C2=O)C=C(C=C3O)O",
+          "ConnectivitySMILES": "CC1=CC2=C(C(=C1)O)C(=O)C3=C(C2=O)C=C(C=C3O)O",
+          "InChIKey": "RHMXXJGYXNZAPX-UHFFFAOYSA-N"
+        }
+      ]
+    }
+  }
+}

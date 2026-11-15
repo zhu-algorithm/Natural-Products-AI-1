@@ -1,0 +1,19 @@
+{
+  "name": "oleanolic acid",
+  "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/oleanolic%20acid/property/SMILES,ConnectivitySMILES,InChIKey/JSON",
+  "retrieved_at": "2026-11-15T01:05:55.510689+00:00",
+  "http_status": 200,
+  "raw_response_sha256": "d808ddbfa1940188004d6d47a9e8b0820a647558d5f249a7b308ae5e092963d5",
+  "response": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 10494,
+          "SMILES": "C[C@]12CC[C@@H](C([C@@H]1CC[C@@]3([C@@H]2CC=C4[C@]3(CC[C@@]5([C@H]4CC(CC5)(C)C)C(=O)O)C)C)(C)C)O",
+          "ConnectivitySMILES": "CC1(CCC2(CCC3(C(=CCC4C3(CCC5C4(CCC(C5(C)C)O)C)C)C2C1)C)C(=O)O)C",
+          "InChIKey": "MIJYXULNPSFWEK-GTOFXWBISA-N"
+        }
+      ]
+    }
+  }
+}

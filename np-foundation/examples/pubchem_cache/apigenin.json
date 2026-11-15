@@ -1,0 +1,19 @@
+{
+  "name": "apigenin",
+  "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/apigenin/property/SMILES,ConnectivitySMILES,InChIKey/JSON",
+  "retrieved_at": "2026-11-15T01:05:39.122656+00:00",
+  "http_status": 200,
+  "raw_response_sha256": "1643ee9ca14f186401d0a9aa9b1709c25e1435c6c0bf72bac1269d5247c6ecb1",
+  "response": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 5280443,
+          "SMILES": "C1=CC(=CC=C1C2=CC(=O)C3=C(C=C(C=C3O2)O)O)O",
+          "ConnectivitySMILES": "C1=CC(=CC=C1C2=CC(=O)C3=C(C=C(C=C3O2)O)O)O",
+          "InChIKey": "KZNIFHPLKGYRTM-UHFFFAOYSA-N"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "nicotine",
+  "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/nicotine/property/SMILES,ConnectivitySMILES,InChIKey/JSON",
+  "retrieved_at": "2026-11-15T01:05:35.154895+00:00",
+  "http_status": 200,
+  "raw_response_sha256": "ec3ed487bbda667dc42382c3497b33ec4e16156572281bfc9cf13efe26beb6fb",
+  "response": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 89594,
+          "SMILES": "CN1CCC[C@H]1C2=CN=CC=C2",
+          "ConnectivitySMILES": "CN1CCCC1C2=CN=CC=C2",
+          "InChIKey": "SNICXCGAKADSCV-JTQLQIEISA-N"
+        }
+      ]
+    }
+  }
+}

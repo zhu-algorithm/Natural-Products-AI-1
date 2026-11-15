@@ -1,0 +1,19 @@
+{
+  "name": "curcumin",
+  "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/curcumin/property/SMILES,ConnectivitySMILES,InChIKey/JSON",
+  "retrieved_at": "2026-11-15T01:05:26.518738+00:00",
+  "http_status": 200,
+  "raw_response_sha256": "50ffff2b8122a973472a4a4ff38bf5437698eb2432db6c73ae8c70c6b3aaa761",
+  "response": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 969516,
+          "SMILES": "COC1=C(C=CC(=C1)/C=C/C(=O)CC(=O)/C=C/C2=CC(=C(C=C2)O)OC)O",
+          "ConnectivitySMILES": "COC1=C(C=CC(=C1)C=CC(=O)CC(=O)C=CC2=CC(=C(C=C2)O)OC)O",
+          "InChIKey": "VFLDPWHFBUODDF-FCXRPNKRSA-N"
+        }
+      ]
+    }
+  }
+}

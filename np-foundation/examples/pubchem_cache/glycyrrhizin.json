@@ -1,0 +1,19 @@
+{
+  "name": "glycyrrhizin",
+  "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/glycyrrhizin/property/SMILES,ConnectivitySMILES,InChIKey/JSON",
+  "retrieved_at": "2026-11-15T01:05:59.154615+00:00",
+  "http_status": 200,
+  "raw_response_sha256": "07d66590c4b30354f3bb23c9d41e5c45bffe46ad572c4a2f8e973034c5030a6c",
+  "response": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 14982,
+          "SMILES": "C[C@]12CC[C@](C[C@H]1C3=CC(=O)[C@@H]4[C@]5(CC[C@@H](C([C@@H]5CC[C@]4([C@@]3(CC2)C)C)(C)C)O[C@@H]6[C@@H]([C@H]([C@@H]([C@H](O6)C(=O)O)O)O)O[C@H]7[C@@H]([C@H]([C@@H]([C@H](O7)C(=O)O)O)O)O)C)(C)C(=O)O",
+          "ConnectivitySMILES": "CC1(C2CCC3(C(C2(CCC1OC4C(C(C(C(O4)C(=O)O)O)O)OC5C(C(C(C(O5)C(=O)O)O)O)O)C)C(=O)C=C6C3(CCC7(C6CC(CC7)(C)C(=O)O)C)C)C)C",
+          "InChIKey": "LPLVUJXQOOQHMX-QWBHMCJMSA-N"
+        }
+      ]
+    }
+  }
+}

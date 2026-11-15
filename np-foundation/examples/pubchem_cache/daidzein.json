@@ -1,0 +1,19 @@
+{
+  "name": "daidzein",
+  "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/daidzein/property/SMILES,ConnectivitySMILES,InChIKey/JSON",
+  "retrieved_at": "2026-11-15T01:05:48.106499+00:00",
+  "http_status": 200,
+  "raw_response_sha256": "13809316739a592ebae4c684fb9784418422a612d5bf869d9f7b793b293721cb",
+  "response": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 5281708,
+          "SMILES": "C1=CC(=CC=C1C2=COC3=C(C2=O)C=CC(=C3)O)O",
+          "ConnectivitySMILES": "C1=CC(=CC=C1C2=COC3=C(C2=O)C=CC(=C3)O)O",
+          "InChIKey": "ZQSIJRDFPHDXIC-UHFFFAOYSA-N"
+        }
+      ]
+    }
+  }
+}

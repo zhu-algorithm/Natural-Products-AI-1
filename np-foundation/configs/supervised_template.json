@@ -1,0 +1,18 @@
+{
+  "data_path": "../data/training/labeled_compounds.csv",
+  "output_dir": "../runs/supervised",
+  "max_records": 50000,
+  "seed": 42,
+  "max_seq_length": 512,
+  "max_atoms": 256,
+  "graph_mode": "auto",
+  "tasks": [{"name": "logS", "column": "logS", "kind": "regression", "domain": "aqueous_solubility", "label_source": "REPLACE_WITH_ACTUAL_MEASUREMENT_SOURCE"}],
+  "model": {"d_model": 64, "nhead": 4, "num_layers": 2, "dim_feedforward": 128, "dropout": 0.1, "graph_layers": 2},
+  "training": {
+    "epochs": 5, "batch_size": 16, "learning_rate": 0.001,
+    "objective": "causal", "lm_weight": 0.1, "task_weight": 1.0,
+    "contrastive_weight": 0.1, "contrastive_temperature": 0.1,
+    "val_fraction": 0.15, "test_fraction": 0.15, "split": "scaffold",
+    "selection_metric": "auto", "device": "cpu", "cpu_threads": 4
+  }
+}

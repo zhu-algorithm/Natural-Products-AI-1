@@ -1,0 +1,19 @@
+{
+  "name": "luteolin",
+  "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/luteolin/property/SMILES,ConnectivitySMILES,InChIKey/JSON",
+  "retrieved_at": "2026-11-15T01:05:44.478664+00:00",
+  "http_status": 200,
+  "raw_response_sha256": "0b73028f4dcaa9519211d041806e4d20672527e444aa7a18660181a5c0b569fb",
+  "response": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 5280445,
+          "SMILES": "C1=CC(=C(C=C1C2=CC(=O)C3=C(C=C(C=C3O2)O)O)O)O",
+          "ConnectivitySMILES": "C1=CC(=C(C=C1C2=CC(=O)C3=C(C=C(C=C3O2)O)O)O)O",
+          "InChIKey": "IQPNAANSBPBGFQ-UHFFFAOYSA-N"
+        }
+      ]
+    }
+  }
+}
